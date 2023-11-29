@@ -13,7 +13,7 @@ class ApplicationController < ActionController::Base
       # Add the :name parameter to the permitted sign up parameters
       devise_parameter_sanitizer.permit(:sign_up, keys: [:name])
   
-      If you need to permit additional parameters for account update, add them here
+      # If you need to permit additional parameters for account update, add them here
       devise_parameter_sanitizer.permit(:account_update, keys: [:name])
     end
   end
