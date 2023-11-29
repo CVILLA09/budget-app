@@ -1,4 +1,8 @@
 class User < ApplicationRecord
+    # Include default devise modules.
+    devise :database_authenticatable, :registerable,
+    :recoverable, :rememberable, :validatable
+
     # Associations
     has_many :purchases, foreign_key: 'author_id', dependent: :destroy
     has_many :categories, through: :purchases
@@ -8,7 +12,5 @@ class User < ApplicationRecord
     
     # Validations
     validates :name, presence: true
-  
-    # Add methods for devise if you're using it for authentication
   end
   
