@@ -23,3 +23,13 @@ Processing by StaticPagesController#splash as HTML
 Completed 200 OK in 606ms (Views: 572.7ms | ActiveRecord: 0.0ms | Allocations: 106431)
 
 
+Started GET "/" for ::1 at 2023-11-28 21:56:46 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 1.0ms | Allocations: 557)
+  Rendered layout layouts/application.html.erb (Duration: 148.0ms | Allocations: 35113)
+Completed 200 OK in 204ms (Views: 157.1ms | ActiveRecord: 0.0ms | Allocations: 43702)
+
+
