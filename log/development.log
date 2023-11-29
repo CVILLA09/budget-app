@@ -13,3 +13,13 @@ SyntaxError (/Users/macpro/Desktop/budget-app/app/controllers/application_contro
   
 app/controllers/application_controller.rb:16: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
 app/controllers/static_pages_controller.rb:1:in `<main>'
+Started GET "/" for ::1 at 2023-11-28 20:39:30 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 0.5ms | Allocations: 184)
+  Rendered layout layouts/application.html.erb (Duration: 564.3ms | Allocations: 99367)
+Completed 200 OK in 606ms (Views: 572.7ms | ActiveRecord: 0.0ms | Allocations: 106431)
+
+
