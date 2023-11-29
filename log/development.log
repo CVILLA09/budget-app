@@ -625,3 +625,180 @@ Processing by StaticPagesController#splash as HTML
 Completed 200 OK in 24ms (Views: 21.6ms | ActiveRecord: 0.0ms | Allocations: 8285)
 
 
+Started GET "/" for ::1 at 2023-11-29 16:07:37 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 0.9ms | Allocations: 544)
+  Rendered layout layouts/application.html.erb (Duration: 261.7ms | Allocations: 60496)
+Completed 200 OK in 297ms (Views: 270.4ms | ActiveRecord: 0.0ms | Allocations: 67512)
+
+
+Started GET "/" for ::1 at 2023-11-29 16:08:05 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 0.3ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 18.6ms | Allocations: 7506)
+Completed 200 OK in 21ms (Views: 19.2ms | ActiveRecord: 0.0ms | Allocations: 8254)
+
+
+Started GET "/" for ::1 at 2023-11-29 16:08:13 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 0.5ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 22.5ms | Allocations: 7754)
+Completed 200 OK in 28ms (Views: 23.5ms | ActiveRecord: 0.0ms | Allocations: 8509)
+
+
+Started GET "/" for ::1 at 2023-11-29 16:08:23 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 0.2ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 27.0ms | Allocations: 7530)
+Completed 200 OK in 29ms (Views: 27.7ms | ActiveRecord: 0.0ms | Allocations: 8294)
+
+
+Started GET "/users/sign_in" for ::1 at 2023-11-29 16:09:44 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 7.9ms | Allocations: 3214)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 3306)
+Completed 500 Internal Server Error in 60ms (ActiveRecord: 15.9ms | Allocations: 14889)
+
+
+  
+ActionView::Template::Error (undefined method `email' for #<User id: nil, name: nil, created_at: nil, updated_at: nil>):
+    3: <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    4:   <div class="field">
+    5:     <%= f.label :email %><br />
+    6:     <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+    7:   </div>
+    8: 
+    9:   <div class="field">
+  
+app/views/devise/sessions/new.html.erb:6
+app/views/devise/sessions/new.html.erb:3
+Started GET "/users/sign_in" for ::1 at 2023-11-29 17:25:00 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1896)
+  Rendered layout layouts/application.html.erb (Duration: 2.0ms | Allocations: 1988)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 7.3ms | Allocations: 8483)
+
+
+  
+ActionView::Template::Error (undefined method `email' for #<User id: nil, name: nil, created_at: nil, updated_at: nil>):
+    4: <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    5:   <div class="field">
+    6:     <%= f.label :email %><br />
+    7:     <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+    8:   </div>
+    9: 
+   10:   <div class="field">
+  
+app/views/devise/sessions/new.html.erb:7
+app/views/devise/sessions/new.html.erb:4
+Started GET "/" for ::1 at 2023-11-29 17:30:24 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 0.8ms | Allocations: 329)
+  Rendered layout layouts/application.html.erb (Duration: 74.4ms | Allocations: 44725)
+Completed 200 OK in 79ms (Views: 77.4ms | ActiveRecord: 0.0ms | Allocations: 45977)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/login"):
+  
+Started GET "/users/sign_in" for ::1 at 2023-11-29 17:30:29 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1457)
+  Rendered layout layouts/application.html.erb (Duration: 2.0ms | Allocations: 1548)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 2396)
+
+
+  
+ActionView::Template::Error (undefined method `email' for #<User id: nil, name: nil, created_at: nil, updated_at: nil>):
+    4: <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    5:   <div class="field">
+    6:     <%= f.label :email %><br />
+    7:     <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+    8:   </div>
+    9: 
+   10:   <div class="field">
+  
+app/views/devise/sessions/new.html.erb:7
+app/views/devise/sessions/new.html.erb:4
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2127889314188895495)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+Migrating to AddDeviseToUsers (20231129233759)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.8ms)[0m  [1m[35mALTER TABLE "users" ADD "email" character varying DEFAULT '' NOT NULL[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "users" ADD "encrypted_password" character varying DEFAULT '' NOT NULL[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "users" ADD "reset_password_token" character varying[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "users" ADD "reset_password_sent_at" timestamp(6)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "users" ADD "remember_created_at" timestamp(6)[0m
+  [1m[35m (3.5ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20231129233759') RETURNING "version"[0m
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2127889314188895495)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2023-11-29 17:43:20 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 0.8ms | Allocations: 544)
+  Rendered layout layouts/application.html.erb (Duration: 118.7ms | Allocations: 60789)
+Completed 200 OK in 141ms (Views: 122.7ms | ActiveRecord: 0.0ms | Allocations: 67811)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/login"):
+  
+Started GET "/users/sign_in" for ::1 at 2023-11-29 17:43:25 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.4ms | Allocations: 686)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 21.3ms | Allocations: 3511)
+  Rendered layout layouts/application.html.erb (Duration: 35.0ms | Allocations: 9976)
+Completed 200 OK in 103ms (Views: 38.2ms | ActiveRecord: 16.9ms | Allocations: 27628)
+
+
+Started GET "/users/sign_in" for ::1 at 2023-11-29 17:48:44 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.3ms | Allocations: 666)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 7.8ms | Allocations: 2005)
+  Rendered layout layouts/application.html.erb (Duration: 39.1ms | Allocations: 21951)
+Completed 200 OK in 61ms (Views: 45.0ms | ActiveRecord: 3.8ms | Allocations: 27609)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/login"):
+  
+Started GET "/users/sign_in" for ::1 at 2023-11-29 17:55:44 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.8ms | Allocations: 227)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 6.9ms | Allocations: 1054)
+  Rendered layout layouts/application.html.erb (Duration: 22.8ms | Allocations: 7444)
+Completed 200 OK in 27ms (Views: 23.7ms | ActiveRecord: 0.0ms | Allocations: 8291)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/login"):
+  

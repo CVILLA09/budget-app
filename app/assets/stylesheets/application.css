@@ -1,3 +1,5 @@
+@import "login";
+
 /* Splash Screen */
 
 body {
@@ -21,6 +23,7 @@ body {
     margin-top: 0;
     font-size: 1.5rem;
     margin-bottom: 2rem;
+    font-style: italic;
   }
   
   .title {
@@ -89,7 +92,7 @@ body {
     }
     
     .button-primary {
-      width: 12rem;
+      width: 14rem;
       margin-bottom: 1rem;
     }
   }
