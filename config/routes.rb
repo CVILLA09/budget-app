@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
+  get 'static_pages/splash'
   devise_for :users
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # You can set the root path to a controller and action of your choice, such as:
-  root 'categories#index' # This assumes you have a CategoriesController with an index action.
+  root to: 'static_pages#splash'
 
   resources :categories do
     resources :purchases, only: [:new, :create, :show]
