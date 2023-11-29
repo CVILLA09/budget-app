@@ -33,3 +33,595 @@ Processing by StaticPagesController#splash as HTML
 Completed 200 OK in 204ms (Views: 157.1ms | ActiveRecord: 0.0ms | Allocations: 43702)
 
 
+Started GET "/" for ::1 at 2023-11-28 22:02:14 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 2.1ms | Allocations: 557)
+  Rendered layout layouts/application.html.erb (Duration: 857.9ms | Allocations: 146825)
+Completed 200 OK in 900ms (Views: 865.7ms | ActiveRecord: 0.0ms | Allocations: 153829)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/tailwindcss/components"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/tailwindcss/utilities"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/tailwindcss/base"):
+  
+Started GET "/" for ::1 at 2023-11-28 22:03:13 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 1.3ms | Allocations: 557)
+  Rendered layout layouts/application.html.erb (Duration: 215.2ms | Allocations: 52290)
+Completed 200 OK in 252ms (Views: 221.1ms | ActiveRecord: 0.0ms | Allocations: 59285)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/tailwindcss/base"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/tailwindcss/components"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/tailwindcss/utilities"):
+  
+Started GET "/" for ::1 at 2023-11-28 22:12:52 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 0.4ms | Allocations: 89)
+  Rendered layout layouts/application.html.erb (Duration: 46.2ms | Allocations: 10970)
+Completed 200 OK in 48ms (Views: 47.2ms | ActiveRecord: 0.0ms | Allocations: 11729)
+
+
+Started GET "/" for ::1 at 2023-11-28 22:13:32 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 2.6ms | Allocations: 557)
+  Rendered layout layouts/application.html.erb (Duration: 274.2ms | Allocations: 60567)
+Completed 200 OK in 315ms (Views: 284.4ms | ActiveRecord: 0.0ms | Allocations: 67583)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Proxima%20Nova%20Font.otf"):
+  
+Started GET "/users/sign_in" for ::1 at 2023-11-28 22:13:39 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 8.4ms | Allocations: 3321)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 3413)
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 14.2ms | Allocations: 15503)
+
+
+  
+ActionView::Template::Error (undefined method `email' for #<User id: nil, name: nil, created_at: nil, updated_at: nil>):
+    3: <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    4:   <div class="field">
+    5:     <%= f.label :email %><br />
+    6:     <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+    7:   </div>
+    8: 
+    9:   <div class="field">
+  
+app/views/devise/sessions/new.html.erb:6
+app/views/devise/sessions/new.html.erb:3
+Started GET "/" for ::1 at 2023-11-28 22:13:42 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 0.3ms | Allocations: 89)
+  Rendered layout layouts/application.html.erb (Duration: 55.6ms | Allocations: 6551)
+Completed 200 OK in 58ms (Views: 56.6ms | ActiveRecord: 0.0ms | Allocations: 7327)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Proxima%20Nova%20Font.otf"):
+  
+Started GET "/users/sign_up" for ::1 at 2023-11-28 22:13:45 -0600
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 222)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.6ms | Allocations: 2112)
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | Allocations: 2203)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 3365)
+
+
+  
+ActionView::Template::Error (undefined method `email' for #<User id: nil, name: nil, created_at: nil, updated_at: nil>):
+     5: 
+     6:   <div class="field">
+     7:     <%= f.label :email %><br />
+     8:     <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+     9:   </div>
+    10: 
+    11:   <div class="field">
+  
+app/views/devise/registrations/new.html.erb:8
+app/views/devise/registrations/new.html.erb:3
+Started GET "/" for ::1 at 2023-11-28 22:13:48 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 0.6ms | Allocations: 89)
+  Rendered layout layouts/application.html.erb (Duration: 34.8ms | Allocations: 6551)
+Completed 200 OK in 39ms (Views: 36.0ms | ActiveRecord: 0.0ms | Allocations: 7314)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Proxima%20Nova%20Font.otf"):
+  
+Started GET "/" for ::1 at 2023-11-29 14:44:58 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 2.7ms | Allocations: 89)
+  Rendered layout layouts/application.html.erb (Duration: 88.1ms | Allocations: 8389)
+Completed 200 OK in 115ms (Views: 93.5ms | ActiveRecord: 0.0ms | Allocations: 9151)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Proxima%20Nova%20Font.otf"):
+  
+Started GET "/" for ::1 at 2023-11-29 14:45:00 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 0.3ms | Allocations: 89)
+  Rendered layout layouts/application.html.erb (Duration: 14.9ms | Allocations: 6551)
+Completed 200 OK in 18ms (Views: 15.8ms | ActiveRecord: 0.0ms | Allocations: 7295)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Proxima%20Nova%20Font.otf"):
+  
+Started GET "/" for ::1 at 2023-11-29 14:45:24 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 1.4ms | Allocations: 557)
+  Rendered layout layouts/application.html.erb (Duration: 313.5ms | Allocations: 58742)
+Completed 200 OK in 364ms (Views: 322.8ms | ActiveRecord: 0.0ms | Allocations: 65740)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Proxima%20Nova%20Font.otf"):
+  
+Started GET "/" for ::1 at 2023-11-29 14:45:47 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 1.1ms | Allocations: 89)
+  Rendered layout layouts/application.html.erb (Duration: 36.4ms | Allocations: 8483)
+Completed 200 OK in 42ms (Views: 38.2ms | ActiveRecord: 0.0ms | Allocations: 9255)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Proxima%20Nova%20Font.otf"):
+  
+Started GET "/" for ::1 at 2023-11-29 15:05:25 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 2.0ms | Allocations: 336)
+  Rendered layout layouts/application.html.erb (Duration: 50.1ms | Allocations: 22165)
+Completed 200 OK in 61ms (Views: 54.6ms | ActiveRecord: 0.0ms | Allocations: 24407)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Proxima%20Nova%20Font.otf"):
+  
+Started GET "/" for ::1 at 2023-11-29 15:06:23 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 0.4ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 27.7ms | Allocations: 8397)
+Completed 200 OK in 31ms (Views: 28.6ms | ActiveRecord: 0.0ms | Allocations: 9166)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Proxima%20Nova%20Font.otf"):
+  
+Started GET "/" for ::1 at 2023-11-29 15:11:58 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 1.1ms | Allocations: 333)
+  Rendered layout layouts/application.html.erb (Duration: 47.0ms | Allocations: 22161)
+Completed 200 OK in 60ms (Views: 52.8ms | ActiveRecord: 0.0ms | Allocations: 24413)
+
+
+Started GET "/users/sign_up" for ::1 at 2023-11-29 15:12:01 -0600
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 5.8ms | Allocations: 227)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 59.9ms | Allocations: 3178)
+  Rendered layout layouts/application.html.erb (Duration: 60.5ms | Allocations: 3273)
+Completed 500 Internal Server Error in 167ms (ActiveRecord: 27.1ms | Allocations: 14744)
+
+
+  
+ActionView::Template::Error (undefined method `email' for #<User id: nil, name: nil, created_at: nil, updated_at: nil>):
+     5: 
+     6:   <div class="field">
+     7:     <%= f.label :email %><br />
+     8:     <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+     9:   </div>
+    10: 
+    11:   <div class="field">
+  
+app/views/devise/registrations/new.html.erb:8
+app/views/devise/registrations/new.html.erb:3
+Started GET "/users/sign_in" for ::1 at 2023-11-29 15:12:02 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.4ms | Allocations: 2336)
+  Rendered layout layouts/application.html.erb (Duration: 4.1ms | Allocations: 2613)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms | Allocations: 5781)
+
+
+  
+ActionView::Template::Error (undefined method `email' for #<User id: nil, name: nil, created_at: nil, updated_at: nil>):
+    3: <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    4:   <div class="field">
+    5:     <%= f.label :email %><br />
+    6:     <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+    7:   </div>
+    8: 
+    9:   <div class="field">
+  
+app/views/devise/sessions/new.html.erb:6
+app/views/devise/sessions/new.html.erb:3
+Started GET "/" for ::1 at 2023-11-29 15:12:04 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 0.6ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 36.4ms | Allocations: 6545)
+Completed 200 OK in 42ms (Views: 39.2ms | ActiveRecord: 0.0ms | Allocations: 7305)
+
+
+Started GET "/" for ::1 at 2023-11-29 15:21:19 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 1.8ms | Allocations: 338)
+  Rendered layout layouts/application.html.erb (Duration: 216.8ms | Allocations: 43106)
+Completed 200 OK in 229ms (Views: 220.5ms | ActiveRecord: 0.0ms | Allocations: 45347)
+
+
+Started GET "/" for ::1 at 2023-11-29 15:22:42 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 2.1ms | Allocations: 339)
+  Rendered layout layouts/application.html.erb (Duration: 51.4ms | Allocations: 20273)
+Completed 200 OK in 63ms (Views: 55.8ms | ActiveRecord: 0.0ms | Allocations: 22532)
+
+
+Started GET "/" for ::1 at 2023-11-29 15:22:58 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 0.9ms | Allocations: 337)
+  Rendered layout layouts/application.html.erb (Duration: 30.0ms | Allocations: 19915)
+Completed 200 OK in 39ms (Views: 33.0ms | ActiveRecord: 0.0ms | Allocations: 22171)
+
+
+Started GET "/" for ::1 at 2023-11-29 15:23:09 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 1.9ms | Allocations: 337)
+  Rendered layout layouts/application.html.erb (Duration: 37.2ms | Allocations: 20211)
+Completed 200 OK in 45ms (Views: 39.9ms | ActiveRecord: 0.0ms | Allocations: 22449)
+
+
+Started GET "/" for ::1 at 2023-11-29 15:23:58 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 1.0ms | Allocations: 339)
+  Rendered layout layouts/application.html.erb (Duration: 30.7ms | Allocations: 20213)
+Completed 200 OK in 42ms (Views: 34.6ms | ActiveRecord: 0.0ms | Allocations: 22455)
+
+
+Started GET "/" for ::1 at 2023-11-29 15:24:10 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 2.1ms | Allocations: 334)
+  Rendered layout layouts/application.html.erb (Duration: 58.7ms | Allocations: 20196)
+Completed 200 OK in 75ms (Views: 64.5ms | ActiveRecord: 0.0ms | Allocations: 22424)
+
+
+Started GET "/" for ::1 at 2023-11-29 15:24:43 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 1.2ms | Allocations: 339)
+  Rendered layout layouts/application.html.erb (Duration: 37.7ms | Allocations: 19946)
+Completed 200 OK in 46ms (Views: 40.9ms | ActiveRecord: 0.0ms | Allocations: 22190)
+
+
+Started GET "/" for ::1 at 2023-11-29 15:26:13 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 1.8ms | Allocations: 337)
+  Rendered layout layouts/application.html.erb (Duration: 35.6ms | Allocations: 20211)
+Completed 200 OK in 48ms (Views: 40.5ms | ActiveRecord: 0.0ms | Allocations: 22449)
+
+
+Started GET "/" for ::1 at 2023-11-29 15:27:24 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 1.1ms | Allocations: 339)
+  Rendered layout layouts/application.html.erb (Duration: 30.8ms | Allocations: 20214)
+Completed 200 OK in 39ms (Views: 33.8ms | ActiveRecord: 0.0ms | Allocations: 22461)
+
+
+Started GET "/" for ::1 at 2023-11-29 15:33:34 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 0.2ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 18.1ms | Allocations: 7508)
+Completed 200 OK in 20ms (Views: 18.7ms | ActiveRecord: 0.0ms | Allocations: 8264)
+
+
+Started GET "/" for ::1 at 2023-11-29 15:34:07 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 0.3ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 25.3ms | Allocations: 7500)
+Completed 200 OK in 28ms (Views: 26.1ms | ActiveRecord: 0.0ms | Allocations: 8245)
+
+
+Started GET "/" for ::1 at 2023-11-29 15:34:20 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 0.2ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 25.0ms | Allocations: 7658)
+Completed 200 OK in 35ms (Views: 25.6ms | ActiveRecord: 0.0ms | Allocations: 8408)
+
+
+Started GET "/" for ::1 at 2023-11-29 15:34:27 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 0.8ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 24.7ms | Allocations: 7615)
+Completed 200 OK in 28ms (Views: 26.1ms | ActiveRecord: 0.0ms | Allocations: 8380)
+
+
+Started GET "/" for ::1 at 2023-11-29 15:34:36 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 0.4ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 21.6ms | Allocations: 7507)
+Completed 200 OK in 24ms (Views: 22.5ms | ActiveRecord: 0.0ms | Allocations: 8263)
+
+
+Started GET "/" for ::1 at 2023-11-29 15:35:14 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 0.2ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 22.7ms | Allocations: 7486)
+Completed 200 OK in 25ms (Views: 23.6ms | ActiveRecord: 0.0ms | Allocations: 8251)
+
+
+Started GET "/" for ::1 at 2023-11-29 15:35:20 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 0.2ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 27.2ms | Allocations: 7491)
+Completed 200 OK in 29ms (Views: 28.0ms | ActiveRecord: 0.0ms | Allocations: 8244)
+
+
+Started GET "/" for ::1 at 2023-11-29 15:36:28 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 0.9ms | Allocations: 338)
+  Rendered layout layouts/application.html.erb (Duration: 36.7ms | Allocations: 20212)
+Completed 200 OK in 47ms (Views: 40.2ms | ActiveRecord: 0.0ms | Allocations: 22447)
+
+
+Started GET "/" for ::1 at 2023-11-29 15:36:48 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 2.0ms | Allocations: 336)
+  Rendered layout layouts/application.html.erb (Duration: 37.5ms | Allocations: 20212)
+Completed 200 OK in 49ms (Views: 43.6ms | ActiveRecord: 0.0ms | Allocations: 22462)
+
+
+Started GET "/" for ::1 at 2023-11-29 15:45:09 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 0.3ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 21.6ms | Allocations: 7541)
+Completed 200 OK in 23ms (Views: 22.2ms | ActiveRecord: 0.0ms | Allocations: 8294)
+
+
+Started GET "/" for ::1 at 2023-11-29 15:47:37 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 0.3ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 20.2ms | Allocations: 7540)
+Completed 200 OK in 22ms (Views: 21.0ms | ActiveRecord: 0.0ms | Allocations: 8290)
+
+
+Started GET "/users/sign_in" for ::1 at 2023-11-29 15:47:46 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1883)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 1975)
+Completed 500 Internal Server Error in 54ms (ActiveRecord: 15.0ms | Allocations: 8207)
+
+
+  
+ActionView::Template::Error (undefined method `email' for #<User id: nil, name: nil, created_at: nil, updated_at: nil>):
+    3: <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    4:   <div class="field">
+    5:     <%= f.label :email %><br />
+    6:     <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+    7:   </div>
+    8: 
+    9:   <div class="field">
+  
+app/views/devise/sessions/new.html.erb:6
+app/views/devise/sessions/new.html.erb:3
+Started GET "/users/sign_up" for ::1 at 2023-11-29 15:47:47 -0600
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.7ms | Allocations: 331)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 8.1ms | Allocations: 4882)
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 5674)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms | Allocations: 8389)
+
+
+  
+ActionView::Template::Error (undefined method `email' for #<User id: nil, name: nil, created_at: nil, updated_at: nil>):
+     5: 
+     6:   <div class="field">
+     7:     <%= f.label :email %><br />
+     8:     <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+     9:   </div>
+    10: 
+    11:   <div class="field">
+  
+app/views/devise/registrations/new.html.erb:8
+app/views/devise/registrations/new.html.erb:3
+Started GET "/" for ::1 at 2023-11-29 15:47:50 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 0.9ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 33.2ms | Allocations: 6403)
+Completed 200 OK in 38ms (Views: 34.5ms | ActiveRecord: 0.0ms | Allocations: 7166)
+
+
+Started GET "/" for ::1 at 2023-11-29 15:49:04 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 0.4ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 31.1ms | Allocations: 7672)
+Completed 200 OK in 33ms (Views: 31.8ms | ActiveRecord: 0.0ms | Allocations: 8425)
+
+
+Started GET "/" for ::1 at 2023-11-29 15:49:48 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 0.5ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 29.1ms | Allocations: 7569)
+Completed 200 OK in 31ms (Views: 29.8ms | ActiveRecord: 0.0ms | Allocations: 8328)
+
+
+Started GET "/" for ::1 at 2023-11-29 15:49:56 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 0.2ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 21.5ms | Allocations: 7533)
+Completed 200 OK in 23ms (Views: 22.1ms | ActiveRecord: 0.0ms | Allocations: 8286)
+
+
+Started GET "/" for ::1 at 2023-11-29 15:50:05 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 0.2ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 25.0ms | Allocations: 7526)
+Completed 200 OK in 28ms (Views: 25.5ms | ActiveRecord: 0.0ms | Allocations: 8300)
+
+
+Started GET "/" for ::1 at 2023-11-29 15:51:38 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 0.4ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 57.4ms | Allocations: 7533)
+Completed 200 OK in 59ms (Views: 58.2ms | ActiveRecord: 0.0ms | Allocations: 8292)
+
+
+Started GET "/" for ::1 at 2023-11-29 15:52:36 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 0.4ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 26.8ms | Allocations: 7522)
+Completed 200 OK in 30ms (Views: 28.0ms | ActiveRecord: 0.0ms | Allocations: 8278)
+
+
+Started GET "/" for ::1 at 2023-11-29 15:54:19 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 0.3ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 23.8ms | Allocations: 7550)
+Completed 200 OK in 27ms (Views: 24.8ms | ActiveRecord: 0.0ms | Allocations: 8303)
+
+
+Started GET "/" for ::1 at 2023-11-29 15:56:39 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 0.2ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 22.8ms | Allocations: 7513)
+Completed 200 OK in 25ms (Views: 23.4ms | ActiveRecord: 0.0ms | Allocations: 8272)
+
+
+Started GET "/" for ::1 at 2023-11-29 15:56:41 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 0.6ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 14.1ms | Allocations: 6246)
+Completed 200 OK in 17ms (Views: 15.4ms | ActiveRecord: 0.0ms | Allocations: 6987)
+
+
+Started GET "/" for ::1 at 2023-11-29 15:56:47 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 0.3ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 16.6ms | Allocations: 6301)
+Completed 200 OK in 20ms (Views: 17.7ms | ActiveRecord: 0.0ms | Allocations: 7075)
+
+
+Started GET "/" for ::1 at 2023-11-29 15:56:56 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 0.5ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 20.2ms | Allocations: 7526)
+Completed 200 OK in 24ms (Views: 21.6ms | ActiveRecord: 0.0ms | Allocations: 8285)
+
+

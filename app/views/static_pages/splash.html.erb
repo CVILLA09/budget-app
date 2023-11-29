@@ -1,18 +1,16 @@
-<div class="flex flex-col justify-between h-screen items-center">
-  <p class="text-center p-3 blue-btn w-full">Welcome!<br>to your Budget App!</p>
-  <h1 class="text-4xl font-extrabold blue animate-scale">
-    Budget Monitor
-  </h1>
-  <div class="w-full">
-    <% if user_signed_in? %>
-      <div>
-        <%= link_to 'Start Monitoring!', categories_path, class: "blue-btn w-full p-4", method: :get %>
-      </div>
-    <% else %>
-      <div class="flex">
-        <%= link_to 'Sign in', new_user_session_path, class: "blue-btn w-1/2 p-4 border-e-2", method: :get %>
-        <%= link_to 'Sign up', new_user_registration_path, class: "blue-btn w-1/2 p-4 border-s-2", method: :get %>
-      </div>
-    <% end %>
+<div class="container">
+  <div class="welcome-message">
+    <p>Get started with MoneyMatters, your financial partner.</p>
   </div>
+  <h1 class="title animate-scale">
+    MoneyMatters
+  </h1>
+  <% if user_signed_in? %>
+    <%= link_to 'Start Monitoring!', categories_path, class: "button-primary" %>
+  <% else %>
+    <div class="buttons-container">
+      <%= link_to 'Log in', new_user_session_path, class: "button-primary" %>
+      <%= link_to 'Sign up', new_user_registration_path, class: "button-primary" %>
+    </div>
+  <% end %>
 </div>
