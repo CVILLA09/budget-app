@@ -1,16 +1,15 @@
 class User < ApplicationRecord
-    # Include default devise modules.
-    devise :database_authenticatable, :registerable,
-    :recoverable, :rememberable, :validatable
+  # Include default devise modules.
+  devise :database_authenticatable, :registerable,
+         :recoverable, :rememberable, :validatable
 
-    # Associations
-    has_many :purchases, foreign_key: 'author_id', dependent: :destroy
-    has_many :categories, through: :purchases
+  # Associations
+  has_many :purchases, foreign_key: 'author_id', dependent: :destroy
+  has_many :categories, through: :purchases
 
-    # Attributes
-    attribute :name, :string
-    
-    # Validations
-    validates :name, presence: true
-  end
-  
+  # Attributes
+  attribute :name, :string
+
+  # Validations
+  validates :name, presence: true
+end
