@@ -28,6 +28,7 @@
   </div>
 
   <section class="actions-section">
+  <div class="action-buttons">
     <%= link_to new_category_purchase_path(@category), class: 'new-purchase-button' do %>
       <button>New Purchase</button>
     <% end %>
@@ -35,7 +36,7 @@
     <%= link_to edit_category_path(@category), class: 'edit-category-button' do %>
       <button>Edit Category</button>
     <% end %>
-
+    </div>
     <%= button_to "Delete Category", @category, method: :delete, data: { confirm: 'Are you sure?' }, class: "delete-category-button" %>
   </section>
 </div>
