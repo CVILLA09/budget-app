@@ -6663,3 +6663,106 @@ Processing by ActiveStorage::DiskController#show as PNG
 Completed 304 Not Modified in 2ms (ActiveRecord: 0.0ms | Allocations: 145)
 
 
+Started GET "/categories/2" for ::1 at 2023-12-01 17:13:50 -0600
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "categories_users" ON "categories"."id" = "categories_users"."category_id" WHERE "categories_users"."user_id" = $1 AND "categories"."id" = $2 LIMIT $3[0m  [["user_id", 1], ["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/categories_controller.rb:54:in `set_category'
+  Rendering layout layouts/application.html.erb
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Category"], ["name", "icon"], ["LIMIT", 1]]
+  ↳ app/views/categories/_category.html.erb:2
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/categories/_category.html.erb:3
+  [1m[36mPurchase Sum (0.4ms)[0m  [1m[34mSELECT SUM("purchases"."amount") FROM "purchases" INNER JOIN "categories_purchases" ON "purchases"."id" = "categories_purchases"."purchase_id" WHERE "categories_purchases"."category_id" = $1[0m  [["category_id", 2]]
+  ↳ app/views/categories/_category.html.erb:15
+  Rendered categories/_category.html.erb (Duration: 5.4ms | Allocations: 2085)
+  [1m[36mPurchase Load (0.4ms)[0m  [1m[34mSELECT "purchases".* FROM "purchases" INNER JOIN "categories_purchases" ON "purchases"."id" = "categories_purchases"."purchase_id" WHERE "categories_purchases"."category_id" = $1 ORDER BY "purchases"."created_at" DESC[0m  [["category_id", 2]]
+  ↳ app/views/categories/show.html.erb:21
+  Rendered categories/show.html.erb within layouts/application (Duration: 10.4ms | Allocations: 3985)
+  Rendered layout layouts/application.html.erb (Duration: 13.7ms | Allocations: 5884)
+Completed 200 OK in 22ms (Views: 13.1ms | ActiveRecord: 1.6ms | Allocations: 9020)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJ6OXRzZXppeG05d3NtMTU0NWtxdjhyajhrNm9uIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwicGFydHkucG5nXCI7IGZpbGVuYW1lKj1VVEYtOCcncGFydHkucG5nIiwiY29udGVudF90eXBlIjoiaW1hZ2UvcG5nIiwic2VydmljZV9uYW1lIjoibG9jYWwifSwiZXhwIjoiMjAyMy0xMi0wMVQyMzoxNTowOS4xNTRaIiwicHVyIjoiYmxvYl9rZXkifX0=--1ae1e3db77ac60b65c3fcc99d4261b12b800e79e/party.png" for ::1 at 2023-12-01 17:13:50 -0600
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"party"}
+Completed 304 Not Modified in 2ms (ActiveRecord: 0.0ms | Allocations: 202)
+
+
+Started GET "/categories/2/purchases/new" for ::1 at 2023-12-01 17:13:52 -0600
+Processing by PurchasesController#new as HTML
+  Parameters: {"category_id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/purchases_controller.rb:8:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering purchases/new.html.erb within layouts/application
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "categories_users" ON "categories"."id" = "categories_users"."category_id" WHERE "categories_users"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/purchases/_form.html.erb:25
+  Rendered purchases/_form.html.erb (Duration: 2.6ms | Allocations: 1310)
+  Rendered purchases/new.html.erb within layouts/application (Duration: 4.0ms | Allocations: 2030)
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 3961)
+Completed 200 OK in 18ms (Views: 10.0ms | ActiveRecord: 1.1ms | Allocations: 6745)
+
+
+Started POST "/purchases" for ::1 at 2023-12-01 17:14:07 -0600
+Processing by PurchasesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "purchase"=>{"name"=>"Negroni", "amount"=>"1", "category_id"=>"2"}, "commit"=>"Save"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 404 Not Found in 7ms (ActiveRecord: 0.4ms | Allocations: 2200)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Category without an ID):
+  
+app/controllers/purchases_controller.rb:14:in `create'
+Started GET "/categories/2/purchases/new" for ::1 at 2023-12-01 17:18:22 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PurchasesController#new as HTML
+  Parameters: {"category_id"=>"2"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.7ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/purchases_controller.rb:8:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering purchases/new.html.erb within layouts/application
+  [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "categories_users" ON "categories"."id" = "categories_users"."category_id" WHERE "categories_users"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/purchases/_form.html.erb:25
+  Rendered purchases/_form.html.erb (Duration: 23.5ms | Allocations: 6314)
+  Rendered purchases/new.html.erb within layouts/application (Duration: 399.6ms | Allocations: 46417)
+  Rendered layout layouts/application.html.erb (Duration: 426.7ms | Allocations: 60454)
+Completed 200 OK in 626ms (Views: 430.0ms | ActiveRecord: 35.5ms | Allocations: 114893)
+
+
+Started GET "/categories/2/purchases/new" for ::1 at 2023-12-01 17:18:51 -0600
+Processing by PurchasesController#new as HTML
+  Parameters: {"category_id"=>"2"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.7ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/purchases_controller.rb:8:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering purchases/new.html.erb within layouts/application
+  [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "categories_users" ON "categories"."id" = "categories_users"."category_id" WHERE "categories_users"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/purchases/_form.html.erb:25
+  Rendered purchases/_form.html.erb (Duration: 8.9ms | Allocations: 1309)
+  Rendered purchases/new.html.erb within layouts/application (Duration: 12.7ms | Allocations: 2030)
+  Rendered layout layouts/application.html.erb (Duration: 21.7ms | Allocations: 3965)
+Completed 200 OK in 162ms (Views: 23.6ms | ActiveRecord: 2.2ms | Allocations: 6780)
+
+
+Started GET "/users/sign_out" for ::1 at 2023-12-01 17:19:00 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  
+Started POST "/purchases" for ::1 at 2023-12-01 17:21:24 -0600
+Processing by PurchasesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "purchase"=>{"name"=>"Old Fashioned ", "amount"=>"5", "category_id"=>"2"}, "commit"=>"Save"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 404 Not Found in 4ms (ActiveRecord: 0.3ms | Allocations: 2271)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Category without an ID):
+  
+app/controllers/purchases_controller.rb:14:in `create'
