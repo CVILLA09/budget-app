@@ -6,8 +6,8 @@
 
 <div class="login-container">
   <%= form_for(resource, as: resource_name, url: session_path(resource_name), html: { class: "login-form" }) do |f| %>
-    <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: 'Email', class: "input" %>
-    <%= f.password_field :password, autocomplete: "current-password", placeholder: 'Password', class: "input" %>
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: 'Email', class: "input-field" %>
+    <%= f.password_field :password, autocomplete: "current-password", placeholder: 'Password', class: "input-field" %>    
     
     <div class="actions">
       <%= f.submit "Log in", class: "button-primary" %>
