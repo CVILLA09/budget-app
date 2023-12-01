@@ -2207,3 +2207,585 @@ Processing by Devise::RegistrationsController#new as HTML
 Completed 200 OK in 46ms (Views: 33.7ms | ActiveRecord: 4.2ms | Allocations: 21793)
 
 
+Started GET "/" for ::1 at 2023-11-30 22:22:54 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 1.2ms | Allocations: 990)
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 14683)
+Completed 200 OK in 14ms (Views: 11.7ms | ActiveRecord: 0.0ms | Allocations: 16939)
+
+
+Started GET "/users/sign_up" for ::1 at 2023-11-30 22:23:04 -0600
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.6ms | Allocations: 214)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 8.6ms | Allocations: 2268)
+  Rendered layout layouts/application.html.erb (Duration: 13.8ms | Allocations: 4204)
+Completed 200 OK in 36ms (Views: 18.1ms | ActiveRecord: 5.5ms | Allocations: 9513)
+
+
+Started GET "/" for ::1 at 2023-11-30 22:23:06 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 2.2ms | Allocations: 693)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 2623)
+Completed 200 OK in 9ms (Views: 7.0ms | ActiveRecord: 0.0ms | Allocations: 3383)
+
+
+Started GET "/users/sign_in" for ::1 at 2023-11-30 22:23:07 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 7.3ms | Allocations: 1537)
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 3453)
+Completed 200 OK in 18ms (Views: 14.8ms | ActiveRecord: 0.0ms | Allocations: 4708)
+
+
+Started GET "/" for ::1 at 2023-11-30 22:23:09 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 1.8ms | Allocations: 686)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 2590)
+Completed 200 OK in 13ms (Views: 11.1ms | ActiveRecord: 0.0ms | Allocations: 3367)
+
+
+Started GET "/users/sign_up" for ::1 at 2023-11-30 22:23:11 -0600
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 13)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 6.6ms | Allocations: 1467)
+  Rendered layout layouts/application.html.erb (Duration: 14.0ms | Allocations: 3357)
+Completed 200 OK in 17ms (Views: 15.1ms | ActiveRecord: 0.0ms | Allocations: 4191)
+
+
+Started GET "/users/sign_up" for ::1 at 2023-11-30 23:17:14 -0600
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.0ms | Allocations: 214)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 8.0ms | Allocations: 2149)
+  Rendered layout layouts/application.html.erb (Duration: 31.3ms | Allocations: 16018)
+Completed 200 OK in 63ms (Views: 35.1ms | ActiveRecord: 8.9ms | Allocations: 23970)
+
+
+Started GET "/users/sign_up" for ::1 at 2023-11-30 23:17:45 -0600
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.9ms | Allocations: 214)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 6.8ms | Allocations: 1950)
+  Rendered layout layouts/application.html.erb (Duration: 28.8ms | Allocations: 15852)
+Completed 200 OK in 54ms (Views: 34.1ms | ActiveRecord: 8.7ms | Allocations: 21475)
+
+
+Started GET "/users/sign_up" for ::1 at 2023-11-30 23:18:29 -0600
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.0ms | Allocations: 214)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 7.4ms | Allocations: 1955)
+  Rendered layout layouts/application.html.erb (Duration: 29.1ms | Allocations: 15859)
+Completed 200 OK in 47ms (Views: 33.4ms | ActiveRecord: 4.8ms | Allocations: 21446)
+
+
+Started GET "/users/sign_up" for ::1 at 2023-11-30 23:18:56 -0600
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.6ms | Allocations: 214)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 6.0ms | Allocations: 1794)
+  Rendered layout layouts/application.html.erb (Duration: 39.2ms | Allocations: 15618)
+Completed 200 OK in 59ms (Views: 44.7ms | ActiveRecord: 4.8ms | Allocations: 21188)
+
+
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2127889314188895495)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (2.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+Migrating to AddDetailsToUsers (20231201061259)
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (7.6ms)[0m  [1m[35mALTER TABLE "users" ADD "full_name" character varying[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "users" ADD "profile_picture" character varying[0m
+  [1m[36mActiveRecord::SchemaMigration Create (2.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20231201061259') RETURNING "version"[0m
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2127889314188895495)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/users/sign_up" for ::1 at 2023-12-01 00:16:45 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.7ms | Allocations: 235)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 285.5ms | Allocations: 38379)
+  Rendered layout layouts/application.html.erb (Duration: 313.3ms | Allocations: 52367)
+Completed 200 OK in 420ms (Views: 334.5ms | ActiveRecord: 16.3ms | Allocations: 77205)
+
+
+Started GET "/users/sign_up" for ::1 at 2023-12-01 00:17:23 -0600
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.3ms | Allocations: 214)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 7.5ms | Allocations: 1975)
+  Rendered layout layouts/application.html.erb (Duration: 32.3ms | Allocations: 15881)
+Completed 200 OK in 55ms (Views: 38.5ms | ActiveRecord: 5.0ms | Allocations: 22221)
+
+
+Started GET "/users/sign_up" for ::1 at 2023-12-01 00:18:12 -0600
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.2ms | Allocations: 214)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 7.4ms | Allocations: 1983)
+  Rendered layout layouts/application.html.erb (Duration: 74.6ms | Allocations: 15891)
+Completed 200 OK in 99ms (Views: 81.9ms | ActiveRecord: 6.5ms | Allocations: 22153)
+
+
+Started GET "/users/sign_up" for ::1 at 2023-12-01 00:18:54 -0600
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.7ms | Allocations: 214)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 6.9ms | Allocations: 1922)
+  Rendered layout layouts/application.html.erb (Duration: 28.2ms | Allocations: 15671)
+Completed 200 OK in 46ms (Views: 32.3ms | ActiveRecord: 5.3ms | Allocations: 21970)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2127889314188895495)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+Migrating to CreateActiveStorageTables (20231201061926)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (12.2ms)[0m  [1m[35mCREATE TABLE "active_storage_blobs" ("id" bigserial primary key, "key" character varying NOT NULL, "filename" character varying NOT NULL, "content_type" character varying, "metadata" text, "service_name" character varying NOT NULL, "byte_size" bigint NOT NULL, "checksum" character varying, "created_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_active_storage_blobs_on_key" ON "active_storage_blobs" ("key")[0m
+  [1m[35m (7.0ms)[0m  [1m[35mCREATE TABLE "active_storage_attachments" ("id" bigserial primary key, "name" character varying NOT NULL, "record_type" character varying NOT NULL, "record_id" bigint NOT NULL, "blob_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_c3b3935057"
+FOREIGN KEY ("blob_id")
+  REFERENCES "active_storage_blobs" ("id")
+)[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE INDEX "index_active_storage_attachments_on_blob_id" ON "active_storage_attachments" ("blob_id")[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_active_storage_attachments_uniqueness" ON "active_storage_attachments" ("record_type", "record_id", "name", "blob_id")[0m
+  [1m[35m (3.7ms)[0m  [1m[35mCREATE TABLE "active_storage_variant_records" ("id" bigserial primary key, "blob_id" bigint NOT NULL, "variation_digest" character varying NOT NULL, CONSTRAINT "fk_rails_993965df05"
+FOREIGN KEY ("blob_id")
+  REFERENCES "active_storage_blobs" ("id")
+)[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_active_storage_variant_records_uniqueness" ON "active_storage_variant_records" ("blob_id", "variation_digest")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20231201061926') RETURNING "version"[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(2127889314188895495)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/users/sign_up" for ::1 at 2023-12-01 00:25:36 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 2.8ms | Allocations: 235)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 108.6ms | Allocations: 27123)
+  Rendered layout layouts/application.html.erb (Duration: 109.5ms | Allocations: 27240)
+Completed 500 Internal Server Error in 211ms (ActiveRecord: 23.3ms | Allocations: 52055)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `user' for #<ActionView::Base:0x0000000000d660>):
+     9:   <%= render "devise/shared/error_messages", resource: resource %>
+    10: 
+    11:   <div class="field">
+    12:   <% if user.profile_picture.attached? %>
+    13:   <%= image_tag url_for(user.profile_picture), class: "profile-picture-class" %>
+    14: <% end %>
+    15:   <%= f.file_field :profile_picture, accept: 'image/png,image/gif,image/jpeg', placeholder: 'Upload Picture', class: "input-field" %>
+  
+app/views/devise/registrations/new.html.erb:12
+app/views/devise/registrations/new.html.erb:8
+Started GET "/users/sign_up" for ::1 at 2023-12-01 00:26:36 -0600
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.7ms | Allocations: 214)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 9.7ms | Allocations: 2438)
+  Rendered layout layouts/application.html.erb (Duration: 30.4ms | Allocations: 16572)
+Completed 200 OK in 50ms (Views: 34.7ms | ActiveRecord: 4.4ms | Allocations: 22897)
+
+
+Started POST "/users" for ::1 at 2023-12-01 00:29:28 -0600
+Processing by Devise::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"profile_picture"=>#<ActionDispatch::Http::UploadedFile:0x000000010e198e30 @tempfile=#<Tempfile:/var/folders/sk/00z_9wfs1mq1x8y9vg_lx44c0000gn/T/RackMultipart20231201-42626-d7mjsu.png>, @content_type="image/png", @original_filename="tom.png", @headers="Content-Disposition: form-data; name=\"user[profile_picture]\"; filename=\"tom.png\"\r\nContent-Type: image/png\r\n">, "full_name"=>"Tom Cruise", "email"=>"thisistom@email.com", "password"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (4.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "thisistom@email.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.7ms | Allocations: 636)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1790)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 3679)
+Completed 422 Unprocessable Entity in 279ms (Views: 4.9ms | ActiveRecord: 7.1ms | Allocations: 26274)
+
+
+Started GET "/users/sign_up" for ::1 at 2023-12-01 00:30:36 -0600
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.5ms | Allocations: 214)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 6.0ms | Allocations: 1920)
+  Rendered layout layouts/application.html.erb (Duration: 28.8ms | Allocations: 15830)
+Completed 200 OK in 50ms (Views: 33.9ms | ActiveRecord: 5.1ms | Allocations: 22043)
+
+
+Started POST "/users" for ::1 at 2023-12-01 00:30:48 -0600
+Processing by Devise::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"profile_picture"=>#<ActionDispatch::Http::UploadedFile:0x000000010e432e48 @tempfile=#<Tempfile:/var/folders/sk/00z_9wfs1mq1x8y9vg_lx44c0000gn/T/RackMultipart20231201-42626-7fp31w.png>, @content_type="image/png", @original_filename="tom.png", @headers="Content-Disposition: form-data; name=\"user[profile_picture]\"; filename=\"tom.png\"\r\nContent-Type: image/png\r\n">, "name"=>"Tom Cruise", "email"=>"thisistom@email.com", "password"=>"[FILTERED]"}, "commit"=>"Sign up"}
+[31mUnpermitted parameter: :name. Context: { controller: Devise::RegistrationsController, action: create, request: #<ActionDispatch::Request:0x000000010dd1f840>, params: {"authenticity_token"=>"[FILTERED]", "user"=>{"profile_picture"=>#<ActionDispatch::Http::UploadedFile:0x000000010e432e48 @tempfile=#<Tempfile:/var/folders/sk/00z_9wfs1mq1x8y9vg_lx44c0000gn/T/RackMultipart20231201-42626-7fp31w.png>, @content_type="image/png", @original_filename="tom.png", @headers="Content-Disposition: form-data; name=\"user[profile_picture]\"; filename=\"tom.png\"\r\nContent-Type: image/png\r\n">, "name"=>"Tom Cruise", "email"=>"thisistom@email.com", "password"=>"[FILTERED]"}, "commit"=>"Sign up", "controller"=>"devise/registrations", "action"=>"create"} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (1.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "thisistom@email.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.3ms | Allocations: 361)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1730)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 3619)
+Completed 422 Unprocessable Entity in 238ms (Views: 4.9ms | ActiveRecord: 4.2ms | Allocations: 13528)
+
+
+Started GET "/users/sign_up" for ::1 at 2023-12-01 00:35:48 -0600
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.8ms | Allocations: 214)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 7.1ms | Allocations: 1920)
+  Rendered layout layouts/application.html.erb (Duration: 27.7ms | Allocations: 15830)
+Completed 200 OK in 46ms (Views: 31.9ms | ActiveRecord: 5.3ms | Allocations: 22084)
+
+
+Started POST "/users" for ::1 at 2023-12-01 00:35:59 -0600
+Processing by Devise::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"profile_picture"=>#<ActionDispatch::Http::UploadedFile:0x000000010e3d4a78 @tempfile=#<Tempfile:/var/folders/sk/00z_9wfs1mq1x8y9vg_lx44c0000gn/T/RackMultipart20231201-42626-v48k8a.png>, @content_type="image/png", @original_filename="tom.png", @headers="Content-Disposition: form-data; name=\"user[profile_picture]\"; filename=\"tom.png\"\r\nContent-Type: image/png\r\n">, "name"=>"Tom Cruise", "email"=>"thisistom@email.com", "password"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (1.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "thisistom@email.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "full_name", "profile_picture") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "Tom Cruise"], ["created_at", "2023-12-01 06:36:00.262251"], ["updated_at", "2023-12-01 06:36:00.262251"], ["email", "thisistom@email.com"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil], ["full_name", nil], ["profile_picture", nil]]
+  [1m[36mActiveStorage::Blob Load (2.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" INNER JOIN "active_storage_attachments" ON "active_storage_blobs"."id" = "active_storage_attachments"."blob_id" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "profile_picture"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "profile_picture"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Create (0.4ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "service_name", "byte_size", "checksum", "created_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["key", "o29zcuwbhjyrwrxwpvjizioreq15"], ["filename", "tom.png"], ["content_type", "image/jpeg"], ["metadata", "{\"identified\":true}"], ["service_name", "local"], ["byte_size", 78445], ["checksum", "dSIqSvWSTVHUSdk6uRfrNA=="], ["created_at", "2023-12-01 06:36:00.320546"]]
+  [1m[36mActiveStorage::Attachment Create (2.4ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "profile_picture"], ["record_type", "User"], ["record_id", 1], ["blob_id", 1], ["created_at", "2023-12-01 06:36:00.328524"]]
+  [1m[36mUser Update (0.9ms)[0m  [1m[33mUPDATE "users" SET "updated_at" = $1 WHERE "users"."id" = $2[0m  [["updated_at", "2023-12-01 06:36:00.332803"], ["id", 1]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+[36m  Disk Storage (1.0ms) [0m[32mUploaded file to key: o29zcuwbhjyrwrxwpvjizioreq15 (checksum: dSIqSvWSTVHUSdk6uRfrNA==)[0m
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: 1d831195-1c4d-4914-aa04-9272504cd9bf) to Async(default) with arguments: #<GlobalID:0x000000010d1aac80 @uri=#<URI::GID gid://budget-app/ActiveStorage::Blob/1>>
+Redirected to http://localhost:3000/categories
+Completed 303 See Other in 375ms (ActiveRecord: 12.8ms | Allocations: 48454)
+
+
+Started GET "/categories" for ::1 at 2023-12-01 00:36:00 -0600
+[ActiveJob] [ActiveStorage::AnalyzeJob] [1d831195-1c4d-4914-aa04-9272504cd9bf]   [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [1d831195-1c4d-4914-aa04-9272504cd9bf] Performing ActiveStorage::AnalyzeJob (Job ID: 1d831195-1c4d-4914-aa04-9272504cd9bf) from Async(default) enqueued at 2023-12-01T06:36:00.378610000Z with arguments: #<GlobalID:0x000000010d44b2f0 @uri=#<URI::GID gid://budget-app/ActiveStorage::Blob/1>>
+[ActiveJob] [ActiveStorage::AnalyzeJob] [1d831195-1c4d-4914-aa04-9272504cd9bf] Skipping image analysis because the ruby-vips gem isn't installed
+[ActiveJob] [ActiveStorage::AnalyzeJob] [1d831195-1c4d-4914-aa04-9272504cd9bf]   [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [1d831195-1c4d-4914-aa04-9272504cd9bf]   [1m[36mActiveStorage::Blob Update (1.7ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = $1 WHERE "active_storage_blobs"."id" = $2[0m  [["metadata", "{\"identified\":true,\"analyzed\":true}"], ["id", 1]]
+Processing by CategoriesController#index as TURBO_STREAM
+[ActiveJob] [ActiveStorage::AnalyzeJob] [1d831195-1c4d-4914-aa04-9272504cd9bf]   [1m[36mActiveStorage::Attachment Load (1.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = $1[0m  [["blob_id", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [1d831195-1c4d-4914-aa04-9272504cd9bf]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [1d831195-1c4d-4914-aa04-9272504cd9bf]   [1m[36mUser Update (0.7ms)[0m  [1m[33mUPDATE "users" SET "updated_at" = $1 WHERE "users"."id" = $2[0m  [["updated_at", "2023-12-01 06:36:00.436149"], ["id", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [1d831195-1c4d-4914-aa04-9272504cd9bf]   [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [1d831195-1c4d-4914-aa04-9272504cd9bf] Performed ActiveStorage::AnalyzeJob (Job ID: 1d831195-1c4d-4914-aa04-9272504cd9bf) from Async(default) in 43.34ms
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 15.6ms | Allocations: 21707)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedTable: ERROR:  relation "categories" does not exist
+LINE 10:  WHERE a.attrelid = '"categories"'::regclass
+                             ^
+):
+  
+Started GET "/" for ::1 at 2023-12-01 00:37:56 -0600
+Processing by StaticPagesController#splash as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:11:in `redirect_if_authenticated'
+Redirected to http://localhost:3000/categories
+Filter chain halted as :redirect_if_authenticated rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.4ms | Allocations: 1397)
+
+
+Started GET "/users/sign_in" for ::1 at 2023-12-01 00:37:58 -0600
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/categories
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 9ms (ActiveRecord: 0.6ms | Allocations: 1981)
+
+
+Started GET "/" for ::1 at 2023-12-01 00:38:11 -0600
+Processing by StaticPagesController#splash as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:11:in `redirect_if_authenticated'
+Redirected to http://localhost:3000/categories
+Filter chain halted as :redirect_if_authenticated rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms | Allocations: 1280)
+
+
+Started GET "/categories" for ::1 at 2023-12-01 00:38:11 -0600
+Processing by CategoriesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 1.5ms | Allocations: 3017)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedTable: ERROR:  relation "categories" does not exist
+LINE 10:  WHERE a.attrelid = '"categories"'::regclass
+                             ^
+):
+  
+Started GET "/" for ::1 at 2023-12-01 00:38:14 -0600
+Processing by StaticPagesController#splash as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:11:in `redirect_if_authenticated'
+Redirected to http://localhost:3000/categories
+Filter chain halted as :redirect_if_authenticated rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms | Allocations: 1287)
+
+
+Started GET "/categories" for ::1 at 2023-12-01 00:38:14 -0600
+Processing by CategoriesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 1.5ms | Allocations: 2990)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedTable: ERROR:  relation "categories" does not exist
+LINE 10:  WHERE a.attrelid = '"categories"'::regclass
+                             ^
+):
+  
+Started GET "/" for ::1 at 2023-12-01 00:38:17 -0600
+Processing by StaticPagesController#splash as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:11:in `redirect_if_authenticated'
+Redirected to http://localhost:3000/categories
+Filter chain halted as :redirect_if_authenticated rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 1261)
+
+
+Started GET "/categories" for ::1 at 2023-12-01 00:38:17 -0600
+Processing by CategoriesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.8ms | Allocations: 3007)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedTable: ERROR:  relation "categories" does not exist
+LINE 10:  WHERE a.attrelid = '"categories"'::regclass
+                             ^
+):
+  
+Started GET "/" for ::1 at 2023-12-01 00:38:18 -0600
+Processing by StaticPagesController#splash as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:11:in `redirect_if_authenticated'
+Redirected to http://localhost:3000/categories
+Filter chain halted as :redirect_if_authenticated rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms | Allocations: 1279)
+
+
+Started GET "/categories" for ::1 at 2023-12-01 00:38:18 -0600
+Processing by CategoriesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.8ms | Allocations: 3016)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedTable: ERROR:  relation "categories" does not exist
+LINE 10:  WHERE a.attrelid = '"categories"'::regclass
+                             ^
+):
+  
+Started GET "/" for ::1 at 2023-12-01 00:38:22 -0600
+Processing by StaticPagesController#splash as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:11:in `redirect_if_authenticated'
+Redirected to http://localhost:3000/categories
+Filter chain halted as :redirect_if_authenticated rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.3ms | Allocations: 1288)
+
+
+Started GET "/categories" for ::1 at 2023-12-01 00:38:22 -0600
+Processing by CategoriesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 1.4ms | Allocations: 2986)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedTable: ERROR:  relation "categories" does not exist
+LINE 10:  WHERE a.attrelid = '"categories"'::regclass
+                             ^
+):
+  
+Started GET "/" for ::1 at 2023-12-01 00:38:36 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#splash as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:11:in `redirect_if_authenticated'
+Redirected to http://localhost:3000/categories
+Filter chain halted as :redirect_if_authenticated rendered or redirected
+Completed 302 Found in 59ms (ActiveRecord: 11.2ms | Allocations: 25573)
+
+
+Started GET "/categories" for ::1 at 2023-12-01 00:38:36 -0600
+Processing by CategoriesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 1.0ms | Allocations: 11550)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedTable: ERROR:  relation "categories" does not exist
+LINE 10:  WHERE a.attrelid = '"categories"'::regclass
+                             ^
+):
+  
+Started GET "/" for ::1 at 2023-12-01 00:38:36 -0600
+Processing by StaticPagesController#splash as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:11:in `redirect_if_authenticated'
+Redirected to http://localhost:3000/categories
+Filter chain halted as :redirect_if_authenticated rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms | Allocations: 1294)
+
+
+Started GET "/categories" for ::1 at 2023-12-01 00:38:36 -0600
+Processing by CategoriesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 1.1ms | Allocations: 3008)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedTable: ERROR:  relation "categories" does not exist
+LINE 10:  WHERE a.attrelid = '"categories"'::regclass
+                             ^
+):
+  
+Started GET "/" for ::1 at 2023-12-01 00:38:40 -0600
+Processing by StaticPagesController#splash as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:11:in `redirect_if_authenticated'
+Redirected to http://localhost:3000/categories
+Filter chain halted as :redirect_if_authenticated rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.3ms | Allocations: 1293)
+
+
+Started GET "/categories" for ::1 at 2023-12-01 00:38:40 -0600
+Processing by CategoriesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 1.4ms | Allocations: 2988)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedTable: ERROR:  relation "categories" does not exist
+LINE 10:  WHERE a.attrelid = '"categories"'::regclass
+                             ^
+):
+  
+Started GET "/" for ::1 at 2023-12-01 00:39:17 -0600
+Processing by StaticPagesController#splash as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:11:in `redirect_if_authenticated'
+Redirected to http://localhost:3000/categories
+Filter chain halted as :redirect_if_authenticated rendered or redirected
+Completed 302 Found in 31ms (ActiveRecord: 4.4ms | Allocations: 6887)
+
+
+Started GET "/categories" for ::1 at 2023-12-01 00:39:17 -0600
+Processing by CategoriesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.7ms | Allocations: 9310)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedTable: ERROR:  relation "categories" does not exist
+LINE 10:  WHERE a.attrelid = '"categories"'::regclass
+                             ^
+):
+  
+Started GET "/" for ::1 at 2023-12-01 00:39:18 -0600
+Processing by StaticPagesController#splash as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:11:in `redirect_if_authenticated'
+Redirected to http://localhost:3000/categories
+Filter chain halted as :redirect_if_authenticated rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms | Allocations: 1310)
+
+
+Started GET "/categories" for ::1 at 2023-12-01 00:39:18 -0600
+Processing by CategoriesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 1.6ms | Allocations: 3008)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedTable: ERROR:  relation "categories" does not exist
+LINE 10:  WHERE a.attrelid = '"categories"'::regclass
+                             ^
+):
+  
+Started GET "/" for ::1 at 2023-12-01 00:39:22 -0600
+Processing by StaticPagesController#splash as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:11:in `redirect_if_authenticated'
+Redirected to http://localhost:3000/categories
+Filter chain halted as :redirect_if_authenticated rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 1276)
+
+
+Started GET "/categories" for ::1 at 2023-12-01 00:39:22 -0600
+Processing by CategoriesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 1.2ms | Allocations: 3004)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedTable: ERROR:  relation "categories" does not exist
+LINE 10:  WHERE a.attrelid = '"categories"'::regclass
+                             ^
+):
+  
+Started GET "/users/sign_up" for ::1 at 2023-12-01 00:39:27 -0600
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/categories
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 6ms (ActiveRecord: 0.3ms | Allocations: 2126)
+
+
+Started GET "/categories" for ::1 at 2023-12-01 00:39:27 -0600
+Processing by CategoriesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 1.2ms | Allocations: 3008)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedTable: ERROR:  relation "categories" does not exist
+LINE 10:  WHERE a.attrelid = '"categories"'::regclass
+                             ^
+):
+  
+Started GET "/" for ::1 at 2023-12-01 00:39:28 -0600
+Processing by StaticPagesController#splash as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:11:in `redirect_if_authenticated'
+Redirected to http://localhost:3000/categories
+Filter chain halted as :redirect_if_authenticated rendered or redirected
+Completed 302 Found in 6ms (ActiveRecord: 0.6ms | Allocations: 1282)
+
+
+Started GET "/categories" for ::1 at 2023-12-01 00:39:28 -0600
+Processing by CategoriesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 1.1ms | Allocations: 3019)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedTable: ERROR:  relation "categories" does not exist
+LINE 10:  WHERE a.attrelid = '"categories"'::regclass
+                             ^
+):
+  

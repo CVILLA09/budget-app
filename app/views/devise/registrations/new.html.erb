@@ -9,21 +9,19 @@
   <%= render "devise/shared/error_messages", resource: resource %>
 
   <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "input-field" %>
+  <%= f.file_field :profile_picture, accept: 'image/png,image/gif,image/jpeg', placeholder: 'Upload Picture', class: "input-field" %>
+</div>
+
+  <div class="field">
+  <%= f.text_field :name, autofocus: true, placeholder: 'Full name', class: "input-field" %>
+</div>
+
+  <div class="field">
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: 'Email', class: "input-field" %>
   </div>
 
   <div class="field">
-    <%= f.label :password %>
-    <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
-    <% end %><br />
-    <%= f.password_field :password, autocomplete: "new-password", class: "input-field" %>
-  </div>
-
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "input-field" %>
+    <%= f.password_field :password, autocomplete: "new-password", placeholder: 'Password', class: "input-field" %>
   </div>
 
   <div class="actions">
