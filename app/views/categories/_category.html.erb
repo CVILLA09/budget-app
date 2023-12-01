@@ -1,7 +1,10 @@
 <div id="<%= dom_id(category) %>" class="category-item">
-    <% if category.icon.present? %>
-        <%= image_tag(category.icon, alt: category.name, class: 'category-icon') %>
-    <% end %>
+<% if category.icon.attached? %>
+<%= image_tag(category.icon, alt: category.name, class: 'category-icon') %>
+<% else %>
+<!-- Provide a fallback if no icon is attached -->
+<span class="category-icon-placeholder">No icon</span>
+<% end %>
 
     <div class="category-content">
         <div class="category-header">
