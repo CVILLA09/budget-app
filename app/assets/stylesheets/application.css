@@ -13,7 +13,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 100vh;
+    height: 95vh;
     padding: 2rem;
   }
   
@@ -33,8 +33,18 @@ body {
     margin: 0;
     flex-grow: 1;
     display: flex;
+    flex-direction: column;
+    text-align: center;
     align-items: center;
     justify-content: center;
+  }
+
+  .money-logo img {
+    width: auto;
+    height: 170px;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
   }
   
   .buttons-container {
@@ -85,27 +95,35 @@ body {
   }
   
   /* Adjust the button container for mobile */
-@media (max-width: 768px) {
-    .buttons-container {
-      width: auto;
-      flex-direction: column;
-    }
-    
-    .button-primary {
-      width: 14rem;
-      margin-bottom: 1rem;
-    }
-  }
-  
-  /* Ensure buttons are centered horizontally on all screen sizes */
-  .button-primary {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  /* You might also want to adjust the padding on the container for mobile screens */
   @media (max-width: 768px) {
-    .container {
+    .title h1 {
+      font-size: 3rem;
+      word-wrap: break-word;
+    }
+  
+    .buttons-container {
+      flex-direction: column;
+      width: 100%;
+      gap: 0.5rem;
+    }
+  
+    .button-primary {
+      width: 80%;
+      margin-bottom: 1rem;
+      margin-left: auto;
+      margin-right: auto;
       padding: 1rem;
     }
+    
+    /* Adjust the padding on the container for mobile screens */
+    .container {
+      padding: 1rem;
+      height: auto;
+      min-height: 95vh;
+    }
+  
+    .money-logo img {
+      height: 120px;
+    }
   }
+  

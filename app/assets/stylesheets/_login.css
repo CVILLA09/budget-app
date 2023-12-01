@@ -65,7 +65,7 @@ body, input, button, a {
     display: flex;
     justify-content: space-around;
     width: 30%;
-    margin-top: 20px;
+    margin-top: 1.5rem;
   }
   
   .link {

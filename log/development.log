@@ -1694,3 +1694,318 @@ Processing by Devise::SessionsController#new as HTML
 Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.0ms | Allocations: 3942)
 
 
+Started GET "/" for ::1 at 2023-11-30 21:20:02 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 0.7ms | Allocations: 331)
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | Allocations: 2439)
+Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 3701)
+
+
+Started GET "/" for ::1 at 2023-11-30 21:20:22 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 0.3ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 13.0ms | Allocations: 3363)
+Completed 200 OK in 16ms (Views: 13.9ms | ActiveRecord: 0.0ms | Allocations: 4129)
+
+
+Started GET "/" for ::1 at 2023-11-30 21:20:33 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 0.5ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 12.9ms | Allocations: 3355)
+Completed 200 OK in 16ms (Views: 13.8ms | ActiveRecord: 0.0ms | Allocations: 4124)
+
+
+Started GET "/users/sign_in" for ::1 at 2023-11-30 21:21:00 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 5.0ms | Allocations: 1180)
+  Rendered layout layouts/application.html.erb (Duration: 10.8ms | Allocations: 3107)
+Completed 200 OK in 14ms (Views: 11.9ms | ActiveRecord: 0.0ms | Allocations: 3993)
+
+
+Started GET "/" for ::1 at 2023-11-30 21:21:16 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 0.5ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 2142)
+Completed 200 OK in 13ms (Views: 10.8ms | ActiveRecord: 0.0ms | Allocations: 2932)
+
+
+Started GET "/" for ::1 at 2023-11-30 21:29:56 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 65.3ms | Allocations: 23941)
+  Rendered layout layouts/application.html.erb (Duration: 109.6ms | Allocations: 37765)
+Completed 200 OK in 118ms (Views: 112.6ms | ActiveRecord: 0.0ms | Allocations: 40053)
+
+
+Started GET "/" for ::1 at 2023-11-30 21:30:59 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1003)
+  Rendered layout layouts/application.html.erb (Duration: 36.1ms | Allocations: 16166)
+Completed 200 OK in 46ms (Views: 40.5ms | ActiveRecord: 0.0ms | Allocations: 18451)
+
+
+Started GET "/" for ::1 at 2023-11-30 21:31:12 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 2.8ms | Allocations: 678)
+  Rendered layout layouts/application.html.erb (Duration: 14.4ms | Allocations: 3851)
+Completed 200 OK in 18ms (Views: 15.7ms | ActiveRecord: 0.0ms | Allocations: 4632)
+
+
+Started GET "/" for ::1 at 2023-11-30 21:31:33 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 2.0ms | Allocations: 689)
+  Rendered layout layouts/application.html.erb (Duration: 14.4ms | Allocations: 3866)
+Completed 200 OK in 17ms (Views: 16.2ms | ActiveRecord: 0.0ms | Allocations: 4630)
+
+
+Started GET "/" for ::1 at 2023-11-30 21:31:50 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 2.0ms | Allocations: 686)
+  Rendered layout layouts/application.html.erb (Duration: 13.2ms | Allocations: 3859)
+Completed 200 OK in 17ms (Views: 14.8ms | ActiveRecord: 0.0ms | Allocations: 4628)
+
+
+Started GET "/" for ::1 at 2023-11-30 21:35:37 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 1.5ms | Allocations: 678)
+  Rendered layout layouts/application.html.erb (Duration: 14.5ms | Allocations: 3846)
+Completed 200 OK in 17ms (Views: 15.2ms | ActiveRecord: 0.0ms | Allocations: 4612)
+
+
+Started GET "/" for ::1 at 2023-11-30 21:36:04 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 2.1ms | Allocations: 678)
+  Rendered layout layouts/application.html.erb (Duration: 17.4ms | Allocations: 3852)
+Completed 200 OK in 19ms (Views: 18.2ms | ActiveRecord: 0.0ms | Allocations: 4639)
+
+
+Started GET "/" for ::1 at 2023-11-30 21:37:20 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 1.8ms | Allocations: 678)
+  Rendered layout layouts/application.html.erb (Duration: 19.1ms | Allocations: 3848)
+Completed 200 OK in 22ms (Views: 19.7ms | ActiveRecord: 0.0ms | Allocations: 4614)
+
+
+Started GET "/users/sign_in" for ::1 at 2023-11-30 21:37:38 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 6.7ms | Allocations: 1654)
+  Rendered layout layouts/application.html.erb (Duration: 12.5ms | Allocations: 3665)
+Completed 200 OK in 45ms (Views: 15.9ms | ActiveRecord: 8.9ms | Allocations: 11428)
+
+
+Started GET "/" for ::1 at 2023-11-30 21:37:58 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 3.3ms | Allocations: 689)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 2596)
+Completed 200 OK in 11ms (Views: 8.9ms | ActiveRecord: 0.0ms | Allocations: 3365)
+
+
+Started GET "/users/sign_in" for ::1 at 2023-11-30 21:38:17 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 6.7ms | Allocations: 1184)
+  Rendered layout layouts/application.html.erb (Duration: 13.7ms | Allocations: 3068)
+Completed 200 OK in 17ms (Views: 15.1ms | ActiveRecord: 0.0ms | Allocations: 3938)
+
+
+Started GET "/users/sign_in" for ::1 at 2023-11-30 21:39:25 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1183)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 3067)
+Completed 200 OK in 12ms (Views: 10.1ms | ActiveRecord: 0.0ms | Allocations: 3929)
+
+
+Started GET "/users/sign_in" for ::1 at 2023-11-30 21:39:36 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1183)
+  Rendered layout layouts/application.html.erb (Duration: 11.8ms | Allocations: 3067)
+Completed 200 OK in 16ms (Views: 12.8ms | ActiveRecord: 0.0ms | Allocations: 3941)
+
+
+Started GET "/" for ::1 at 2023-11-30 21:40:46 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 1.1ms | Allocations: 678)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | Allocations: 2567)
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.0ms | Allocations: 3329)
+
+
+Started GET "/" for ::1 at 2023-11-30 21:40:49 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 1.3ms | Allocations: 678)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 2567)
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.0ms | Allocations: 3345)
+
+
+Started GET "/users/sign_in" for ::1 at 2023-11-30 21:43:09 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 6.8ms | Allocations: 1184)
+  Rendered layout layouts/application.html.erb (Duration: 16.7ms | Allocations: 3068)
+Completed 200 OK in 20ms (Views: 18.1ms | ActiveRecord: 0.0ms | Allocations: 3938)
+
+
+Started GET "/" for ::1 at 2023-11-30 21:43:12 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 1.6ms | Allocations: 678)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 2567)
+Completed 200 OK in 13ms (Views: 9.4ms | ActiveRecord: 0.0ms | Allocations: 3368)
+
+
+Started GET "/" for ::1 at 2023-11-30 21:43:35 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 1.4ms | Allocations: 678)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 2567)
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.0ms | Allocations: 3345)
+
+
+Started GET "/" for ::1 at 2023-11-30 21:45:03 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 2.8ms | Allocations: 693)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 2616)
+Completed 200 OK in 12ms (Views: 10.4ms | ActiveRecord: 0.0ms | Allocations: 3371)
+
+
+Started GET "/users/sign_in" for ::1 at 2023-11-30 21:45:09 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 5.0ms | Allocations: 1193)
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | Allocations: 3098)
+Completed 200 OK in 14ms (Views: 11.9ms | ActiveRecord: 0.0ms | Allocations: 3988)
+
+
+Started GET "/" for ::1 at 2023-11-30 21:45:10 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 1.8ms | Allocations: 686)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 2575)
+Completed 200 OK in 14ms (Views: 11.5ms | ActiveRecord: 0.0ms | Allocations: 3367)
+
+
+Started GET "/" for ::1 at 2023-11-30 21:53:41 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 2.6ms | Allocations: 678)
+  Rendered layout layouts/application.html.erb (Duration: 13.6ms | Allocations: 3856)
+Completed 200 OK in 15ms (Views: 14.2ms | ActiveRecord: 0.0ms | Allocations: 4628)
+
+
+Started GET "/" for ::1 at 2023-11-30 21:54:08 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 3.4ms | Allocations: 678)
+  Rendered layout layouts/application.html.erb (Duration: 15.4ms | Allocations: 3855)
+Completed 200 OK in 18ms (Views: 16.5ms | ActiveRecord: 0.0ms | Allocations: 4624)
+
+
+Started GET "/" for ::1 at 2023-11-30 21:54:16 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 1.4ms | Allocations: 678)
+  Rendered layout layouts/application.html.erb (Duration: 14.9ms | Allocations: 3862)
+Completed 200 OK in 17ms (Views: 15.7ms | ActiveRecord: 0.0ms | Allocations: 4646)
+
+
+Started GET "/" for ::1 at 2023-11-30 21:54:32 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 3.6ms | Allocations: 678)
+  Rendered layout layouts/application.html.erb (Duration: 15.9ms | Allocations: 3861)
+Completed 200 OK in 19ms (Views: 16.5ms | ActiveRecord: 0.0ms | Allocations: 4639)
+
+
+Started GET "/" for ::1 at 2023-11-30 21:54:46 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 3.5ms | Allocations: 678)
+  Rendered layout layouts/application.html.erb (Duration: 19.1ms | Allocations: 3885)
+Completed 200 OK in 22ms (Views: 20.2ms | ActiveRecord: 0.0ms | Allocations: 4666)
+
+
+Started GET "/" for ::1 at 2023-11-30 21:55:45 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 2.1ms | Allocations: 686)
+  Rendered layout layouts/application.html.erb (Duration: 14.7ms | Allocations: 3878)
+Completed 200 OK in 17ms (Views: 15.3ms | ActiveRecord: 0.0ms | Allocations: 4659)
+
+
+Started GET "/" for ::1 at 2023-11-30 21:55:57 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 3.0ms | Allocations: 681)
+  Rendered layout layouts/application.html.erb (Duration: 18.0ms | Allocations: 3857)
+Completed 200 OK in 21ms (Views: 19.2ms | ActiveRecord: 0.0ms | Allocations: 4626)
+
+
+Started GET "/" for ::1 at 2023-11-30 21:56:04 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 2.8ms | Allocations: 678)
+  Rendered layout layouts/application.html.erb (Duration: 14.6ms | Allocations: 3861)
+Completed 200 OK in 18ms (Views: 15.8ms | ActiveRecord: 0.0ms | Allocations: 4642)
+
+
+Started GET "/" for ::1 at 2023-11-30 21:57:28 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 2.8ms | Allocations: 678)
+  Rendered layout layouts/application.html.erb (Duration: 20.3ms | Allocations: 3849)
+Completed 200 OK in 23ms (Views: 21.3ms | ActiveRecord: 0.0ms | Allocations: 4624)
+
+

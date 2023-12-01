@@ -2,9 +2,10 @@
   <div class="welcome-message">
     <p>Get started with MoneyMatters, your financial partner.</p>
   </div>
-  <h1 class="title animate-scale">
-    MoneyMatters
-  </h1>
+  <div class="title animate-scale">
+  <%= link_to image_tag('money.png', alt: 'Money'), root_path, class: 'money-logo' %>
+    <h1>MoneyMatters</h1>
+  </div>
   <% if user_signed_in? %>
     <%= link_to 'Start Monitoring!', categories_path, class: "button-primary" %>
   <% else %>
