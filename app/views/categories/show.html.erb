@@ -1,0 +1,41 @@
+<div class="page-container">
+  <div class="content-wrap">
+    <div class="navigation">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <%= link_to image_tag('backarrow.png', alt: 'Back'), categories_path, class: 'nav-link' %>
+        </li>
+        <li class="nav-title"><h2><strong><%= @category.name %></strong></h2></li>
+        <li class="nav-item">
+        <%= button_to 'Sign Out', destroy_user_session_path, method: :delete, form: { class: "sign-out-button", "data-turbo" => "false" }, class: "sign-out-button" %>
+        </li>
+      </ul>
+    </div>
+    
+    <p class="notice"><%= notice %></p>
+    
+    <%= render 'category', category: @category %>
+
+    <section class="purchases-section">
+      <div id="purchases">
+        <% @purchases.each do |purchase| %>
+          <%= link_to category_purchase_path(@category, purchase), class: 'purchase-link' do %>
+            <%= render "purchases/purchase", purchase: purchase %>
+          <% end %>
+        <% end %>
+      </div>
+    </section>
+  </div>
+
+  <section class="actions-section">
+    <%= link_to new_category_purchase_path(@category), class: 'new-purchase-button' do %>
+      <button>New Purchase</button>
+    <% end %>
+
+    <%= link_to edit_category_path(@category), class: 'edit-category-button' do %>
+      <button>Edit Category</button>
+    <% end %>
+
+    <%= button_to "Delete Category", @category, method: :delete, data: { confirm: 'Are you sure?' }, class: "delete-category-button" %>
+  </section>
+</div>

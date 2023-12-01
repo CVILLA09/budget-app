@@ -2789,3 +2789,1118 @@ LINE 10:  WHERE a.attrelid = '"categories"'::regclass
                              ^
 ):
   
+Started GET "/categories" for ::1 at 2023-12-01 00:46:04 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CategoriesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 127ms (ActiveRecord: 22.2ms | Allocations: 35510)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedTable: ERROR:  relation "categories" does not exist
+LINE 10:  WHERE a.attrelid = '"categories"'::regclass
+                             ^
+):
+  
+Started GET "/" for ::1 at 2023-12-01 00:46:08 -0600
+Processing by StaticPagesController#splash as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:11:in `redirect_if_authenticated'
+Redirected to http://localhost:3000/categories
+Filter chain halted as :redirect_if_authenticated rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.4ms | Allocations: 1576)
+
+
+Started GET "/categories" for ::1 at 2023-12-01 00:46:08 -0600
+Processing by CategoriesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 1.2ms | Allocations: 3017)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedTable: ERROR:  relation "categories" does not exist
+LINE 10:  WHERE a.attrelid = '"categories"'::regclass
+                             ^
+):
+  
+Started GET "/splash" for ::1 at 2023-12-01 00:46:14 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/splash"):
+  
+Started GET "/static_pages" for ::1 at 2023-12-01 00:46:36 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/static_pages"):
+  
+Started GET "/" for ::1 at 2023-12-01 00:46:41 -0600
+Processing by StaticPagesController#splash as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:11:in `redirect_if_authenticated'
+Redirected to http://localhost:3000/categories
+Filter chain halted as :redirect_if_authenticated rendered or redirected
+Completed 302 Found in 7ms (ActiveRecord: 0.7ms | Allocations: 1285)
+
+
+Started GET "/categories" for ::1 at 2023-12-01 00:46:41 -0600
+Processing by CategoriesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 2.0ms | Allocations: 2984)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedTable: ERROR:  relation "categories" does not exist
+LINE 10:  WHERE a.attrelid = '"categories"'::regclass
+                             ^
+):
+  
+Started GET "/categories" for ::1 at 2023-12-01 01:08:56 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CategoriesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 152ms (ActiveRecord: 25.8ms | Allocations: 35471)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedTable: ERROR:  relation "categories" does not exist
+LINE 10:  WHERE a.attrelid = '"categories"'::regclass
+                             ^
+):
+  
+Started GET "/" for ::1 at 2023-12-01 01:09:00 -0600
+Processing by StaticPagesController#splash as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:11:in `redirect_if_authenticated'
+Redirected to http://localhost:3000/categories
+Filter chain halted as :redirect_if_authenticated rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms | Allocations: 1540)
+
+
+Started GET "/categories" for ::1 at 2023-12-01 01:09:00 -0600
+Processing by CategoriesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.9ms | Allocations: 2990)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedTable: ERROR:  relation "categories" does not exist
+LINE 10:  WHERE a.attrelid = '"categories"'::regclass
+                             ^
+):
+  
+Started GET "/" for ::1 at 2023-12-01 01:09:00 -0600
+Processing by StaticPagesController#splash as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:11:in `redirect_if_authenticated'
+Redirected to http://localhost:3000/categories
+Filter chain halted as :redirect_if_authenticated rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.4ms | Allocations: 1272)
+
+
+Started GET "/categories" for ::1 at 2023-12-01 01:09:00 -0600
+Processing by CategoriesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 1.6ms | Allocations: 3024)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedTable: ERROR:  relation "categories" does not exist
+LINE 10:  WHERE a.attrelid = '"categories"'::regclass
+                             ^
+):
+  
+Started GET "/" for ::1 at 2023-12-01 01:33:30 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#splash as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:11:in `redirect_if_authenticated'
+Redirected to http://localhost:3000/categories
+Filter chain halted as :redirect_if_authenticated rendered or redirected
+Completed 302 Found in 58ms (ActiveRecord: 11.3ms | Allocations: 25609)
+
+
+Started GET "/categories" for ::1 at 2023-12-01 01:33:30 -0600
+Processing by CategoriesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.9ms | Allocations: 11582)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedTable: ERROR:  relation "categories" does not exist
+LINE 10:  WHERE a.attrelid = '"categories"'::regclass
+                             ^
+):
+  
+Started GET "/" for ::1 at 2023-12-01 01:33:31 -0600
+Processing by StaticPagesController#splash as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:11:in `redirect_if_authenticated'
+Redirected to http://localhost:3000/categories
+Filter chain halted as :redirect_if_authenticated rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms | Allocations: 1299)
+
+
+Started GET "/categories" for ::1 at 2023-12-01 01:33:31 -0600
+Processing by CategoriesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 1.1ms | Allocations: 2984)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedTable: ERROR:  relation "categories" does not exist
+LINE 10:  WHERE a.attrelid = '"categories"'::regclass
+                             ^
+):
+  
+Started GET "/categories" for ::1 at 2023-12-01 01:33:32 -0600
+Processing by CategoriesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 1.7ms | Allocations: 2996)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedTable: ERROR:  relation "categories" does not exist
+LINE 10:  WHERE a.attrelid = '"categories"'::regclass
+                             ^
+):
+  
+Started GET "/categories" for ::1 at 2023-12-01 01:33:34 -0600
+Processing by CategoriesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 1.9ms | Allocations: 2995)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedTable: ERROR:  relation "categories" does not exist
+LINE 10:  WHERE a.attrelid = '"categories"'::regclass
+                             ^
+):
+  
+Started GET "/categories" for ::1 at 2023-12-01 01:33:39 -0600
+Processing by CategoriesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 1.0ms | Allocations: 2980)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedTable: ERROR:  relation "categories" does not exist
+LINE 10:  WHERE a.attrelid = '"categories"'::regclass
+                             ^
+):
+  
+Started GET "/categories" for ::1 at 2023-12-01 01:33:51 -0600
+Processing by CategoriesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 1.0ms | Allocations: 2995)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedTable: ERROR:  relation "categories" does not exist
+LINE 10:  WHERE a.attrelid = '"categories"'::regclass
+                             ^
+):
+  
+  [1m[35m (2.9ms)[0m  [1m[35mCREATE DATABASE "budget_app_development" ENCODING = 'unicode'[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE DATABASE "budget_app_test" ENCODING = 'unicode'[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2127889314188895495)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(2127889314188895495)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2023-12-01 01:35:47 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#splash as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:11:in `redirect_if_authenticated'
+Redirected to http://localhost:3000/categories
+Filter chain halted as :redirect_if_authenticated rendered or redirected
+Completed 302 Found in 59ms (ActiveRecord: 11.1ms | Allocations: 25567)
+
+
+Started GET "/categories" for ::1 at 2023-12-01 01:35:47 -0600
+Processing by CategoriesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 1.0ms | Allocations: 11553)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedTable: ERROR:  relation "categories" does not exist
+LINE 10:  WHERE a.attrelid = '"categories"'::regclass
+                             ^
+):
+  
+Started GET "/" for ::1 at 2023-12-01 01:35:47 -0600
+Processing by StaticPagesController#splash as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:11:in `redirect_if_authenticated'
+Redirected to http://localhost:3000/categories
+Filter chain halted as :redirect_if_authenticated rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms | Allocations: 1297)
+
+
+Started GET "/categories" for ::1 at 2023-12-01 01:35:47 -0600
+Processing by CategoriesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 1.1ms | Allocations: 3014)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedTable: ERROR:  relation "categories" does not exist
+LINE 10:  WHERE a.attrelid = '"categories"'::regclass
+                             ^
+):
+  
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2127889314188895495)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+Migrating to RenameGroupsToCategories (20231201074049)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "groups" RENAME TO "categories"[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER INDEX "groups_pkey" RENAME TO "categories_pkey"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "public"."groups_id_seq" RENAME TO "categories_id_seq"[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20231201074049') RETURNING "version"[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(2127889314188895495)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2127889314188895495)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+Migrating to CreateCategories (20231201074125)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (3.0ms)[0m  [1m[35mCREATE TABLE "categories" ("id" bigserial primary key, "name" character varying, "icon" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2127889314188895495)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2127889314188895495)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+Migrating to UpdateForeignKeyForFinancialTransactions (20231201074600)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.4ms)[0m  [1m[35mALTER TABLE "financial_transactions" DROP CONSTRAINT "fk_rails_c1099500fc"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "financial_transactions" RENAME COLUMN "group_id" TO "category_id"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER INDEX "index_financial_transactions_on_group_id" RENAME TO "index_financial_transactions_on_category_id"[0m
+  [1m[35m (3.6ms)[0m  [1m[35mALTER TABLE "financial_transactions" ADD CONSTRAINT "fk_rails_f7528b28d2"
+FOREIGN KEY ("category_id")
+  REFERENCES "categories" ("id")
+[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20231201074600') RETURNING "version"[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2127889314188895495)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2127889314188895495)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+Migrating to DropFinancialTransactionsTable (20231201074949)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.8ms)[0m  [1m[35mDROP TABLE "financial_transactions"[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20231201074949') RETURNING "version"[0m
+  [1m[36mTRANSACTION (2.8ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateJoinTableForCategoriesPurchases (20231201075220)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "categories_purchases" ("category_id" bigint NOT NULL, "purchase_id" bigint NOT NULL)[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE INDEX "index_categories_purchases_on_category_id" ON "categories_purchases" ("category_id")[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE INDEX "index_categories_purchases_on_purchase_id" ON "categories_purchases" ("purchase_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20231201075220') RETURNING "version"[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(2127889314188895495)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2023-12-01 01:55:57 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#splash as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:11:in `redirect_if_authenticated'
+Redirected to http://localhost:3000/categories
+Filter chain halted as :redirect_if_authenticated rendered or redirected
+Completed 302 Found in 53ms (ActiveRecord: 10.2ms | Allocations: 25600)
+
+
+Started GET "/categories" for ::1 at 2023-12-01 01:55:57 -0600
+Processing by CategoriesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 2.8ms | Allocations: 12719)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedTable: ERROR:  relation "purchases" does not exist
+LINE 10:  WHERE a.attrelid = '"purchases"'::regclass
+                             ^
+):
+  
+Started GET "/" for ::1 at 2023-12-01 01:55:57 -0600
+Processing by StaticPagesController#splash as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:11:in `redirect_if_authenticated'
+Redirected to http://localhost:3000/categories
+Filter chain halted as :redirect_if_authenticated rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.5ms | Allocations: 1276)
+
+
+Started GET "/categories" for ::1 at 2023-12-01 01:55:57 -0600
+Processing by CategoriesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 1.1ms | Allocations: 3074)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedTable: ERROR:  relation "purchases" does not exist
+LINE 10:  WHERE a.attrelid = '"purchases"'::regclass
+                             ^
+):
+  
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2127889314188895495)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.5ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+Migrating to CreatePurchases (20231201075724)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (13.3ms)[0m  [1m[35mCREATE TABLE "purchases" ("id" bigserial primary key, "name" character varying, "amount" decimal, "author_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_1ad2b8d50e"
+FOREIGN KEY ("author_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCREATE INDEX "index_purchases_on_author_id" ON "purchases" ("author_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20231201075724') RETURNING "version"[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT pg_advisory_unlock(2127889314188895495)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2023-12-01 01:57:57 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#splash as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:11:in `redirect_if_authenticated'
+Redirected to http://localhost:3000/categories
+Filter chain halted as :redirect_if_authenticated rendered or redirected
+Completed 302 Found in 56ms (ActiveRecord: 11.0ms | Allocations: 25584)
+
+
+Started GET "/categories" for ::1 at 2023-12-01 01:57:57 -0600
+Processing by CategoriesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (2.9ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "categories_purchases" ON "categories"."id" = "categories_purchases"."category_id" INNER JOIN "purchases" ON "categories_purchases"."purchase_id" = "purchases"."id" WHERE "purchases"."author_id" = $1[0m  [["author_id", 1]]
+  ↳ app/views/categories/index.html.erb:19
+  Rendered categories/index.html.erb within layouts/application (Duration: 226.4ms | Allocations: 40839)
+  Rendered layout layouts/application.html.erb (Duration: 254.0ms | Allocations: 54941)
+Completed 200 OK in 284ms (Views: 254.9ms | ActiveRecord: 7.1ms | Allocations: 70700)
+
+
+Started GET "/categories" for ::1 at 2023-12-01 02:00:47 -0600
+Processing by CategoriesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (1.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "categories_purchases" ON "categories"."id" = "categories_purchases"."category_id" INNER JOIN "purchases" ON "categories_purchases"."purchase_id" = "purchases"."id" WHERE "purchases"."author_id" = $1[0m  [["author_id", 1]]
+  ↳ app/views/categories/index.html.erb:19
+  Rendered categories/index.html.erb within layouts/application (Duration: 5.9ms | Allocations: 1220)
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | Allocations: 3119)
+Completed 200 OK in 18ms (Views: 9.3ms | ActiveRecord: 1.9ms | Allocations: 5372)
+
+
+Started GET "/categories" for ::1 at 2023-12-01 02:01:23 -0600
+Processing by CategoriesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "categories_purchases" ON "categories"."id" = "categories_purchases"."category_id" INNER JOIN "purchases" ON "categories_purchases"."purchase_id" = "purchases"."id" WHERE "purchases"."author_id" = $1[0m  [["author_id", 1]]
+  ↳ app/views/categories/index.html.erb:19
+  Rendered categories/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1216)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 3115)
+Completed 200 OK in 15ms (Views: 7.9ms | ActiveRecord: 1.0ms | Allocations: 5391)
+
+
+Started GET "/categories/new" for ::1 at 2023-12-01 02:01:30 -0600
+Processing by CategoriesController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering categories/new.html.erb within layouts/application
+  Rendered categories/_form.html.erb (Duration: 41.8ms | Allocations: 8539)
+  Rendered categories/new.html.erb within layouts/application (Duration: 49.3ms | Allocations: 9512)
+  Rendered layout layouts/application.html.erb (Duration: 52.2ms | Allocations: 11448)
+Completed 200 OK in 77ms (Views: 52.7ms | ActiveRecord: 0.2ms | Allocations: 16354)
+
+
+Started GET "/categories" for ::1 at 2023-12-01 02:01:37 -0600
+Processing by CategoriesController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.7ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "categories_purchases" ON "categories"."id" = "categories_purchases"."category_id" INNER JOIN "purchases" ON "categories_purchases"."purchase_id" = "purchases"."id" WHERE "purchases"."author_id" = $1[0m  [["author_id", 1]]
+  ↳ app/views/categories/index.html.erb:19
+  Rendered categories/index.html.erb within layouts/application (Duration: 6.7ms | Allocations: 1219)
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | Allocations: 3126)
+Completed 200 OK in 17ms (Views: 11.0ms | ActiveRecord: 1.6ms | Allocations: 5392)
+
+
+Started GET "/categories" for ::1 at 2023-12-01 02:03:23 -0600
+Processing by CategoriesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "categories_purchases" ON "categories"."id" = "categories_purchases"."category_id" INNER JOIN "purchases" ON "categories_purchases"."purchase_id" = "purchases"."id" WHERE "purchases"."author_id" = $1[0m  [["author_id", 1]]
+  ↳ app/views/categories/index.html.erb:19
+  Rendered categories/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1216)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 3115)
+Completed 200 OK in 14ms (Views: 9.1ms | ActiveRecord: 0.6ms | Allocations: 5364)
+
+
+Started GET "/categories" for ::1 at 2023-12-01 02:06:21 -0600
+Processing by CategoriesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "categories_purchases" ON "categories"."id" = "categories_purchases"."category_id" INNER JOIN "purchases" ON "categories_purchases"."purchase_id" = "purchases"."id" WHERE "purchases"."author_id" = $1[0m  [["author_id", 1]]
+  ↳ app/views/categories/index.html.erb:19
+  Rendered categories/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1216)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 3115)
+Completed 200 OK in 15ms (Views: 9.7ms | ActiveRecord: 0.8ms | Allocations: 5358)
+
+
+Started GET "/categories" for ::1 at 2023-12-01 02:07:29 -0600
+Processing by CategoriesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "categories_purchases" ON "categories"."id" = "categories_purchases"."category_id" INNER JOIN "purchases" ON "categories_purchases"."purchase_id" = "purchases"."id" WHERE "purchases"."author_id" = $1[0m  [["author_id", 1]]
+  ↳ app/views/categories/index.html.erb:19
+  Rendered categories/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1216)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 3115)
+Completed 200 OK in 17ms (Views: 9.0ms | ActiveRecord: 0.7ms | Allocations: 5367)
+
+
+Started GET "/categories" for ::1 at 2023-12-01 02:07:34 -0600
+Processing by CategoriesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "categories_purchases" ON "categories"."id" = "categories_purchases"."category_id" INNER JOIN "purchases" ON "categories_purchases"."purchase_id" = "purchases"."id" WHERE "purchases"."author_id" = $1[0m  [["author_id", 1]]
+  ↳ app/views/categories/index.html.erb:19
+  Rendered categories/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1216)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 3115)
+Completed 200 OK in 15ms (Views: 7.3ms | ActiveRecord: 0.5ms | Allocations: 5364)
+
+
+Started GET "/categories" for ::1 at 2023-12-01 02:07:52 -0600
+Processing by CategoriesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "categories_purchases" ON "categories"."id" = "categories_purchases"."category_id" INNER JOIN "purchases" ON "categories_purchases"."purchase_id" = "purchases"."id" WHERE "purchases"."author_id" = $1[0m  [["author_id", 1]]
+  ↳ app/views/categories/index.html.erb:19
+  Rendered categories/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1216)
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 3115)
+Completed 200 OK in 13ms (Views: 6.3ms | ActiveRecord: 0.6ms | Allocations: 5385)
+
+
+Started GET "/categories" for ::1 at 2023-12-01 02:08:02 -0600
+Processing by CategoriesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "categories_purchases" ON "categories"."id" = "categories_purchases"."category_id" INNER JOIN "purchases" ON "categories_purchases"."purchase_id" = "purchases"."id" WHERE "purchases"."author_id" = $1[0m  [["author_id", 1]]
+  ↳ app/views/categories/index.html.erb:19
+  Rendered categories/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1228)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 3158)
+Completed 200 OK in 14ms (Views: 9.5ms | ActiveRecord: 0.4ms | Allocations: 5438)
+
+
+Started GET "/categories" for ::1 at 2023-12-01 02:08:21 -0600
+Processing by CategoriesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.7ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "categories_purchases" ON "categories"."id" = "categories_purchases"."category_id" INNER JOIN "purchases" ON "categories_purchases"."purchase_id" = "purchases"."id" WHERE "purchases"."author_id" = $1[0m  [["author_id", 1]]
+  ↳ app/views/categories/index.html.erb:19
+  Rendered categories/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1219)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 3118)
+Completed 200 OK in 14ms (Views: 8.3ms | ActiveRecord: 0.8ms | Allocations: 5394)
+
+
+Started GET "/categories" for ::1 at 2023-12-01 02:08:28 -0600
+Processing by CategoriesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "categories_purchases" ON "categories"."id" = "categories_purchases"."category_id" INNER JOIN "purchases" ON "categories_purchases"."purchase_id" = "purchases"."id" WHERE "purchases"."author_id" = $1[0m  [["author_id", 1]]
+  ↳ app/views/categories/index.html.erb:19
+  Rendered categories/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1216)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 3115)
+Completed 200 OK in 15ms (Views: 7.6ms | ActiveRecord: 0.5ms | Allocations: 5373)
+
+
+Started GET "/" for ::1 at 2023-12-01 02:08:35 -0600
+Processing by StaticPagesController#splash as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:11:in `redirect_if_authenticated'
+Redirected to http://localhost:3000/categories
+Filter chain halted as :redirect_if_authenticated rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms | Allocations: 1248)
+
+
+Started GET "/categories" for ::1 at 2023-12-01 02:08:35 -0600
+Processing by CategoriesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "categories_purchases" ON "categories"."id" = "categories_purchases"."category_id" INNER JOIN "purchases" ON "categories_purchases"."purchase_id" = "purchases"."id" WHERE "purchases"."author_id" = $1[0m  [["author_id", 1]]
+  ↳ app/views/categories/index.html.erb:19
+  Rendered categories/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1217)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 3116)
+Completed 200 OK in 9ms (Views: 5.2ms | ActiveRecord: 0.3ms | Allocations: 5391)
+
+
+Started GET "/" for ::1 at 2023-12-01 02:08:37 -0600
+Processing by StaticPagesController#splash as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:11:in `redirect_if_authenticated'
+Redirected to http://localhost:3000/categories
+Filter chain halted as :redirect_if_authenticated rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 1242)
+
+
+Started GET "/categories" for ::1 at 2023-12-01 02:08:37 -0600
+Processing by CategoriesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "categories_purchases" ON "categories"."id" = "categories_purchases"."category_id" INNER JOIN "purchases" ON "categories_purchases"."purchase_id" = "purchases"."id" WHERE "purchases"."author_id" = $1[0m  [["author_id", 1]]
+  ↳ app/views/categories/index.html.erb:19
+  Rendered categories/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1216)
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | Allocations: 3115)
+Completed 200 OK in 8ms (Views: 4.6ms | ActiveRecord: 0.3ms | Allocations: 5378)
+
+
+Started GET "/" for ::1 at 2023-12-01 02:08:39 -0600
+Processing by StaticPagesController#splash as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:11:in `redirect_if_authenticated'
+Redirected to http://localhost:3000/categories
+Filter chain halted as :redirect_if_authenticated rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.3ms | Allocations: 1254)
+
+
+Started GET "/categories" for ::1 at 2023-12-01 02:08:39 -0600
+Processing by CategoriesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "categories_purchases" ON "categories"."id" = "categories_purchases"."category_id" INNER JOIN "purchases" ON "categories_purchases"."purchase_id" = "purchases"."id" WHERE "purchases"."author_id" = $1[0m  [["author_id", 1]]
+  ↳ app/views/categories/index.html.erb:19
+  Rendered categories/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1231)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 3163)
+Completed 200 OK in 13ms (Views: 6.7ms | ActiveRecord: 0.3ms | Allocations: 5404)
+
+
+Started GET "/users/sign_out" for ::1 at 2023-12-01 02:08:41 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  
+Started GET "/categories" for ::1 at 2023-12-01 02:08:56 -0600
+Processing by CategoriesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "categories_purchases" ON "categories"."id" = "categories_purchases"."category_id" INNER JOIN "purchases" ON "categories_purchases"."purchase_id" = "purchases"."id" WHERE "purchases"."author_id" = $1[0m  [["author_id", 1]]
+  ↳ app/views/categories/index.html.erb:19
+  Rendered categories/index.html.erb within layouts/application (Duration: 24.7ms | Allocations: 1231)
+  Rendered layout layouts/application.html.erb (Duration: 28.9ms | Allocations: 3163)
+Completed 200 OK in 35ms (Views: 29.6ms | ActiveRecord: 0.7ms | Allocations: 5424)
+
+
+Started GET "/users/sign_out" for ::1 at 2023-12-01 02:09:36 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  
+Started GET "/users/sign_out" for ::1 at 2023-12-01 02:12:41 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  
+Started GET "/categories" for ::1 at 2023-12-01 02:12:47 -0600
+Processing by CategoriesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "categories_purchases" ON "categories"."id" = "categories_purchases"."category_id" INNER JOIN "purchases" ON "categories_purchases"."purchase_id" = "purchases"."id" WHERE "purchases"."author_id" = $1[0m  [["author_id", 1]]
+  ↳ app/views/categories/index.html.erb:19
+  Rendered categories/index.html.erb within layouts/application (Duration: 5.8ms | Allocations: 1663)
+  Rendered layout layouts/application.html.erb (Duration: 32.5ms | Allocations: 15613)
+Completed 200 OK in 99ms (Views: 35.7ms | ActiveRecord: 11.5ms | Allocations: 31941)
+
+
+Started GET "/users/sign_out" for ::1 at 2023-12-01 02:12:49 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  
+Started GET "/" for ::1 at 2023-12-01 02:18:46 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#splash as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:11:in `redirect_if_authenticated'
+Redirected to http://localhost:3000/categories
+Filter chain halted as :redirect_if_authenticated rendered or redirected
+Completed 302 Found in 81ms (ActiveRecord: 16.5ms | Allocations: 25589)
+
+
+Started GET "/categories" for ::1 at 2023-12-01 02:18:46 -0600
+Processing by CategoriesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (2.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "categories_purchases" ON "categories"."id" = "categories_purchases"."category_id" INNER JOIN "purchases" ON "categories_purchases"."purchase_id" = "purchases"."id" WHERE "purchases"."author_id" = $1[0m  [["author_id", 1]]
+  ↳ app/views/categories/index.html.erb:19
+  Rendered categories/index.html.erb within layouts/application (Duration: 261.2ms | Allocations: 38722)
+  Rendered layout layouts/application.html.erb (Duration: 287.7ms | Allocations: 52797)
+Completed 200 OK in 338ms (Views: 290.8ms | ActiveRecord: 8.9ms | Allocations: 68529)
+
+
+Started GET "/users/sign_out" for ::1 at 2023-12-01 02:18:49 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  
+Started GET "/" for ::1 at 2023-12-01 02:28:02 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#splash as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:11:in `redirect_if_authenticated'
+Redirected to http://localhost:3000/categories
+Filter chain halted as :redirect_if_authenticated rendered or redirected
+Completed 302 Found in 54ms (ActiveRecord: 10.8ms | Allocations: 25576)
+
+
+Started GET "/categories" for ::1 at 2023-12-01 02:28:03 -0600
+Processing by CategoriesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.8ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "categories_purchases" ON "categories"."id" = "categories_purchases"."category_id" INNER JOIN "purchases" ON "categories_purchases"."purchase_id" = "purchases"."id" WHERE "purchases"."author_id" = $1[0m  [["author_id", 1]]
+  ↳ app/views/categories/index.html.erb:19
+  Rendered categories/index.html.erb within layouts/application (Duration: 145.5ms | Allocations: 39754)
+  Rendered layout layouts/application.html.erb (Duration: 158.6ms | Allocations: 53852)
+Completed 200 OK in 189ms (Views: 161.4ms | ActiveRecord: 5.0ms | Allocations: 69590)
+
+
+Started GET "/users/sign_out" for ::1 at 2023-12-01 02:28:05 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  
+Started GET "/" for ::1 at 2023-12-01 02:29:03 -0600
+Processing by StaticPagesController#splash as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:11:in `redirect_if_authenticated'
+Redirected to http://localhost:3000/categories
+Filter chain halted as :redirect_if_authenticated rendered or redirected
+Completed 302 Found in 12ms (ActiveRecord: 2.7ms | Allocations: 6902)
+
+
+Started GET "/categories" for ::1 at 2023-12-01 02:29:03 -0600
+Processing by CategoriesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "categories_purchases" ON "categories"."id" = "categories_purchases"."category_id" INNER JOIN "purchases" ON "categories_purchases"."purchase_id" = "purchases"."id" WHERE "purchases"."author_id" = $1[0m  [["author_id", 1]]
+  ↳ app/views/categories/index.html.erb:19
+  Rendered categories/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1678)
+  Rendered layout layouts/application.html.erb (Duration: 15.4ms | Allocations: 15623)
+Completed 200 OK in 65ms (Views: 23.0ms | ActiveRecord: 6.0ms | Allocations: 26500)
+
+
+Started GET "/users/sign_out" for ::1 at 2023-12-01 02:29:05 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  
+Started GET "/" for ::1 at 2023-12-01 02:32:55 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#splash as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:11:in `redirect_if_authenticated'
+Redirected to http://localhost:3000/categories
+Filter chain halted as :redirect_if_authenticated rendered or redirected
+Completed 302 Found in 67ms (ActiveRecord: 11.3ms | Allocations: 25597)
+
+
+Started GET "/categories" for ::1 at 2023-12-01 02:32:55 -0600
+Processing by CategoriesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (1.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "categories_purchases" ON "categories"."id" = "categories_purchases"."category_id" INNER JOIN "purchases" ON "categories_purchases"."purchase_id" = "purchases"."id" WHERE "purchases"."author_id" = $1[0m  [["author_id", 1]]
+  ↳ app/views/categories/index.html.erb:19
+  Rendered categories/index.html.erb within layouts/application (Duration: 74.5ms | Allocations: 26680)
+  Rendered layout layouts/application.html.erb (Duration: 100.1ms | Allocations: 40859)
+Completed 200 OK in 137ms (Views: 102.3ms | ActiveRecord: 6.2ms | Allocations: 56615)
+
+
+Started GET "/" for ::1 at 2023-12-01 02:32:58 -0600
+Processing by StaticPagesController#splash as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:11:in `redirect_if_authenticated'
+Redirected to http://localhost:3000/categories
+Filter chain halted as :redirect_if_authenticated rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms | Allocations: 1274)
+
+
+Started GET "/categories" for ::1 at 2023-12-01 02:32:58 -0600
+Processing by CategoriesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "categories_purchases" ON "categories"."id" = "categories_purchases"."category_id" INNER JOIN "purchases" ON "categories_purchases"."purchase_id" = "purchases"."id" WHERE "purchases"."author_id" = $1[0m  [["author_id", 1]]
+  ↳ app/views/categories/index.html.erb:19
+  Rendered categories/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1220)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 3119)
+Completed 200 OK in 12ms (Views: 7.3ms | ActiveRecord: 0.8ms | Allocations: 5379)
+
+
+Started GET "/" for ::1 at 2023-12-01 02:32:59 -0600
+Processing by StaticPagesController#splash as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:11:in `redirect_if_authenticated'
+Redirected to http://localhost:3000/categories
+Filter chain halted as :redirect_if_authenticated rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.3ms | Allocations: 1289)
+
+
+Started GET "/categories" for ::1 at 2023-12-01 02:32:59 -0600
+Processing by CategoriesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "categories_purchases" ON "categories"."id" = "categories_purchases"."category_id" INNER JOIN "purchases" ON "categories_purchases"."purchase_id" = "purchases"."id" WHERE "purchases"."author_id" = $1[0m  [["author_id", 1]]
+  ↳ app/views/categories/index.html.erb:19
+  Rendered categories/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1220)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 3119)
+Completed 200 OK in 34ms (Views: 28.5ms | ActiveRecord: 0.7ms | Allocations: 5402)
+
+
+Started GET "/" for ::1 at 2023-12-01 02:33:00 -0600
+Processing by StaticPagesController#splash as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:11:in `redirect_if_authenticated'
+Redirected to http://localhost:3000/categories
+Filter chain halted as :redirect_if_authenticated rendered or redirected
+Completed 302 Found in 6ms (ActiveRecord: 0.3ms | Allocations: 1263)
+
+
+Started GET "/categories" for ::1 at 2023-12-01 02:33:00 -0600
+Processing by CategoriesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.9ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "categories_purchases" ON "categories"."id" = "categories_purchases"."category_id" INNER JOIN "purchases" ON "categories_purchases"."purchase_id" = "purchases"."id" WHERE "purchases"."author_id" = $1[0m  [["author_id", 1]]
+  ↳ app/views/categories/index.html.erb:19
+  Rendered categories/index.html.erb within layouts/application (Duration: 5.5ms | Allocations: 1224)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 3137)
+Completed 200 OK in 17ms (Views: 8.8ms | ActiveRecord: 1.2ms | Allocations: 5404)
+
+
+Started GET "/users/sign_out" for ::1 at 2023-12-01 02:33:01 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  
+Started GET "/" for ::1 at 2023-12-01 02:35:58 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#splash as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:11:in `redirect_if_authenticated'
+Redirected to http://localhost:3000/categories
+Filter chain halted as :redirect_if_authenticated rendered or redirected
+Completed 302 Found in 94ms (ActiveRecord: 19.3ms | Allocations: 25581)
+
+
+Started GET "/categories" for ::1 at 2023-12-01 02:35:58 -0600
+Processing by CategoriesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (5.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "categories_purchases" ON "categories"."id" = "categories_purchases"."category_id" INNER JOIN "purchases" ON "categories_purchases"."purchase_id" = "purchases"."id" WHERE "purchases"."author_id" = $1[0m  [["author_id", 1]]
+  ↳ app/views/categories/index.html.erb:19
+  Rendered categories/index.html.erb within layouts/application (Duration: 132.6ms | Allocations: 26840)
+  Rendered layout layouts/application.html.erb (Duration: 251.6ms | Allocations: 41083)
+Completed 200 OK in 313ms (Views: 257.2ms | ActiveRecord: 14.2ms | Allocations: 56821)
+
+
+Started GET "/users/sign_out" for ::1 at 2023-12-01 02:36:01 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  
+Started GET "/categories" for ::1 at 2023-12-01 02:36:51 -0600
+Processing by CategoriesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.9ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "categories_purchases" ON "categories"."id" = "categories_purchases"."category_id" INNER JOIN "purchases" ON "categories_purchases"."purchase_id" = "purchases"."id" WHERE "purchases"."author_id" = $1[0m  [["author_id", 1]]
+  ↳ app/views/categories/index.html.erb:19
+  Rendered categories/index.html.erb within layouts/application (Duration: 7.4ms | Allocations: 1801)
+  Rendered layout layouts/application.html.erb (Duration: 32.8ms | Allocations: 15733)
+Completed 200 OK in 97ms (Views: 34.9ms | ActiveRecord: 15.3ms | Allocations: 32080)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2023-12-01 02:36:53 -0600
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 303 See Other in 15ms (ActiveRecord: 0.5ms | Allocations: 3673)
+
+
+Started GET "/" for ::1 at 2023-12-01 02:36:53 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 2.5ms | Allocations: 962)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 2884)
+Completed 200 OK in 15ms (Views: 8.8ms | ActiveRecord: 0.0ms | Allocations: 4003)
+
+
+Started GET "/users/sign_in" for ::1 at 2023-12-01 02:37:35 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 6.9ms | Allocations: 2219)
+  Rendered layout layouts/application.html.erb (Duration: 31.4ms | Allocations: 16145)
+Completed 200 OK in 50ms (Views: 37.4ms | ActiveRecord: 3.9ms | Allocations: 22519)
+
+
+Started POST "/users/sign_in" for ::1 at 2023-12-01 02:37:46 -0600
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"thisistom@email.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "thisistom@email.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/categories
+Completed 303 See Other in 282ms (ActiveRecord: 0.5ms | Allocations: 4087)
+
+
+Started GET "/categories" for ::1 at 2023-12-01 02:37:46 -0600
+Processing by CategoriesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "categories_purchases" ON "categories"."id" = "categories_purchases"."category_id" INNER JOIN "purchases" ON "categories_purchases"."purchase_id" = "purchases"."id" WHERE "purchases"."author_id" = $1[0m  [["author_id", 1]]
+  ↳ app/views/categories/index.html.erb:19
+  Rendered categories/index.html.erb within layouts/application (Duration: 5.6ms | Allocations: 1762)
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 3707)
+Completed 200 OK in 48ms (Views: 12.8ms | ActiveRecord: 8.7ms | Allocations: 14312)
+
+
+Started GET "/categories" for ::1 at 2023-12-01 02:43:46 -0600
+Processing by CategoriesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (1.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "categories_purchases" ON "categories"."id" = "categories_purchases"."category_id" INNER JOIN "purchases" ON "categories_purchases"."purchase_id" = "purchases"."id" WHERE "purchases"."author_id" = $1[0m  [["author_id", 1]]
+  ↳ app/views/categories/index.html.erb:19
+  Rendered categories/index.html.erb within layouts/application (Duration: 7.7ms | Allocations: 1788)
+  Rendered layout layouts/application.html.erb (Duration: 37.9ms | Allocations: 15718)
+Completed 200 OK in 105ms (Views: 40.2ms | ActiveRecord: 10.6ms | Allocations: 33944)
+
+
+Started GET "/categories" for ::1 at 2023-12-01 02:44:05 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CategoriesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (2.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "categories_purchases" ON "categories"."id" = "categories_purchases"."category_id" INNER JOIN "purchases" ON "categories_purchases"."purchase_id" = "purchases"."id" WHERE "purchases"."author_id" = $1[0m  [["author_id", 1]]
+  ↳ app/views/categories/index.html.erb:19
+  Rendered categories/index.html.erb within layouts/application (Duration: 204.5ms | Allocations: 39196)
+  Rendered layout layouts/application.html.erb (Duration: 261.7ms | Allocations: 53316)
+Completed 200 OK in 435ms (Views: 267.3ms | ActiveRecord: 34.6ms | Allocations: 93035)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2023-12-01 02:44:07 -0600
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 303 See Other in 15ms (ActiveRecord: 0.7ms | Allocations: 3554)
+
+
+Started GET "/" for ::1 at 2023-12-01 02:44:07 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 2.2ms | Allocations: 945)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 2871)
+Completed 200 OK in 17ms (Views: 11.5ms | ActiveRecord: 0.0ms | Allocations: 4009)
+
+
+Started GET "/users/sign_in" for ::1 at 2023-12-01 02:44:09 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 8.2ms | Allocations: 2293)
+  Rendered layout layouts/application.html.erb (Duration: 14.1ms | Allocations: 4234)
+Completed 200 OK in 24ms (Views: 20.9ms | ActiveRecord: 0.0ms | Allocations: 5710)
+
+
+Started POST "/users/sign_in" for ::1 at 2023-12-01 02:44:15 -0600
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"thisistom@email.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "thisistom@email.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/categories
+Completed 303 See Other in 277ms (ActiveRecord: 0.6ms | Allocations: 4031)
+
+
+Started GET "/categories" for ::1 at 2023-12-01 02:44:15 -0600
+Processing by CategoriesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.8ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "categories_purchases" ON "categories"."id" = "categories_purchases"."category_id" INNER JOIN "purchases" ON "categories_purchases"."purchase_id" = "purchases"."id" WHERE "purchases"."author_id" = $1[0m  [["author_id", 1]]
+  ↳ app/views/categories/index.html.erb:19
+  Rendered categories/index.html.erb within layouts/application (Duration: 17.9ms | Allocations: 1310)
+  Rendered layout layouts/application.html.erb (Duration: 42.2ms | Allocations: 3208)
+Completed 200 OK in 53ms (Views: 42.4ms | ActiveRecord: 1.1ms | Allocations: 5474)
+
+
+Started GET "/categories" for ::1 at 2023-12-01 02:45:01 -0600
+Processing by CategoriesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "categories_purchases" ON "categories"."id" = "categories_purchases"."category_id" INNER JOIN "purchases" ON "categories_purchases"."purchase_id" = "purchases"."id" WHERE "purchases"."author_id" = $1[0m  [["author_id", 1]]
+  ↳ app/views/categories/index.html.erb:19
+  Rendered categories/index.html.erb within layouts/application (Duration: 7.2ms | Allocations: 1779)
+  Rendered layout layouts/application.html.erb (Duration: 33.3ms | Allocations: 15706)
+Completed 200 OK in 93ms (Views: 34.6ms | ActiveRecord: 14.5ms | Allocations: 32039)
+
+
+Started GET "/categories" for ::1 at 2023-12-01 02:45:22 -0600
+Processing by CategoriesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "categories_purchases" ON "categories"."id" = "categories_purchases"."category_id" INNER JOIN "purchases" ON "categories_purchases"."purchase_id" = "purchases"."id" WHERE "purchases"."author_id" = $1[0m  [["author_id", 1]]
+  ↳ app/views/categories/index.html.erb:19
+  Rendered categories/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1301)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 3199)
+Completed 200 OK in 14ms (Views: 8.4ms | ActiveRecord: 0.7ms | Allocations: 5481)
+
+
+Started GET "/categories" for ::1 at 2023-12-01 02:45:39 -0600
+Processing by CategoriesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "categories_purchases" ON "categories"."id" = "categories_purchases"."category_id" INNER JOIN "purchases" ON "categories_purchases"."purchase_id" = "purchases"."id" WHERE "purchases"."author_id" = $1[0m  [["author_id", 1]]
+  ↳ app/views/categories/index.html.erb:19
+  Rendered categories/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1311)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 3241)
+Completed 200 OK in 16ms (Views: 10.4ms | ActiveRecord: 0.7ms | Allocations: 5539)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2023-12-01 02:45:55 -0600
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 303 See Other in 5ms (ActiveRecord: 0.2ms | Allocations: 2580)
+
+
+Started GET "/" for ::1 at 2023-12-01 02:45:55 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 1.7ms | Allocations: 935)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 2875)
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.0ms | Allocations: 3917)
+
+
+Started GET "/users/sign_in" for ::1 at 2023-12-01 02:45:57 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 5.0ms | Allocations: 1632)
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 3573)
+Completed 200 OK in 16ms (Views: 13.9ms | ActiveRecord: 0.0ms | Allocations: 4940)
+
+
+Started POST "/users/sign_in" for ::1 at 2023-12-01 02:46:02 -0600
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"thisistom@email.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "thisistom@email.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/categories
+Completed 303 See Other in 250ms (ActiveRecord: 0.3ms | Allocations: 2965)
+
+
+Started GET "/categories" for ::1 at 2023-12-01 02:46:03 -0600
+Processing by CategoriesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "categories_purchases" ON "categories"."id" = "categories_purchases"."category_id" INNER JOIN "purchases" ON "categories_purchases"."purchase_id" = "purchases"."id" WHERE "purchases"."author_id" = $1[0m  [["author_id", 1]]
+  ↳ app/views/categories/index.html.erb:19
+  Rendered categories/index.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1306)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 3204)
+Completed 200 OK in 16ms (Views: 8.9ms | ActiveRecord: 0.7ms | Allocations: 5469)
+
+
+Started GET "/" for ::1 at 2023-12-01 02:47:23 -0600
+Processing by StaticPagesController#splash as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:11:in `redirect_if_authenticated'
+Redirected to http://localhost:3000/categories
+Filter chain halted as :redirect_if_authenticated rendered or redirected
+Completed 302 Found in 18ms (ActiveRecord: 3.2ms | Allocations: 6886)
+
+
+Started GET "/categories" for ::1 at 2023-12-01 02:47:23 -0600
+Processing by CategoriesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "categories_purchases" ON "categories"."id" = "categories_purchases"."category_id" INNER JOIN "purchases" ON "categories_purchases"."purchase_id" = "purchases"."id" WHERE "purchases"."author_id" = $1[0m  [["author_id", 1]]
+  ↳ app/views/categories/index.html.erb:19
+  Rendered categories/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1783)
+  Rendered layout layouts/application.html.erb (Duration: 19.0ms | Allocations: 15710)
+Completed 200 OK in 49ms (Views: 22.2ms | ActiveRecord: 6.0ms | Allocations: 26532)
+
+
+Started GET "/" for ::1 at 2023-12-01 02:47:24 -0600
+Processing by StaticPagesController#splash as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/static_pages_controller.rb:11:in `redirect_if_authenticated'
+Redirected to http://localhost:3000/categories
+Filter chain halted as :redirect_if_authenticated rendered or redirected
+Completed 302 Found in 6ms (ActiveRecord: 0.2ms | Allocations: 1268)
+
+
+Started GET "/categories" for ::1 at 2023-12-01 02:47:24 -0600
+Processing by CategoriesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "categories_purchases" ON "categories"."id" = "categories_purchases"."category_id" INNER JOIN "purchases" ON "categories_purchases"."purchase_id" = "purchases"."id" WHERE "purchases"."author_id" = $1[0m  [["author_id", 1]]
+  ↳ app/views/categories/index.html.erb:19
+  Rendered categories/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1301)
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | Allocations: 3199)
+Completed 200 OK in 18ms (Views: 11.1ms | ActiveRecord: 0.5ms | Allocations: 5470)
+
+
+Started GET "/categories/new" for ::1 at 2023-12-01 02:47:30 -0600
+Processing by CategoriesController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering categories/new.html.erb within layouts/application
+  Rendered categories/_form.html.erb (Duration: 5.3ms | Allocations: 1379)
+  Rendered categories/new.html.erb within layouts/application (Duration: 9.1ms | Allocations: 2460)
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 4392)
+Completed 200 OK in 25ms (Views: 13.4ms | ActiveRecord: 0.3ms | Allocations: 9216)
+
+
+Started POST "/categories" for ::1 at 2023-12-01 02:50:55 -0600
+Processing by CategoriesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "category"=>{"name"=>"Party", "icon"=>#<ActionDispatch::Http::UploadedFile:0x000000011589dda0 @tempfile=#<Tempfile:/var/folders/sk/00z_9wfs1mq1x8y9vg_lx44c0000gn/T/RackMultipart20231201-46830-sqdo2a.png>, @content_type="image/png", @original_filename="party.png", @headers="Content-Disposition: form-data; name=\"category[icon]\"; filename=\"party.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Save"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.2ms | Allocations: 2332)
+
+
+  
+ActiveRecord::HasManyThroughNestedAssociationsAreReadonly (Cannot modify association 'User#categories' because it goes through more than one other association.):
+  
+app/controllers/categories_controller.rb:25:in `create'
+Started POST "/categories" for ::1 at 2023-12-01 02:51:17 -0600
+Processing by CategoriesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "category"=>{"name"=>"Party", "icon"=>#<ActionDispatch::Http::UploadedFile:0x00000001159bf468 @tempfile=#<Tempfile:/var/folders/sk/00z_9wfs1mq1x8y9vg_lx44c0000gn/T/RackMultipart20231201-46830-3uah0e.png>, @content_type="image/png", @original_filename="party.png", @headers="Content-Disposition: form-data; name=\"category[icon]\"; filename=\"party.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Save"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.1ms | Allocations: 2258)
+
+
+  
+ActiveRecord::HasManyThroughNestedAssociationsAreReadonly (Cannot modify association 'User#categories' because it goes through more than one other association.):
+  
+app/controllers/categories_controller.rb:25:in `create'
