@@ -202,7 +202,7 @@
   .footer-section {
     text-align: center;
     margin-top: 16px;
-    padding-bottom: 16px;
+    padding-bottom: 5px;
   }
   
   .add-category-btn {
@@ -212,23 +212,24 @@
   }
   
   .add-category-button {
-    padding: 1rem;
+    padding: 1.2rem;
     font-size: 1rem;
+    font-style: none;
     width: 100%;
-    border: 2px solid #5fb523; /* Green border */
-    background-color: #5fb523; /* Green background */
+    border: 2px solid #5fb523;
+    background-color: #5fb523;
     color: white;
     border-radius: 4px;
     cursor: pointer;
   }
   
   .add-category-button:hover {
-    background-color: #5fb523; /* Darker green on hover */
+    opacity: 0.9;
   }
   
   .add-category-button:focus {
     outline: none;
-    background-color: #5fb523; /* Darker green on focus */
+    background-color: #5fb523;
   }
 
 /* show.html.erb */

@@ -1,0 +1,10 @@
+<div class="purchase-edit-container">
+  <h1 class="purchase-edit-title">Editing purchase</h1>
+
+  <%= render "form", attributes: [@purchase, @categories] %>
+
+  <div class="purchase-edit-actions">
+    <%= link_to "Show this purchase", purchase_path(@purchase), class: 'purchase-edit-link' %>
+    <%= link_to "Back to purchases", purchases_path, class: 'purchase-edit-link' %>
+  </div>
+</div>

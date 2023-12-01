@@ -1,0 +1,18 @@
+<!-- app/views/purchases/new.html.erb -->
+<div class="purchase-new-container">
+  <div class="navigation">
+    <ul class="nav-list">
+      <li class="nav-item">
+        <%= link_to image_tag('backarrow.png', alt: 'Back'), categories_path, class: 'nav-link' %>
+      </li>
+      <li class="nav-title">
+        <h2><strong>New Purchase</strong></h2>
+      </li>
+      <li class="nav-item">
+        <%= link_to 'Sign Out', destroy_user_session_path, method: :delete, data: { confirm: 'Are you sure?' }, class: 'nav-link' %>
+      </li>
+    </ul>
+  </div>
+
+  <%= render "form", attributes: [@purchase, @categories] %>
+</div>
