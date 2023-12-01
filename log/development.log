@@ -802,3 +802,446 @@ Completed 200 OK in 27ms (Views: 23.7ms | ActiveRecord: 0.0ms | Allocations: 829
   
 ActionController::RoutingError (No route matches [GET] "/assets/login"):
   
+Started GET "/" for ::1 at 2023-11-30 18:34:40 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (2.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 1.0ms | Allocations: 544)
+  Rendered layout layouts/application.html.erb (Duration: 344.0ms | Allocations: 61343)
+Completed 200 OK in 395ms (Views: 353.0ms | ActiveRecord: 0.0ms | Allocations: 68380)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/login"):
+  
+Started GET "/users/sign_in" for ::1 at 2023-11-30 18:35:22 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.0ms | Allocations: 686)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 13.5ms | Allocations: 3214)
+  Rendered layout layouts/application.html.erb (Duration: 25.5ms | Allocations: 9679)
+Completed 200 OK in 96ms (Views: 28.8ms | ActiveRecord: 25.3ms | Allocations: 27322)
+
+
+Started GET "/users/sign_in" for ::1 at 2023-11-30 18:45:13 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.3ms | Allocations: 227)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 5.3ms | Allocations: 1054)
+  Rendered layout layouts/application.html.erb (Duration: 42.7ms | Allocations: 7259)
+Completed 200 OK in 46ms (Views: 44.2ms | ActiveRecord: 0.0ms | Allocations: 8133)
+
+
+Started GET "/users/sign_in" for ::1 at 2023-11-30 18:58:11 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.8ms | Allocations: 666)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 6.4ms | Allocations: 1716)
+  Rendered layout layouts/application.html.erb (Duration: 49.5ms | Allocations: 21496)
+Completed 200 OK in 85ms (Views: 53.8ms | ActiveRecord: 9.1ms | Allocations: 29490)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/login"):
+  
+Started GET "/users/sign_in" for ::1 at 2023-11-30 18:59:18 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.2ms | Allocations: 666)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 7.1ms | Allocations: 1723)
+  Rendered layout layouts/application.html.erb (Duration: 38.5ms | Allocations: 21667)
+Completed 200 OK in 66ms (Views: 43.4ms | ActiveRecord: 12.1ms | Allocations: 27379)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/login"):
+  
+Started GET "/users/sign_in" for ::1 at 2023-11-30 18:59:41 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.5ms | Allocations: 666)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 6.1ms | Allocations: 1727)
+  Rendered layout layouts/application.html.erb (Duration: 40.6ms | Allocations: 21671)
+Completed 200 OK in 61ms (Views: 45.5ms | ActiveRecord: 4.8ms | Allocations: 27349)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/login"):
+  
+Started GET "/users/sign_in" for ::1 at 2023-11-30 19:00:16 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.8ms | Allocations: 666)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 5.8ms | Allocations: 1732)
+  Rendered layout layouts/application.html.erb (Duration: 38.8ms | Allocations: 21676)
+Completed 200 OK in 59ms (Views: 43.9ms | ActiveRecord: 4.5ms | Allocations: 27363)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/login"):
+  
+Started GET "/users/sign_in" for ::1 at 2023-11-30 19:00:50 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.9ms | Allocations: 666)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1731)
+  Rendered layout layouts/application.html.erb (Duration: 38.3ms | Allocations: 21675)
+Completed 200 OK in 58ms (Views: 43.5ms | ActiveRecord: 5.4ms | Allocations: 27347)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/login"):
+  
+Started GET "/users/sign_in" for ::1 at 2023-11-30 19:01:57 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1317)
+  Rendered layout layouts/application.html.erb (Duration: 1.9ms | Allocations: 1409)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 3.6ms | Allocations: 7076)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `f' for #<ActionView::Base:0x0000000002d4d8>):
+    1: <div class="header">
+    2: <h1>LOG IN</h1>
+    3: <div class="actions">
+    4: <%= f.submit "Log in", class: "button-primary" %>
+    5: </div>
+    6: </div>
+    7: 
+  
+app/views/devise/sessions/new.html.erb:4
+Started GET "/users/sign_in" for ::1 at 2023-11-30 19:02:14 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1297)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 1389)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 4.0ms | Allocations: 7040)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `f' for #<ActionView::Base:0x00000000032938>):
+    1: <div class="header">
+    2: <h1>LOG IN</h1>
+    3: <%= f.submit "Log in", class: "button-primary" %>
+    4: </div>
+    5: 
+    6: <div class="login-container">
+  
+app/views/devise/sessions/new.html.erb:3
+Started GET "/users/sign_in" for ::1 at 2023-11-30 19:02:42 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.4ms | Allocations: 666)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1732)
+  Rendered layout layouts/application.html.erb (Duration: 37.9ms | Allocations: 21677)
+Completed 200 OK in 56ms (Views: 42.9ms | ActiveRecord: 4.6ms | Allocations: 27350)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/login"):
+  
+Started GET "/users/sign_in" for ::1 at 2023-11-30 19:05:26 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 227)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 816)
+  Rendered layout layouts/application.html.erb (Duration: 17.0ms | Allocations: 7206)
+Completed 200 OK in 20ms (Views: 17.9ms | ActiveRecord: 0.0ms | Allocations: 8073)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/login"):
+  
+Started GET "/users/sign_in" for ::1 at 2023-11-30 19:05:49 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.0ms | Allocations: 227)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.0ms | Allocations: 816)
+  Rendered layout layouts/application.html.erb (Duration: 13.7ms | Allocations: 7206)
+Completed 200 OK in 16ms (Views: 14.3ms | ActiveRecord: 0.0ms | Allocations: 8058)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/login"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/login"):
+  
+Started GET "/users/sign_in" for ::1 at 2023-11-30 19:12:54 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1427)
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | Allocations: 1519)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 7.9ms | Allocations: 9503)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `f' for #<ActionView::Base:0x0000000003dae0>):
+    1: <div class="header">
+    2:   <%= link_to 'Back', root_path, class: "back-button" %> <!-- Adjust the path as necessary -->
+    3:   <h1>LOG IN</h1>
+    4:   <%= f.submit "Log In", class: "login-header-button" %>
+    5: </div>
+    6: 
+    7: <div class="login-container">
+  
+app/views/devise/sessions/new.html.erb:4
+Started GET "/users/sign_in" for ::1 at 2023-11-30 19:14:59 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 5.0ms | Allocations: 1235)
+  Rendered layout layouts/application.html.erb (Duration: 36.0ms | Allocations: 21179)
+Completed 200 OK in 60ms (Views: 40.0ms | ActiveRecord: 9.9ms | Allocations: 26886)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/login"):
+  
+Started GET "/" for ::1 at 2023-11-30 19:15:06 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 0.7ms | Allocations: 329)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 6814)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.0ms | Allocations: 8083)
+
+
+Started GET "/users/sign_in" for ::1 at 2023-11-30 19:15:08 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 756)
+  Rendered layout layouts/application.html.erb (Duration: 22.8ms | Allocations: 6924)
+Completed 200 OK in 28ms (Views: 24.3ms | ActiveRecord: 0.0ms | Allocations: 7806)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/login"):
+  
+Started GET "/users/sign_in" for ::1 at 2023-11-30 19:19:17 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1022)
+  Rendered layout layouts/application.html.erb (Duration: 41.0ms | Allocations: 20982)
+Completed 200 OK in 60ms (Views: 45.9ms | ActiveRecord: 4.8ms | Allocations: 26649)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/login"):
+  
+Started GET "/" for ::1 at 2023-11-30 19:19:27 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 1.7ms | Allocations: 329)
+  Rendered layout layouts/application.html.erb (Duration: 14.7ms | Allocations: 6814)
+Completed 200 OK in 19ms (Views: 17.0ms | ActiveRecord: 0.0ms | Allocations: 8067)
+
+
+Started GET "/users/sign_in" for ::1 at 2023-11-30 19:19:30 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 16.6ms | Allocations: 6759)
+Completed 200 OK in 20ms (Views: 17.7ms | ActiveRecord: 0.0ms | Allocations: 7614)
+
+
+Started GET "/" for ::1 at 2023-11-30 19:19:35 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 0.3ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 15.6ms | Allocations: 6256)
+Completed 200 OK in 19ms (Views: 16.6ms | ActiveRecord: 0.0ms | Allocations: 7002)
+
+
+Started GET "/users/sign_in" for ::1 at 2023-11-30 19:19:37 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.5ms | Allocations: 590)
+  Rendered layout layouts/application.html.erb (Duration: 20.4ms | Allocations: 6758)
+Completed 200 OK in 23ms (Views: 21.3ms | ActiveRecord: 0.0ms | Allocations: 7600)
+
+
+Started GET "/users/sign_in" for ::1 at 2023-11-30 19:22:18 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 4.5ms | Allocations: 963)
+  Rendered layout layouts/application.html.erb (Duration: 33.9ms | Allocations: 20908)
+Completed 200 OK in 52ms (Views: 38.6ms | ActiveRecord: 4.2ms | Allocations: 26603)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/login"):
+  
+Started GET "/users/sign_in" for ::1 at 2023-11-30 19:27:16 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1330)
+  Rendered layout layouts/application.html.erb (Duration: 3.0ms | Allocations: 1422)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 3.5ms | Allocations: 7086)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `f' for #<ActionView::Base:0x000000000584a8>):
+    1: <nav class="navigation-bar">
+    2:   <%= link_to 'Back', root_path, class: "back-button" %>
+    3:   <span>LOG IN</span>
+    4:   <%= f.submit 'Log In', "#", class: "login-text" %> <!-- Replace '#' with the actual path if needed -->
+    5: </nav>
+    6: 
+    7: <div class="login-container">
+  
+app/views/devise/sessions/new.html.erb:4
+Started GET "/users/sign_in" for ::1 at 2023-11-30 19:28:58 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1014)
+  Rendered layout layouts/application.html.erb (Duration: 44.7ms | Allocations: 20960)
+Completed 200 OK in 62ms (Views: 49.4ms | ActiveRecord: 4.5ms | Allocations: 26641)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/login"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/login"):
+  
+Started GET "/users/sign_in" for ::1 at 2023-11-30 19:37:45 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 5.4ms | Allocations: 1967)
+  Rendered layout layouts/application.html.erb (Duration: 337.9ms | Allocations: 62062)
+Completed 200 OK in 433ms (Views: 350.5ms | ActiveRecord: 19.2ms | Allocations: 84564)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/login"):
+  
+Started GET "/users/sign_in" for ::1 at 2023-11-30 19:38:50 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 590)
+  Rendered layout layouts/application.html.erb (Duration: 130.8ms | Allocations: 30981)
+Completed 200 OK in 134ms (Views: 131.9ms | ActiveRecord: 0.0ms | Allocations: 31846)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/login"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/login"):
+  
+Started GET "/users/sign_in" for ::1 at 2023-11-30 19:39:56 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1016)
+  Rendered layout layouts/application.html.erb (Duration: 30.8ms | Allocations: 16771)
+Completed 200 OK in 51ms (Views: 36.6ms | ActiveRecord: 4.0ms | Allocations: 22474)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/login"):
+  
+Started GET "/" for ::1 at 2023-11-30 19:40:12 -0600
+Processing by StaticPagesController#splash as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/splash.html.erb within layouts/application
+  Rendered static_pages/splash.html.erb within layouts/application (Duration: 0.8ms | Allocations: 334)
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 2667)
+Completed 200 OK in 10ms (Views: 6.5ms | ActiveRecord: 0.0ms | Allocations: 3947)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/login"):
+  
+Started GET "/users/sign_in" for ::1 at 2023-11-30 19:40:18 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 13.2ms | Allocations: 2831)
+Completed 200 OK in 17ms (Views: 14.5ms | ActiveRecord: 0.0ms | Allocations: 3678)
+
+
+Started GET "/users/sign_in" for ::1 at 2023-11-30 19:54:07 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 5.2ms | Allocations: 2413)
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 2505)
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 12.1ms | Allocations: 10514)
+
+
+  
+ActionView::Template::Error (The asset "backarrow.png" is not present in the asset pipeline.
+):
+    1: <div class="navigation-bar">
+    2:   <%= link_to image_tag('backarrow.png', alt: 'Back'), root_path, class: 'back-button' %>
+    3:   <h2 class="login-title"><strong>LOG IN</strong></h2>
+    4:   <%= link_to 'Sign Out', destroy_user_session_path, data: { turbo_method: :delete }, class: "sign-out" %>
+    5: </div>
+  
+app/views/devise/sessions/new.html.erb:2
+Started GET "/users/sign_in" for ::1 at 2023-11-30 19:57:52 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 235.4ms | Allocations: 56519)
+  Rendered layout layouts/application.html.erb (Duration: 285.8ms | Allocations: 72049)
+Completed 200 OK in 289ms (Views: 286.8ms | ActiveRecord: 0.0ms | Allocations: 72924)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/login"):
+  
+Started GET "/users/sign_in" for ::1 at 2023-11-30 20:02:37 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1192)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 3285)
+Completed 200 OK in 8ms (Views: 6.4ms | ActiveRecord: 0.0ms | Allocations: 4143)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/login"):
+  
+Started GET "/users/sign_in" for ::1 at 2023-11-30 20:02:54 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1192)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 3285)
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.0ms | Allocations: 4134)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/login"):
+  
