@@ -22,9 +22,10 @@ class CategoriesController < ApplicationController
 
   # POST /categories
   def create
-    @category = current_user.categories.build(category_params)
+    @category = Category.new(category_params)
 
     if @category.save
+      current_user.categories << @category # Associate the new category with the current user
       redirect_to @category, notice: 'Category was successfully created.'
     else
       render :new

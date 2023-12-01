@@ -4,8 +4,8 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   # Associations
+  has_and_belongs_to_many :categories
   has_many :purchases, foreign_key: 'author_id', dependent: :destroy
-  has_many :categories, through: :purchases
   has_one_attached :profile_picture
 
   # Attributes
