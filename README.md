@@ -81,8 +81,8 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link]()
-- [Video presentation]()
+- [Live Demo Link](https://budget-app-web-service.onrender.com)
+- [Video presentation](https://www.loom.com/share/9511907168644460af0de551c2e22049?sid=19e482e2-47fc-42db-8c63-97f8e2bdc144)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

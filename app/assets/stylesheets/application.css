@@ -1,7 +1,12 @@
-@import "_login.css";
-@import "_signup.css";
-@import "categories.css";
-@import "purchases.css";
+/*
+ *= require_tree .
+ *= require_self
+ */
+
+@import "login";
+@import "signup";
+@import "categories";
+@import "purchases";
 
 /* Splash Screen */
 
