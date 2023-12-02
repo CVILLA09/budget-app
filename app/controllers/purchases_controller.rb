@@ -11,7 +11,13 @@ class PurchasesController < ApplicationController
 
   # POST /categories/:category_id/purchases
   def create
-    @category = Category.find(params[:category_id])
+    begin
+      @category = Category.find(params[:category_id])
+    rescue ActiveRecord::RecordNotFound
+      redirect_to categories_path, alert: 'Category not found.'
+      return
+    end
+
     @purchase = @category.purchases.build(purchase_params.merge(author: current_user))
 
     if @purchase.save

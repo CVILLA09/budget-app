@@ -1,4 +1,4 @@
-<%= form_with(model: attributes[0], local: true, class: 'purchase-form') do |form| %>
+<%= form_with(model: [attributes[1].find(params[:category_id]), attributes[0]], local: true, class: 'purchase-form') do |form| %>
     <% if attributes[0].errors.any? %>
       <div class="errors">
         <h2><%= pluralize(attributes[0].errors.count, "error") %> prohibited this purchase from being saved:</h2>
