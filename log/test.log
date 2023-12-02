@@ -553,3 +553,1258 @@ Completed 200 OK in 488ms (Views: 471.4ms | ActiveRecord: 0.0ms | Allocations: 1
   [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
   [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
   [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "schema_sha1"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.0ms)[0m  [1m[35mALTER TABLE "active_storage_variant_records" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "active_storage_blobs" DISABLE TRIGGER ALL;ALTER TABLE "active_storage_attachments" DISABLE TRIGGER ALL;ALTER TABLE "categories" DISABLE TRIGGER ALL;ALTER TABLE "purchases" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "categories_users" DISABLE TRIGGER ALL[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.6ms)[0m  [1m[34m            SELECT schemaname || '.' || tablename
+            FROM pg_tables
+            WHERE
+              tablename !~ '_prt_' AND
+              tablename <> 'schema_migrations'
+  AND tablename <> 'ar_internal_metadata'
+ AND
+              schemaname = ANY (current_schemas(false))
+[0m
+  [1m[35m (0.9ms)[0m  [1m[34mselect table_name from information_schema.views where table_schema = 'budget_app_test'[0m
+  [1m[35m (28.9ms)[0m  [1m[35mTRUNCATE TABLE "active_storage_variant_records", "active_storage_blobs", "active_storage_attachments", "categories", "purchases", "users", "categories_users" RESTART IDENTITY RESTRICT;[0m
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "active_storage_variant_records" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" ENABLE TRIGGER ALL;ALTER TABLE "active_storage_blobs" ENABLE TRIGGER ALL;ALTER TABLE "active_storage_attachments" ENABLE TRIGGER ALL;ALTER TABLE "categories_users" ENABLE TRIGGER ALL;ALTER TABLE "categories" ENABLE TRIGGER ALL;ALTER TABLE "purchases" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "schema_sha1"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.8ms)[0m  [1m[35mALTER TABLE "active_storage_variant_records" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "active_storage_blobs" DISABLE TRIGGER ALL;ALTER TABLE "active_storage_attachments" DISABLE TRIGGER ALL;ALTER TABLE "categories_users" DISABLE TRIGGER ALL;ALTER TABLE "categories" DISABLE TRIGGER ALL;ALTER TABLE "purchases" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.3ms)[0m  [1m[34m            SELECT schemaname || '.' || tablename
+            FROM pg_tables
+            WHERE
+              tablename !~ '_prt_' AND
+              tablename <> 'schema_migrations'
+  AND tablename <> 'ar_internal_metadata'
+ AND
+              schemaname = ANY (current_schemas(false))
+[0m
+  [1m[35m (0.7ms)[0m  [1m[34mselect table_name from information_schema.views where table_schema = 'budget_app_test'[0m
+  [1m[35m (22.9ms)[0m  [1m[35mTRUNCATE TABLE "active_storage_variant_records", "active_storage_blobs", "active_storage_attachments", "categories_users", "categories", "purchases", "users" RESTART IDENTITY RESTRICT;[0m
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "active_storage_variant_records" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" ENABLE TRIGGER ALL;ALTER TABLE "active_storage_blobs" ENABLE TRIGGER ALL;ALTER TABLE "active_storage_attachments" ENABLE TRIGGER ALL;ALTER TABLE "categories_users" ENABLE TRIGGER ALL;ALTER TABLE "categories" ENABLE TRIGGER ALL;ALTER TABLE "purchases" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "schema_sha1"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.0ms)[0m  [1m[35mALTER TABLE "active_storage_variant_records" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "active_storage_blobs" DISABLE TRIGGER ALL;ALTER TABLE "active_storage_attachments" DISABLE TRIGGER ALL;ALTER TABLE "categories_users" DISABLE TRIGGER ALL;ALTER TABLE "categories" DISABLE TRIGGER ALL;ALTER TABLE "purchases" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.5ms)[0m  [1m[34m            SELECT schemaname || '.' || tablename
+            FROM pg_tables
+            WHERE
+              tablename !~ '_prt_' AND
+              tablename <> 'schema_migrations'
+  AND tablename <> 'ar_internal_metadata'
+ AND
+              schemaname = ANY (current_schemas(false))
+[0m
+  [1m[35m (0.8ms)[0m  [1m[34mselect table_name from information_schema.views where table_schema = 'budget_app_test'[0m
+  [1m[35m (27.2ms)[0m  [1m[35mTRUNCATE TABLE "active_storage_variant_records", "active_storage_blobs", "active_storage_attachments", "categories_users", "categories", "purchases", "users" RESTART IDENTITY RESTRICT;[0m
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.8ms)[0m  [1m[35mALTER TABLE "active_storage_variant_records" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" ENABLE TRIGGER ALL;ALTER TABLE "active_storage_attachments" ENABLE TRIGGER ALL;ALTER TABLE "categories_users" ENABLE TRIGGER ALL;ALTER TABLE "categories" ENABLE TRIGGER ALL;ALTER TABLE "active_storage_blobs" ENABLE TRIGGER ALL;ALTER TABLE "purchases" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.3ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "schema_sha1"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.9ms)[0m  [1m[35mALTER TABLE "active_storage_variant_records" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "active_storage_attachments" DISABLE TRIGGER ALL;ALTER TABLE "categories_users" DISABLE TRIGGER ALL;ALTER TABLE "categories" DISABLE TRIGGER ALL;ALTER TABLE "active_storage_blobs" DISABLE TRIGGER ALL;ALTER TABLE "purchases" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.9ms)[0m  [1m[34m            SELECT schemaname || '.' || tablename
+            FROM pg_tables
+            WHERE
+              tablename !~ '_prt_' AND
+              tablename <> 'schema_migrations'
+  AND tablename <> 'ar_internal_metadata'
+ AND
+              schemaname = ANY (current_schemas(false))
+[0m
+  [1m[35m (0.8ms)[0m  [1m[34mselect table_name from information_schema.views where table_schema = 'budget_app_test'[0m
+  [1m[35m (25.6ms)[0m  [1m[35mTRUNCATE TABLE "active_storage_variant_records", "active_storage_attachments", "categories_users", "categories", "active_storage_blobs", "purchases", "users" RESTART IDENTITY RESTRICT;[0m
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "active_storage_variant_records" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" ENABLE TRIGGER ALL;ALTER TABLE "active_storage_attachments" ENABLE TRIGGER ALL;ALTER TABLE "categories_users" ENABLE TRIGGER ALL;ALTER TABLE "categories" ENABLE TRIGGER ALL;ALTER TABLE "active_storage_blobs" ENABLE TRIGGER ALL;ALTER TABLE "purchases" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "schema_sha1"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.9ms)[0m  [1m[35mALTER TABLE "active_storage_variant_records" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "active_storage_attachments" DISABLE TRIGGER ALL;ALTER TABLE "categories_users" DISABLE TRIGGER ALL;ALTER TABLE "categories" DISABLE TRIGGER ALL;ALTER TABLE "active_storage_blobs" DISABLE TRIGGER ALL;ALTER TABLE "purchases" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.6ms)[0m  [1m[34m            SELECT schemaname || '.' || tablename
+            FROM pg_tables
+            WHERE
+              tablename !~ '_prt_' AND
+              tablename <> 'schema_migrations'
+  AND tablename <> 'ar_internal_metadata'
+ AND
+              schemaname = ANY (current_schemas(false))
+[0m
+  [1m[35m (0.8ms)[0m  [1m[34mselect table_name from information_schema.views where table_schema = 'budget_app_test'[0m
+  [1m[35m (22.1ms)[0m  [1m[35mTRUNCATE TABLE "active_storage_variant_records", "active_storage_attachments", "categories_users", "categories", "active_storage_blobs", "purchases", "users" RESTART IDENTITY RESTRICT;[0m
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.8ms)[0m  [1m[35mALTER TABLE "active_storage_variant_records" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" ENABLE TRIGGER ALL;ALTER TABLE "active_storage_attachments" ENABLE TRIGGER ALL;ALTER TABLE "categories_users" ENABLE TRIGGER ALL;ALTER TABLE "categories" ENABLE TRIGGER ALL;ALTER TABLE "active_storage_blobs" ENABLE TRIGGER ALL;ALTER TABLE "purchases" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mUser Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "earnest@kunze.example"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "full_name", "profile_picture") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "User 1"], ["created_at", "2023-12-02 11:12:34.768320"], ["updated_at", "2023-12-02 11:12:34.768320"], ["email", "earnest@kunze.example"], ["encrypted_password", "$2a$04$xUmDvP7GkOdiBCfm7q545.yfZBSAcUiQt/AeYHIqgXdprOIX9yjGO"], ["reset_password_token", nil], ["reset_password_sent_at", nil], ["remember_created_at", nil], ["full_name", nil], ["profile_picture", nil]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mUser Exists? (19.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "santo.lang@beer.test"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "full_name", "profile_picture") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "User 2"], ["created_at", "2023-12-02 11:12:34.817648"], ["updated_at", "2023-12-02 11:12:34.817648"], ["email", "santo.lang@beer.test"], ["encrypted_password", "$2a$04$f1SQp/1pnfWJV0N8M1jnnudNSzbX.Xup6v4eVrlRKmq8OShgaS8c6"], ["reset_password_token", nil], ["reset_password_sent_at", nil], ["remember_created_at", nil], ["full_name", nil], ["profile_picture", nil]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (2.6ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mUser Exists? (3.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "ryann@price.example"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "full_name", "profile_picture") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "User 3"], ["created_at", "2023-12-02 11:12:34.832693"], ["updated_at", "2023-12-02 11:12:34.832693"], ["email", "ryann@price.example"], ["encrypted_password", "$2a$04$krL.klYzQu6oJODmB.G5I.LfmHg0PcG1TMkKA7EODJewxlNU/WPcS"], ["reset_password_token", nil], ["reset_password_sent_at", nil], ["remember_created_at", nil], ["full_name", nil], ["profile_picture", nil]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "schema_sha1"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.3ms)[0m  [1m[35mALTER TABLE "active_storage_variant_records" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "active_storage_attachments" DISABLE TRIGGER ALL;ALTER TABLE "categories_users" DISABLE TRIGGER ALL;ALTER TABLE "categories" DISABLE TRIGGER ALL;ALTER TABLE "active_storage_blobs" DISABLE TRIGGER ALL;ALTER TABLE "purchases" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL[0m
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.4ms)[0m  [1m[34m            SELECT schemaname || '.' || tablename
+            FROM pg_tables
+            WHERE
+              tablename !~ '_prt_' AND
+              tablename <> 'schema_migrations'
+  AND tablename <> 'ar_internal_metadata'
+ AND
+              schemaname = ANY (current_schemas(false))
+[0m
+  [1m[35m (0.7ms)[0m  [1m[34mselect table_name from information_schema.views where table_schema = 'budget_app_test'[0m
+  [1m[35m (32.5ms)[0m  [1m[35mTRUNCATE TABLE "active_storage_variant_records", "active_storage_attachments", "categories_users", "categories", "active_storage_blobs", "purchases", "users" RESTART IDENTITY RESTRICT;[0m
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.8ms)[0m  [1m[35mALTER TABLE "active_storage_variant_records" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" ENABLE TRIGGER ALL;ALTER TABLE "active_storage_attachments" ENABLE TRIGGER ALL;ALTER TABLE "categories_users" ENABLE TRIGGER ALL;ALTER TABLE "categories" ENABLE TRIGGER ALL;ALTER TABLE "active_storage_blobs" ENABLE TRIGGER ALL;ALTER TABLE "purchases" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mUser Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "rico@mclaughlin-wilkinson.test"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "full_name", "profile_picture") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "User 1"], ["created_at", "2023-12-02 11:16:13.293179"], ["updated_at", "2023-12-02 11:16:13.293179"], ["email", "rico@mclaughlin-wilkinson.test"], ["encrypted_password", "$2a$04$6DJKz68vjj4sv6Qgr2HkauzFdYXSE0i/bWDyyHJQVuuwyh8UI1W6C"], ["reset_password_token", nil], ["reset_password_sent_at", nil], ["remember_created_at", nil], ["full_name", nil], ["profile_picture", nil]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "merrilee.toy@feest-mccullough.test"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "full_name", "profile_picture") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "User 2"], ["created_at", "2023-12-02 11:16:13.318952"], ["updated_at", "2023-12-02 11:16:13.318952"], ["email", "merrilee.toy@feest-mccullough.test"], ["encrypted_password", "$2a$04$EVUVU1AvPJ7zth4ciM3DcuqSmniXpR/FCPPcXYZi31BIKLiCMOBHy"], ["reset_password_token", nil], ["reset_password_sent_at", nil], ["remember_created_at", nil], ["full_name", nil], ["profile_picture", nil]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "ngan@mclaughlin.example"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "full_name", "profile_picture") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "User 3"], ["created_at", "2023-12-02 11:16:13.326209"], ["updated_at", "2023-12-02 11:16:13.326209"], ["email", "ngan@mclaughlin.example"], ["encrypted_password", "$2a$04$m8DuAiZeuGy5KE0Iyworlu8nWUTplb3gchYv5qUxjIxtx7SUm47uK"], ["reset_password_token", nil], ["reset_password_sent_at", nil], ["remember_created_at", nil], ["full_name", nil], ["profile_picture", nil]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "schema_sha1"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.8ms)[0m  [1m[35mALTER TABLE "active_storage_variant_records" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "active_storage_attachments" DISABLE TRIGGER ALL;ALTER TABLE "categories_users" DISABLE TRIGGER ALL;ALTER TABLE "categories" DISABLE TRIGGER ALL;ALTER TABLE "active_storage_blobs" DISABLE TRIGGER ALL;ALTER TABLE "purchases" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.3ms)[0m  [1m[34m            SELECT schemaname || '.' || tablename
+            FROM pg_tables
+            WHERE
+              tablename !~ '_prt_' AND
+              tablename <> 'schema_migrations'
+  AND tablename <> 'ar_internal_metadata'
+ AND
+              schemaname = ANY (current_schemas(false))
+[0m
+  [1m[35m (0.8ms)[0m  [1m[34mselect table_name from information_schema.views where table_schema = 'budget_app_test'[0m
+  [1m[35m (23.5ms)[0m  [1m[35mTRUNCATE TABLE "active_storage_variant_records", "active_storage_attachments", "categories_users", "categories", "active_storage_blobs", "purchases", "users" RESTART IDENTITY RESTRICT;[0m
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "active_storage_variant_records" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" ENABLE TRIGGER ALL;ALTER TABLE "active_storage_attachments" ENABLE TRIGGER ALL;ALTER TABLE "categories_users" ENABLE TRIGGER ALL;ALTER TABLE "categories" ENABLE TRIGGER ALL;ALTER TABLE "active_storage_blobs" ENABLE TRIGGER ALL;ALTER TABLE "purchases" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "shenna_hudson@pfeffer.example"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "full_name", "profile_picture") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "User 1"], ["created_at", "2023-12-02 11:18:09.448902"], ["updated_at", "2023-12-02 11:18:09.448902"], ["email", "shenna_hudson@pfeffer.example"], ["encrypted_password", "$2a$04$21QygNG3f6VSoDlb/Gg0puy8P7g5kD8f1sbm4HDMQExAkOsPj5ZZS"], ["reset_password_token", nil], ["reset_password_sent_at", nil], ["remember_created_at", nil], ["full_name", nil], ["profile_picture", nil]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "dante@kuphal-grady.test"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "full_name", "profile_picture") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "User 2"], ["created_at", "2023-12-02 11:18:09.453139"], ["updated_at", "2023-12-02 11:18:09.453139"], ["email", "dante@kuphal-grady.test"], ["encrypted_password", "$2a$04$wfRlPb0e6uFB6GGyPwRLcew//yK07hRy4gFVEB.qOScxXq46JW1bK"], ["reset_password_token", nil], ["reset_password_sent_at", nil], ["remember_created_at", nil], ["full_name", nil], ["profile_picture", nil]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "renae@hilpert-hermiston.example"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "full_name", "profile_picture") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "User 3"], ["created_at", "2023-12-02 11:18:09.479842"], ["updated_at", "2023-12-02 11:18:09.479842"], ["email", "renae@hilpert-hermiston.example"], ["encrypted_password", "$2a$04$HzjXyMpjTbFaM2Djv8KHS.epMkw4ICpzW3YYwBX5LTChk4oBmmTJe"], ["reset_password_token", nil], ["reset_password_sent_at", nil], ["remember_created_at", nil], ["full_name", nil], ["profile_picture", nil]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "mel@tremblay.test"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "full_name", "profile_picture") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "User 4"], ["created_at", "2023-12-02 11:18:09.503930"], ["updated_at", "2023-12-02 11:18:09.503930"], ["email", "mel@tremblay.test"], ["encrypted_password", "$2a$04$oIZfXSVLYICV1BpJm9c29eaSCGsAL4bqZAeeDH11QBiFnMBz1LEQ."], ["reset_password_token", nil], ["reset_password_sent_at", nil], ["remember_created_at", nil], ["full_name", nil], ["profile_picture", nil]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "foster@jerde.example"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "full_name", "profile_picture") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "User 5"], ["created_at", "2023-12-02 11:18:09.511133"], ["updated_at", "2023-12-02 11:18:09.511133"], ["email", "foster@jerde.example"], ["encrypted_password", "$2a$04$Wc/fX7GKXwfQU9L0hyK1AeUjeIJW/PR7EZzneAPeq91k7NMtpBbwC"], ["reset_password_token", nil], ["reset_password_sent_at", nil], ["remember_created_at", nil], ["full_name", nil], ["profile_picture", nil]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (13.9ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mUser Exists? (14.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "dianne@altenwerth.example"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "full_name", "profile_picture") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "User 6"], ["created_at", "2023-12-02 11:18:09.534576"], ["updated_at", "2023-12-02 11:18:09.534576"], ["email", "dianne@altenwerth.example"], ["encrypted_password", "$2a$04$PTo6khFUTAKOo9XFx1STGehCBUbb3OsN5Djdzi/E5pSFtSZqjx2gW"], ["reset_password_token", nil], ["reset_password_sent_at", nil], ["remember_created_at", nil], ["full_name", nil], ["profile_picture", nil]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "schema_sha1"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "schema_sha1"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.9ms)[0m  [1m[35mALTER TABLE "active_storage_variant_records" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "active_storage_attachments" DISABLE TRIGGER ALL;ALTER TABLE "categories_users" DISABLE TRIGGER ALL;ALTER TABLE "categories" DISABLE TRIGGER ALL;ALTER TABLE "active_storage_blobs" DISABLE TRIGGER ALL;ALTER TABLE "purchases" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.5ms)[0m  [1m[34m            SELECT schemaname || '.' || tablename
+            FROM pg_tables
+            WHERE
+              tablename !~ '_prt_' AND
+              tablename <> 'schema_migrations'
+  AND tablename <> 'ar_internal_metadata'
+ AND
+              schemaname = ANY (current_schemas(false))
+[0m
+  [1m[35m (0.8ms)[0m  [1m[34mselect table_name from information_schema.views where table_schema = 'budget_app_test'[0m
+  [1m[35m (28.3ms)[0m  [1m[35mTRUNCATE TABLE "active_storage_variant_records", "active_storage_attachments", "categories_users", "categories", "active_storage_blobs", "purchases", "users" RESTART IDENTITY RESTRICT;[0m
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "active_storage_variant_records" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" ENABLE TRIGGER ALL;ALTER TABLE "active_storage_attachments" ENABLE TRIGGER ALL;ALTER TABLE "categories_users" ENABLE TRIGGER ALL;ALTER TABLE "categories" ENABLE TRIGGER ALL;ALTER TABLE "active_storage_blobs" ENABLE TRIGGER ALL;ALTER TABLE "purchases" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mUser Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jarrett.littel@hand-lang.example"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "full_name", "profile_picture") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "User 1"], ["created_at", "2023-12-02 11:20:10.537569"], ["updated_at", "2023-12-02 11:20:10.537569"], ["email", "jarrett.littel@hand-lang.example"], ["encrypted_password", "$2a$04$tWFtX0riIBvFXqbXH1G/m.jbG9qdtZWJM9EQ6meKRd1/lfqi/6OBe"], ["reset_password_token", nil], ["reset_password_sent_at", nil], ["remember_created_at", nil], ["full_name", nil], ["profile_picture", nil]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "kathlyn@stamm.example"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "full_name", "profile_picture") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "User 2"], ["created_at", "2023-12-02 11:20:10.542146"], ["updated_at", "2023-12-02 11:20:10.542146"], ["email", "kathlyn@stamm.example"], ["encrypted_password", "$2a$04$maqG1uDHInP/DwMDQ1UH9uwuujdqIggQtPcXLC3ucU3cA79QJbS7y"], ["reset_password_token", nil], ["reset_password_sent_at", nil], ["remember_created_at", nil], ["full_name", nil], ["profile_picture", nil]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "reid_goldner@brakus.test"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "full_name", "profile_picture") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "User 3"], ["created_at", "2023-12-02 11:20:10.569439"], ["updated_at", "2023-12-02 11:20:10.569439"], ["email", "reid_goldner@brakus.test"], ["encrypted_password", "$2a$04$xsWiR3J54485T7Ysf8Uvnefh0sgY3KAsl0RGvohtPFoKXUmEh3aRu"], ["reset_password_token", nil], ["reset_password_sent_at", nil], ["remember_created_at", nil], ["full_name", nil], ["profile_picture", nil]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "shirley.moen@johnston.example"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "full_name", "profile_picture") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "User 4"], ["created_at", "2023-12-02 11:20:10.593259"], ["updated_at", "2023-12-02 11:20:10.593259"], ["email", "shirley.moen@johnston.example"], ["encrypted_password", "$2a$04$6xWb.cZMxuunV7kotkQ3tONF.mq.JJo0VFWZxHMZu5Nduj9gVND8e"], ["reset_password_token", nil], ["reset_password_sent_at", nil], ["remember_created_at", nil], ["full_name", nil], ["profile_picture", nil]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "randolph_terry@wuckert-ortiz.example"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "full_name", "profile_picture") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "User 5"], ["created_at", "2023-12-02 11:20:10.599960"], ["updated_at", "2023-12-02 11:20:10.599960"], ["email", "randolph_terry@wuckert-ortiz.example"], ["encrypted_password", "$2a$04$fga/D7CXCMY3XsUQo4uJduJGldOo0gsQrBKw26KLWec3JwY9YA1f2"], ["reset_password_token", nil], ["reset_password_sent_at", nil], ["remember_created_at", nil], ["full_name", nil], ["profile_picture", nil]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "porfirio@rogahn-nikolaus.test"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "full_name", "profile_picture") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "User 6"], ["created_at", "2023-12-02 11:20:10.606894"], ["updated_at", "2023-12-02 11:20:10.606894"], ["email", "porfirio@rogahn-nikolaus.test"], ["encrypted_password", "$2a$04$RGet7zmMIHXIm.V1Wg1PN.2h5T/aI9Drv6nkg4Bk6o2BnMwEXcW3G"], ["reset_password_token", nil], ["reset_password_sent_at", nil], ["remember_created_at", nil], ["full_name", nil], ["profile_picture", nil]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "schema_sha1"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.8ms)[0m  [1m[35mALTER TABLE "active_storage_variant_records" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "active_storage_attachments" DISABLE TRIGGER ALL;ALTER TABLE "categories_users" DISABLE TRIGGER ALL;ALTER TABLE "categories" DISABLE TRIGGER ALL;ALTER TABLE "active_storage_blobs" DISABLE TRIGGER ALL;ALTER TABLE "purchases" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.3ms)[0m  [1m[34m            SELECT schemaname || '.' || tablename
+            FROM pg_tables
+            WHERE
+              tablename !~ '_prt_' AND
+              tablename <> 'schema_migrations'
+  AND tablename <> 'ar_internal_metadata'
+ AND
+              schemaname = ANY (current_schemas(false))
+[0m
+  [1m[35m (0.7ms)[0m  [1m[34mselect table_name from information_schema.views where table_schema = 'budget_app_test'[0m
+  [1m[35m (40.2ms)[0m  [1m[35mTRUNCATE TABLE "active_storage_variant_records", "active_storage_attachments", "categories_users", "categories", "active_storage_blobs", "purchases", "users" RESTART IDENTITY RESTRICT;[0m
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.8ms)[0m  [1m[35mALTER TABLE "active_storage_variant_records" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" ENABLE TRIGGER ALL;ALTER TABLE "active_storage_attachments" ENABLE TRIGGER ALL;ALTER TABLE "categories_users" ENABLE TRIGGER ALL;ALTER TABLE "categories" ENABLE TRIGGER ALL;ALTER TABLE "active_storage_blobs" ENABLE TRIGGER ALL;ALTER TABLE "purchases" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mUser Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "bethel@erdman.example"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "full_name", "profile_picture") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "User 1"], ["created_at", "2023-12-02 11:20:27.006724"], ["updated_at", "2023-12-02 11:20:27.006724"], ["email", "bethel@erdman.example"], ["encrypted_password", "$2a$04$TE7NKgupT/HLZMC9F9Ypg.sP.FkYQfNJZntVb8ZWHdqtHG3GPj3Au"], ["reset_password_token", nil], ["reset_password_sent_at", nil], ["remember_created_at", nil], ["full_name", nil], ["profile_picture", nil]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "lionel.okon@hagenes-lindgren.example"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "full_name", "profile_picture") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "User 2"], ["created_at", "2023-12-02 11:20:27.011169"], ["updated_at", "2023-12-02 11:20:27.011169"], ["email", "lionel.okon@hagenes-lindgren.example"], ["encrypted_password", "$2a$04$651QNoTVOlYCzuwOX5uLdekSCU1126p9e3HNmoH94KZBKILfERzHS"], ["reset_password_token", nil], ["reset_password_sent_at", nil], ["remember_created_at", nil], ["full_name", nil], ["profile_picture", nil]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "gita@harvey.test"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "full_name", "profile_picture") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "User 3"], ["created_at", "2023-12-02 11:20:27.054525"], ["updated_at", "2023-12-02 11:20:27.054525"], ["email", "gita@harvey.test"], ["encrypted_password", "$2a$04$pXghvs/aYDjRVHuxEn1gzenXwJsJj8wieRzXQAOwSfCifXr9G4PVi"], ["reset_password_token", nil], ["reset_password_sent_at", nil], ["remember_created_at", nil], ["full_name", nil], ["profile_picture", nil]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "rudy@reichert.example"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "full_name", "profile_picture") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "User 4"], ["created_at", "2023-12-02 11:20:27.078703"], ["updated_at", "2023-12-02 11:20:27.078703"], ["email", "rudy@reichert.example"], ["encrypted_password", "$2a$04$p9cSIIea8FWlRKOOsrbdReL2j1E2Ku.XisFT7.nQGjLG2uKSZdBbO"], ["reset_password_token", nil], ["reset_password_sent_at", nil], ["remember_created_at", nil], ["full_name", nil], ["profile_picture", nil]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "antione.torphy@schmitt.example"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "full_name", "profile_picture") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "User 5"], ["created_at", "2023-12-02 11:20:27.088983"], ["updated_at", "2023-12-02 11:20:27.088983"], ["email", "antione.torphy@schmitt.example"], ["encrypted_password", "$2a$04$WeVEQtNsRJNIQChmTVmhA.VD0ksKvSoIFjcSvER7odZ5JTv69PdR2"], ["reset_password_token", nil], ["reset_password_sent_at", nil], ["remember_created_at", nil], ["full_name", nil], ["profile_picture", nil]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "rosia.sawayn@glover.example"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "full_name", "profile_picture") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "User 6"], ["created_at", "2023-12-02 11:20:27.096306"], ["updated_at", "2023-12-02 11:20:27.096306"], ["email", "rosia.sawayn@glover.example"], ["encrypted_password", "$2a$04$YFC5NmC3jUcj5W0vjY6gDOqIRWMiF2aGuVUL2SqiJN03A/bpSES7a"], ["reset_password_token", nil], ["reset_password_sent_at", nil], ["remember_created_at", nil], ["full_name", nil], ["profile_picture", nil]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "schema_sha1"]]
+  [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.9ms)[0m  [1m[35mALTER TABLE "active_storage_variant_records" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "active_storage_attachments" DISABLE TRIGGER ALL;ALTER TABLE "categories_users" DISABLE TRIGGER ALL;ALTER TABLE "categories" DISABLE TRIGGER ALL;ALTER TABLE "active_storage_blobs" DISABLE TRIGGER ALL;ALTER TABLE "purchases" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.4ms)[0m  [1m[34m            SELECT schemaname || '.' || tablename
+            FROM pg_tables
+            WHERE
+              tablename !~ '_prt_' AND
+              tablename <> 'schema_migrations'
+  AND tablename <> 'ar_internal_metadata'
+ AND
+              schemaname = ANY (current_schemas(false))
+[0m
+  [1m[35m (0.8ms)[0m  [1m[34mselect table_name from information_schema.views where table_schema = 'budget_app_test'[0m
+  [1m[35m (49.9ms)[0m  [1m[35mTRUNCATE TABLE "active_storage_variant_records", "active_storage_attachments", "categories_users", "categories", "active_storage_blobs", "purchases", "users" RESTART IDENTITY RESTRICT;[0m
+  [1m[36mTRANSACTION (5.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.0ms)[0m  [1m[35mALTER TABLE "active_storage_variant_records" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" ENABLE TRIGGER ALL;ALTER TABLE "active_storage_attachments" ENABLE TRIGGER ALL;ALTER TABLE "categories_users" ENABLE TRIGGER ALL;ALTER TABLE "categories" ENABLE TRIGGER ALL;ALTER TABLE "active_storage_blobs" ENABLE TRIGGER ALL;ALTER TABLE "purchases" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mUser Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "garland.parisian@hermiston.test"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "full_name", "profile_picture") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "User 1"], ["created_at", "2023-12-02 11:22:07.735279"], ["updated_at", "2023-12-02 11:22:07.735279"], ["email", "garland.parisian@hermiston.test"], ["encrypted_password", "$2a$04$BEMyG4f1NLDM31fgzkwBUuPMAfKKqV3kg4aXmlAi9L6HF7q9MwDcu"], ["reset_password_token", nil], ["reset_password_sent_at", nil], ["remember_created_at", nil], ["full_name", nil], ["profile_picture", nil]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "lolita_wiegand@schmeler-jakubowski.test"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "full_name", "profile_picture") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "User 2"], ["created_at", "2023-12-02 11:22:07.740097"], ["updated_at", "2023-12-02 11:22:07.740097"], ["email", "lolita_wiegand@schmeler-jakubowski.test"], ["encrypted_password", "$2a$04$./6Kk93GSC9JlqpgY61ZFuXk4ItAknu5QHC69CriEZ5uHYdJzf6.G"], ["reset_password_token", nil], ["reset_password_sent_at", nil], ["remember_created_at", nil], ["full_name", nil], ["profile_picture", nil]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mCategory Create (0.6ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Sample Category"], ["created_at", "2023-12-02 11:22:07.786791"], ["updated_at", "2023-12-02 11:22:07.786791"]]
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Category"], ["name", "icon"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Create (0.6ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "service_name", "byte_size", "checksum", "created_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["key", "doumfy40mv5tux0itjc24ggzkami"], ["filename", "sample_icon.png"], ["content_type", "image/png"], ["metadata", "{\"identified\":true}"], ["service_name", "test"], ["byte_size", 221914], ["checksum", "9ZWoOEe1EG5hbCydoMWBig=="], ["created_at", "2023-12-02 11:22:07.791430"]]
+  [1m[36mActiveStorage::Attachment Create (0.6ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "icon"], ["record_type", "Category"], ["record_id", 1], ["blob_id", 1], ["created_at", "2023-12-02 11:22:07.792720"]]
+  [1m[36mCategory Update (0.2ms)[0m  [1m[33mUPDATE "categories" SET "updated_at" = $1 WHERE "categories"."id" = $2[0m  [["updated_at", "2023-12-02 11:22:07.793876"], ["id", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+[36m  Disk Storage (1.2ms) [0m[32mUploaded file to key: doumfy40mv5tux0itjc24ggzkami (checksum: 9ZWoOEe1EG5hbCydoMWBig==)[0m
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: b8fe8456-04c2-4f26-9739-d63e6f11ec7a) to Async(default) with arguments: #<GlobalID:0x000000010b932c98 @uri=#<URI::GID gid://budget-app/ActiveStorage::Blob/1>>
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mCategory::HABTM_Users Create (0.6ms)[0m  [1m[32mINSERT INTO "categories_users" ("user_id", "category_id") VALUES ($1, $2)[0m  [["user_id", 1], ["category_id", 1]]
+  [1m[36mCategory::HABTM_Users Create (0.1ms)[0m  [1m[32mINSERT INTO "categories_users" ("user_id", "category_id") VALUES ($1, $2)[0m  [["user_id", 2], ["category_id", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [b8fe8456-04c2-4f26-9739-d63e6f11ec7a]   [1m[36mActiveStorage::Blob Load (1.6ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [b8fe8456-04c2-4f26-9739-d63e6f11ec7a] Performing ActiveStorage::AnalyzeJob (Job ID: b8fe8456-04c2-4f26-9739-d63e6f11ec7a) from Async(default) enqueued at 2023-12-02T11:22:07.798136000Z with arguments: #<GlobalID:0x000000010b9f1648 @uri=#<URI::GID gid://budget-app/ActiveStorage::Blob/1>>
+[ActiveJob] [ActiveStorage::AnalyzeJob] [b8fe8456-04c2-4f26-9739-d63e6f11ec7a] Skipping image analysis because the ruby-vips gem isn't installed
+[ActiveJob] [ActiveStorage::AnalyzeJob] [b8fe8456-04c2-4f26-9739-d63e6f11ec7a]   [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [b8fe8456-04c2-4f26-9739-d63e6f11ec7a]   [1m[36mActiveStorage::Blob Update (3.0ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = $1 WHERE "active_storage_blobs"."id" = $2[0m  [["metadata", "{\"identified\":true,\"analyzed\":true}"], ["id", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [b8fe8456-04c2-4f26-9739-d63e6f11ec7a]   [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = $1[0m  [["blob_id", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [b8fe8456-04c2-4f26-9739-d63e6f11ec7a]   [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1[0m  [["id", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [b8fe8456-04c2-4f26-9739-d63e6f11ec7a]   [1m[36mCategory Update (0.2ms)[0m  [1m[33mUPDATE "categories" SET "updated_at" = $1 WHERE "categories"."id" = $2[0m  [["updated_at", "2023-12-02 11:22:07.829414"], ["id", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [b8fe8456-04c2-4f26-9739-d63e6f11ec7a]   [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [b8fe8456-04c2-4f26-9739-d63e6f11ec7a] Performed ActiveStorage::AnalyzeJob (Job ID: b8fe8456-04c2-4f26-9739-d63e6f11ec7a) from Async(default) in 27.87ms
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" INNER JOIN "categories_users" ON "users"."id" = "categories_users"."user_id" WHERE "categories_users"."category_id" = $1 AND "users"."id" = $2 LIMIT $3[0m  [["category_id", 1], ["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" INNER JOIN "categories_users" ON "users"."id" = "categories_users"."user_id" WHERE "categories_users"."category_id" = $1 AND "users"."id" = $2 LIMIT $3[0m  [["category_id", 1], ["id", 2], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mCategory Create (0.4ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Sample Category"], ["created_at", "2023-12-02 11:22:07.853577"], ["updated_at", "2023-12-02 11:22:07.853577"]]
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Category"], ["name", "icon"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Create (0.2ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "service_name", "byte_size", "checksum", "created_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["key", "ndzrsqfgm0ivu3ly3vmgpzqoleqh"], ["filename", "sample_icon.png"], ["content_type", "image/png"], ["metadata", "{\"identified\":true}"], ["service_name", "test"], ["byte_size", 221914], ["checksum", "9ZWoOEe1EG5hbCydoMWBig=="], ["created_at", "2023-12-02 11:22:07.855713"]]
+  [1m[36mActiveStorage::Attachment Create (0.2ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "icon"], ["record_type", "Category"], ["record_id", 2], ["blob_id", 2], ["created_at", "2023-12-02 11:22:07.856429"]]
+  [1m[36mCategory Update (0.3ms)[0m  [1m[33mUPDATE "categories" SET "updated_at" = $1 WHERE "categories"."id" = $2[0m  [["updated_at", "2023-12-02 11:22:07.857113"], ["id", 2]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+[36m  Disk Storage (1.4ms) [0m[32mUploaded file to key: ndzrsqfgm0ivu3ly3vmgpzqoleqh (checksum: 9ZWoOEe1EG5hbCydoMWBig==)[0m
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: 733093a9-327b-4371-bcb7-7dd83f8365c0) to Async(default) with arguments: #<GlobalID:0x000000010bb94900 @uri=#<URI::GID gid://budget-app/ActiveStorage::Blob/2>>
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [733093a9-327b-4371-bcb7-7dd83f8365c0]   [1m[36mActiveStorage::Blob Load (1.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [733093a9-327b-4371-bcb7-7dd83f8365c0] Discarded ActiveStorage::AnalyzeJob (Job ID: 733093a9-327b-4371-bcb7-7dd83f8365c0) due to a ActiveRecord::RecordNotFound (Couldn't find ActiveStorage::Blob with 'id'=2).
+[ActiveJob] [ActiveStorage::AnalyzeJob] [733093a9-327b-4371-bcb7-7dd83f8365c0] Performed ActiveStorage::AnalyzeJob (Job ID: 733093a9-327b-4371-bcb7-7dd83f8365c0) from Async(default) in 3.19ms
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mCategory Create (0.5ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Sample Category"], ["created_at", "2023-12-02 11:22:07.866900"], ["updated_at", "2023-12-02 11:22:07.866900"]]
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 3], ["record_type", "Category"], ["name", "icon"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Create (0.4ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "service_name", "byte_size", "checksum", "created_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["key", "12x6arfjc3zqo8ycc0ti5fufi1v6"], ["filename", "sample_icon.png"], ["content_type", "image/png"], ["metadata", "{\"identified\":true}"], ["service_name", "test"], ["byte_size", 221914], ["checksum", "9ZWoOEe1EG5hbCydoMWBig=="], ["created_at", "2023-12-02 11:22:07.869739"]]
+  [1m[36mActiveStorage::Attachment Create (0.3ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "icon"], ["record_type", "Category"], ["record_id", 3], ["blob_id", 3], ["created_at", "2023-12-02 11:22:07.870957"]]
+  [1m[36mCategory Update (0.2ms)[0m  [1m[33mUPDATE "categories" SET "updated_at" = $1 WHERE "categories"."id" = $2[0m  [["updated_at", "2023-12-02 11:22:07.871789"], ["id", 3]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+[36m  Disk Storage (1.3ms) [0m[32mUploaded file to key: 12x6arfjc3zqo8ycc0ti5fufi1v6 (checksum: 9ZWoOEe1EG5hbCydoMWBig==)[0m
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: 67f24418-4310-43db-a67c-538abf1f4a98) to Async(default) with arguments: #<GlobalID:0x000000010bbd62b0 @uri=#<URI::GID gid://budget-app/ActiveStorage::Blob/3>>
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [67f24418-4310-43db-a67c-538abf1f4a98]   [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [67f24418-4310-43db-a67c-538abf1f4a98] Discarded ActiveStorage::AnalyzeJob (Job ID: 67f24418-4310-43db-a67c-538abf1f4a98) due to a ActiveRecord::RecordNotFound (Couldn't find ActiveStorage::Blob with 'id'=3).
+[ActiveJob] [ActiveStorage::AnalyzeJob] [67f24418-4310-43db-a67c-538abf1f4a98] Performed ActiveStorage::AnalyzeJob (Job ID: 67f24418-4310-43db-a67c-538abf1f4a98) from Async(default) in 1.69ms
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "schema_sha1"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.8ms)[0m  [1m[35mALTER TABLE "active_storage_variant_records" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "active_storage_attachments" DISABLE TRIGGER ALL;ALTER TABLE "categories_users" DISABLE TRIGGER ALL;ALTER TABLE "categories" DISABLE TRIGGER ALL;ALTER TABLE "active_storage_blobs" DISABLE TRIGGER ALL;ALTER TABLE "purchases" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.3ms)[0m  [1m[34m            SELECT schemaname || '.' || tablename
+            FROM pg_tables
+            WHERE
+              tablename !~ '_prt_' AND
+              tablename <> 'schema_migrations'
+  AND tablename <> 'ar_internal_metadata'
+ AND
+              schemaname = ANY (current_schemas(false))
+[0m
+  [1m[35m (0.7ms)[0m  [1m[34mselect table_name from information_schema.views where table_schema = 'budget_app_test'[0m
+  [1m[35m (25.4ms)[0m  [1m[35mTRUNCATE TABLE "active_storage_variant_records", "active_storage_attachments", "categories_users", "categories", "active_storage_blobs", "purchases", "users" RESTART IDENTITY RESTRICT;[0m
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "active_storage_variant_records" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" ENABLE TRIGGER ALL;ALTER TABLE "active_storage_attachments" ENABLE TRIGGER ALL;ALTER TABLE "categories_users" ENABLE TRIGGER ALL;ALTER TABLE "categories" ENABLE TRIGGER ALL;ALTER TABLE "active_storage_blobs" ENABLE TRIGGER ALL;ALTER TABLE "purchases" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mUser Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "marisol@stiedemann.example"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "full_name", "profile_picture") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "User 1"], ["created_at", "2023-12-02 11:24:00.010125"], ["updated_at", "2023-12-02 11:24:00.010125"], ["email", "marisol@stiedemann.example"], ["encrypted_password", "$2a$04$fZkQKdDAfkTq3p3T0vETLunrhEHrhmzSni0H3OBkSSVEIMX5zcui."], ["reset_password_token", nil], ["reset_password_sent_at", nil], ["remember_created_at", nil], ["full_name", nil], ["profile_picture", nil]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "candis@tremblay.example"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "full_name", "profile_picture") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "User 2"], ["created_at", "2023-12-02 11:24:00.014916"], ["updated_at", "2023-12-02 11:24:00.014916"], ["email", "candis@tremblay.example"], ["encrypted_password", "$2a$04$4u2Li5kk18wwlTteiMFks.F7IODcjKjQEIUkoIETeFcKXmlNWef5e"], ["reset_password_token", nil], ["reset_password_sent_at", nil], ["remember_created_at", nil], ["full_name", nil], ["profile_picture", nil]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mCategory Create (0.6ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Sample Category"], ["created_at", "2023-12-02 11:24:00.055173"], ["updated_at", "2023-12-02 11:24:00.055173"]]
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Category"], ["name", "icon"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Create (0.5ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "service_name", "byte_size", "checksum", "created_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["key", "rswr9wedklp1is7y7pgxfzfw3fmr"], ["filename", "sample_icon.png"], ["content_type", "image/png"], ["metadata", "{\"identified\":true}"], ["service_name", "test"], ["byte_size", 221914], ["checksum", "9ZWoOEe1EG5hbCydoMWBig=="], ["created_at", "2023-12-02 11:24:00.059495"]]
+  [1m[36mActiveStorage::Attachment Create (0.6ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "icon"], ["record_type", "Category"], ["record_id", 1], ["blob_id", 1], ["created_at", "2023-12-02 11:24:00.060709"]]
+  [1m[36mCategory Update (0.3ms)[0m  [1m[33mUPDATE "categories" SET "updated_at" = $1 WHERE "categories"."id" = $2[0m  [["updated_at", "2023-12-02 11:24:00.061903"], ["id", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+[36m  Disk Storage (1.2ms) [0m[32mUploaded file to key: rswr9wedklp1is7y7pgxfzfw3fmr (checksum: 9ZWoOEe1EG5hbCydoMWBig==)[0m
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: 7e240b3f-d6c6-479b-b7ac-8f20ce4d7d0d) to Async(default) with arguments: #<GlobalID:0x0000000111822af0 @uri=#<URI::GID gid://budget-app/ActiveStorage::Blob/1>>
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mCategory::HABTM_Users Create (0.6ms)[0m  [1m[32mINSERT INTO "categories_users" ("user_id", "category_id") VALUES ($1, $2)[0m  [["user_id", 1], ["category_id", 1]]
+  [1m[36mCategory::HABTM_Users Create (0.1ms)[0m  [1m[32mINSERT INTO "categories_users" ("user_id", "category_id") VALUES ($1, $2)[0m  [["user_id", 2], ["category_id", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [7e240b3f-d6c6-479b-b7ac-8f20ce4d7d0d]   [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [7e240b3f-d6c6-479b-b7ac-8f20ce4d7d0d] Performing ActiveStorage::AnalyzeJob (Job ID: 7e240b3f-d6c6-479b-b7ac-8f20ce4d7d0d) from Async(default) enqueued at 2023-12-02T11:24:00.066208000Z with arguments: #<GlobalID:0x000000011190cec0 @uri=#<URI::GID gid://budget-app/ActiveStorage::Blob/1>>
+[ActiveJob] [ActiveStorage::AnalyzeJob] [7e240b3f-d6c6-479b-b7ac-8f20ce4d7d0d] Skipping image analysis because the ruby-vips gem isn't installed
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" INNER JOIN "categories_users" ON "users"."id" = "categories_users"."user_id" WHERE "categories_users"."category_id" = $1 AND "users"."id" = $2 LIMIT $3[0m  [["category_id", 1], ["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" INNER JOIN "categories_users" ON "users"."id" = "categories_users"."user_id" WHERE "categories_users"."category_id" = $1 AND "users"."id" = $2 LIMIT $3[0m  [["category_id", 1], ["id", 2], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [7e240b3f-d6c6-479b-b7ac-8f20ce4d7d0d]   [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [7e240b3f-d6c6-479b-b7ac-8f20ce4d7d0d]   [1m[36mActiveStorage::Blob Update (1.9ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = $1 WHERE "active_storage_blobs"."id" = $2[0m  [["metadata", "{\"identified\":true,\"analyzed\":true}"], ["id", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [7e240b3f-d6c6-479b-b7ac-8f20ce4d7d0d]   [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = $1[0m  [["blob_id", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [7e240b3f-d6c6-479b-b7ac-8f20ce4d7d0d]   [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1[0m  [["id", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [7e240b3f-d6c6-479b-b7ac-8f20ce4d7d0d]   [1m[36mCategory Update (0.4ms)[0m  [1m[33mUPDATE "categories" SET "updated_at" = $1 WHERE "categories"."id" = $2[0m  [["updated_at", "2023-12-02 11:24:00.095796"], ["id", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [7e240b3f-d6c6-479b-b7ac-8f20ce4d7d0d]   [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [7e240b3f-d6c6-479b-b7ac-8f20ce4d7d0d] Performed ActiveStorage::AnalyzeJob (Job ID: 7e240b3f-d6c6-479b-b7ac-8f20ce4d7d0d) from Async(default) in 28.33ms
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mCategory Create (0.4ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Sample Category"], ["created_at", "2023-12-02 11:24:00.111223"], ["updated_at", "2023-12-02 11:24:00.111223"]]
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Category"], ["name", "icon"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Create (0.2ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "service_name", "byte_size", "checksum", "created_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["key", "g1e62nczsiuit9lb9txjpand6wl9"], ["filename", "sample_icon.png"], ["content_type", "image/png"], ["metadata", "{\"identified\":true}"], ["service_name", "test"], ["byte_size", 221914], ["checksum", "9ZWoOEe1EG5hbCydoMWBig=="], ["created_at", "2023-12-02 11:24:00.113301"]]
+  [1m[36mActiveStorage::Attachment Create (0.2ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "icon"], ["record_type", "Category"], ["record_id", 2], ["blob_id", 2], ["created_at", "2023-12-02 11:24:00.114016"]]
+  [1m[36mCategory Update (0.2ms)[0m  [1m[33mUPDATE "categories" SET "updated_at" = $1 WHERE "categories"."id" = $2[0m  [["updated_at", "2023-12-02 11:24:00.114653"], ["id", 2]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+[36m  Disk Storage (1.2ms) [0m[32mUploaded file to key: g1e62nczsiuit9lb9txjpand6wl9 (checksum: 9ZWoOEe1EG5hbCydoMWBig==)[0m
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: ccd2351d-13af-4e10-bba4-17b84043c219) to Async(default) with arguments: #<GlobalID:0x0000000111a6b140 @uri=#<URI::GID gid://budget-app/ActiveStorage::Blob/2>>
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [ccd2351d-13af-4e10-bba4-17b84043c219]   [1m[36mActiveStorage::Blob Load (0.8ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [ccd2351d-13af-4e10-bba4-17b84043c219] Discarded ActiveStorage::AnalyzeJob (Job ID: ccd2351d-13af-4e10-bba4-17b84043c219) due to a ActiveRecord::RecordNotFound (Couldn't find ActiveStorage::Blob with 'id'=2).
+[ActiveJob] [ActiveStorage::AnalyzeJob] [ccd2351d-13af-4e10-bba4-17b84043c219] Performed ActiveStorage::AnalyzeJob (Job ID: ccd2351d-13af-4e10-bba4-17b84043c219) from Async(default) in 2.35ms
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mCategory Create (0.4ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Sample Category"], ["created_at", "2023-12-02 11:24:00.122949"], ["updated_at", "2023-12-02 11:24:00.122949"]]
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 3], ["record_type", "Category"], ["name", "icon"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Create (0.2ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "service_name", "byte_size", "checksum", "created_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["key", "105ceiwrzvrq7huoez8eywu4rumi"], ["filename", "sample_icon.png"], ["content_type", "image/png"], ["metadata", "{\"identified\":true}"], ["service_name", "test"], ["byte_size", 221914], ["checksum", "9ZWoOEe1EG5hbCydoMWBig=="], ["created_at", "2023-12-02 11:24:00.124966"]]
+  [1m[36mActiveStorage::Attachment Create (0.2ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "icon"], ["record_type", "Category"], ["record_id", 3], ["blob_id", 3], ["created_at", "2023-12-02 11:24:00.125610"]]
+  [1m[36mCategory Update (0.2ms)[0m  [1m[33mUPDATE "categories" SET "updated_at" = $1 WHERE "categories"."id" = $2[0m  [["updated_at", "2023-12-02 11:24:00.126230"], ["id", 3]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+[36m  Disk Storage (2.5ms) [0m[32mUploaded file to key: 105ceiwrzvrq7huoez8eywu4rumi (checksum: 9ZWoOEe1EG5hbCydoMWBig==)[0m
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: 30b34705-5fef-4e02-b77d-37054c6e46d7) to Async(default) with arguments: #<GlobalID:0x0000000111accd50 @uri=#<URI::GID gid://budget-app/ActiveStorage::Blob/3>>
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [30b34705-5fef-4e02-b77d-37054c6e46d7]   [1m[36mActiveStorage::Blob Load (0.7ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [30b34705-5fef-4e02-b77d-37054c6e46d7] Discarded ActiveStorage::AnalyzeJob (Job ID: 30b34705-5fef-4e02-b77d-37054c6e46d7) due to a ActiveRecord::RecordNotFound (Couldn't find ActiveStorage::Blob with 'id'=3).
+[ActiveJob] [ActiveStorage::AnalyzeJob] [30b34705-5fef-4e02-b77d-37054c6e46d7] Performed ActiveStorage::AnalyzeJob (Job ID: 30b34705-5fef-4e02-b77d-37054c6e46d7) from Async(default) in 2.31ms
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mCategory Create (0.5ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Sample Category"], ["created_at", "2023-12-02 11:24:00.135435"], ["updated_at", "2023-12-02 11:24:00.135435"]]
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 4], ["record_type", "Category"], ["name", "icon"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Create (0.2ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "service_name", "byte_size", "checksum", "created_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["key", "bx54nu3y7lazguij9599cci5plb8"], ["filename", "sample_icon.png"], ["content_type", "image/png"], ["metadata", "{\"identified\":true}"], ["service_name", "test"], ["byte_size", 221914], ["checksum", "9ZWoOEe1EG5hbCydoMWBig=="], ["created_at", "2023-12-02 11:24:00.137641"]]
+  [1m[36mActiveStorage::Attachment Create (0.2ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "icon"], ["record_type", "Category"], ["record_id", 4], ["blob_id", 4], ["created_at", "2023-12-02 11:24:00.138392"]]
+  [1m[36mCategory Update (0.2ms)[0m  [1m[33mUPDATE "categories" SET "updated_at" = $1 WHERE "categories"."id" = $2[0m  [["updated_at", "2023-12-02 11:24:00.139052"], ["id", 4]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+[36m  Disk Storage (2.1ms) [0m[32mUploaded file to key: bx54nu3y7lazguij9599cci5plb8 (checksum: 9ZWoOEe1EG5hbCydoMWBig==)[0m
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: 419a3ab9-fb6d-4704-b276-b097e2eec16f) to Async(default) with arguments: #<GlobalID:0x0000000111b0f510 @uri=#<URI::GID gid://budget-app/ActiveStorage::Blob/4>>
+[ActiveJob] [ActiveStorage::AnalyzeJob] [419a3ab9-fb6d-4704-b276-b097e2eec16f]   [1m[36mActiveStorage::Blob Load (1.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [419a3ab9-fb6d-4704-b276-b097e2eec16f] Performing ActiveStorage::AnalyzeJob (Job ID: 419a3ab9-fb6d-4704-b276-b097e2eec16f) from Async(default) enqueued at 2023-12-02T11:24:00.142773000Z with arguments: #<GlobalID:0x0000000111b0b1b8 @uri=#<URI::GID gid://budget-app/ActiveStorage::Blob/4>>
+[ActiveJob] [ActiveStorage::AnalyzeJob] [419a3ab9-fb6d-4704-b276-b097e2eec16f] Skipping image analysis because the ruby-vips gem isn't installed
+[ActiveJob] [ActiveStorage::AnalyzeJob] [419a3ab9-fb6d-4704-b276-b097e2eec16f]   [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [419a3ab9-fb6d-4704-b276-b097e2eec16f]   [1m[36mActiveStorage::Blob Update (0.8ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = $1 WHERE "active_storage_blobs"."id" = $2[0m  [["metadata", "{\"identified\":true,\"analyzed\":true}"], ["id", 4]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [419a3ab9-fb6d-4704-b276-b097e2eec16f]   [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = $1[0m  [["blob_id", 4]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [419a3ab9-fb6d-4704-b276-b097e2eec16f]   [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1[0m  [["id", 4]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [419a3ab9-fb6d-4704-b276-b097e2eec16f]   [1m[36mCategory Update (0.3ms)[0m  [1m[33mUPDATE "categories" SET "updated_at" = $1 WHERE "categories"."id" = $2[0m  [["updated_at", "2023-12-02 11:24:00.150646"], ["id", 4]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [419a3ab9-fb6d-4704-b276-b097e2eec16f]   [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [419a3ab9-fb6d-4704-b276-b097e2eec16f] Performed ActiveStorage::AnalyzeJob (Job ID: 419a3ab9-fb6d-4704-b276-b097e2eec16f) from Async(default) in 8.09ms
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "schema_sha1"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.9ms)[0m  [1m[35mALTER TABLE "active_storage_variant_records" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "active_storage_attachments" DISABLE TRIGGER ALL;ALTER TABLE "categories_users" DISABLE TRIGGER ALL;ALTER TABLE "categories" DISABLE TRIGGER ALL;ALTER TABLE "active_storage_blobs" DISABLE TRIGGER ALL;ALTER TABLE "purchases" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.5ms)[0m  [1m[34m            SELECT schemaname || '.' || tablename
+            FROM pg_tables
+            WHERE
+              tablename !~ '_prt_' AND
+              tablename <> 'schema_migrations'
+  AND tablename <> 'ar_internal_metadata'
+ AND
+              schemaname = ANY (current_schemas(false))
+[0m
+  [1m[35m (0.7ms)[0m  [1m[34mselect table_name from information_schema.views where table_schema = 'budget_app_test'[0m
+  [1m[35m (23.1ms)[0m  [1m[35mTRUNCATE TABLE "active_storage_variant_records", "active_storage_attachments", "categories_users", "categories", "active_storage_blobs", "purchases", "users" RESTART IDENTITY RESTRICT;[0m
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "active_storage_variant_records" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" ENABLE TRIGGER ALL;ALTER TABLE "active_storage_attachments" ENABLE TRIGGER ALL;ALTER TABLE "categories_users" ENABLE TRIGGER ALL;ALTER TABLE "categories" ENABLE TRIGGER ALL;ALTER TABLE "active_storage_blobs" ENABLE TRIGGER ALL;ALTER TABLE "purchases" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mUser Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "simona@larson-goodwin.test"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "full_name", "profile_picture") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "User 1"], ["created_at", "2023-12-02 11:24:15.705893"], ["updated_at", "2023-12-02 11:24:15.705893"], ["email", "simona@larson-goodwin.test"], ["encrypted_password", "$2a$04$9TQiw6UIiXJSZosbs/0PVeMAN.QougCShhGDQS4QxaJJzOQItWEyu"], ["reset_password_token", nil], ["reset_password_sent_at", nil], ["remember_created_at", nil], ["full_name", nil], ["profile_picture", nil]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "carlita@veum.test"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "full_name", "profile_picture") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "User 2"], ["created_at", "2023-12-02 11:24:15.710528"], ["updated_at", "2023-12-02 11:24:15.710528"], ["email", "carlita@veum.test"], ["encrypted_password", "$2a$04$Qpw0IuDtSoerVP7fGj8OlOp3i3WbbVZF5ZkhSy.6uRb4X2MOaP4g6"], ["reset_password_token", nil], ["reset_password_sent_at", nil], ["remember_created_at", nil], ["full_name", nil], ["profile_picture", nil]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mCategory Create (0.7ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Sample Category"], ["created_at", "2023-12-02 11:24:15.753045"], ["updated_at", "2023-12-02 11:24:15.753045"]]
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Category"], ["name", "icon"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Create (0.6ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "service_name", "byte_size", "checksum", "created_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["key", "43qwc796i7im2r1nhfk2qy9poamr"], ["filename", "sample_icon.png"], ["content_type", "image/png"], ["metadata", "{\"identified\":true}"], ["service_name", "test"], ["byte_size", 221914], ["checksum", "9ZWoOEe1EG5hbCydoMWBig=="], ["created_at", "2023-12-02 11:24:15.758143"]]
+  [1m[36mActiveStorage::Attachment Create (0.6ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "icon"], ["record_type", "Category"], ["record_id", 1], ["blob_id", 1], ["created_at", "2023-12-02 11:24:15.759526"]]
+  [1m[36mCategory Update (0.2ms)[0m  [1m[33mUPDATE "categories" SET "updated_at" = $1 WHERE "categories"."id" = $2[0m  [["updated_at", "2023-12-02 11:24:15.760672"], ["id", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+[36m  Disk Storage (1.2ms) [0m[32mUploaded file to key: 43qwc796i7im2r1nhfk2qy9poamr (checksum: 9ZWoOEe1EG5hbCydoMWBig==)[0m
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: 33075b3a-b46e-4202-9d65-d9083701d9e7) to Async(default) with arguments: #<GlobalID:0x000000010a1f2c90 @uri=#<URI::GID gid://budget-app/ActiveStorage::Blob/1>>
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mCategory::HABTM_Users Create (0.5ms)[0m  [1m[32mINSERT INTO "categories_users" ("user_id", "category_id") VALUES ($1, $2)[0m  [["user_id", 1], ["category_id", 1]]
+  [1m[36mCategory::HABTM_Users Create (0.2ms)[0m  [1m[32mINSERT INTO "categories_users" ("user_id", "category_id") VALUES ($1, $2)[0m  [["user_id", 2], ["category_id", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [33075b3a-b46e-4202-9d65-d9083701d9e7]   [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [33075b3a-b46e-4202-9d65-d9083701d9e7] Performing ActiveStorage::AnalyzeJob (Job ID: 33075b3a-b46e-4202-9d65-d9083701d9e7) from Async(default) enqueued at 2023-12-02T11:24:15.764846000Z with arguments: #<GlobalID:0x000000010a2dd088 @uri=#<URI::GID gid://budget-app/ActiveStorage::Blob/1>>
+[ActiveJob] [ActiveStorage::AnalyzeJob] [33075b3a-b46e-4202-9d65-d9083701d9e7] Skipping image analysis because the ruby-vips gem isn't installed
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" INNER JOIN "categories_users" ON "users"."id" = "categories_users"."user_id" WHERE "categories_users"."category_id" = $1 AND "users"."id" = $2 LIMIT $3[0m  [["category_id", 1], ["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" INNER JOIN "categories_users" ON "users"."id" = "categories_users"."user_id" WHERE "categories_users"."category_id" = $1 AND "users"."id" = $2 LIMIT $3[0m  [["category_id", 1], ["id", 2], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [33075b3a-b46e-4202-9d65-d9083701d9e7]   [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [33075b3a-b46e-4202-9d65-d9083701d9e7]   [1m[36mActiveStorage::Blob Update (1.7ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = $1 WHERE "active_storage_blobs"."id" = $2[0m  [["metadata", "{\"identified\":true,\"analyzed\":true}"], ["id", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [33075b3a-b46e-4202-9d65-d9083701d9e7]   [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = $1[0m  [["blob_id", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [33075b3a-b46e-4202-9d65-d9083701d9e7]   [1m[36mCategory Load (0.7ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1[0m  [["id", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [33075b3a-b46e-4202-9d65-d9083701d9e7]   [1m[36mCategory Update (0.5ms)[0m  [1m[33mUPDATE "categories" SET "updated_at" = $1 WHERE "categories"."id" = $2[0m  [["updated_at", "2023-12-02 11:24:15.795977"], ["id", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [33075b3a-b46e-4202-9d65-d9083701d9e7]   [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [33075b3a-b46e-4202-9d65-d9083701d9e7] Performed ActiveStorage::AnalyzeJob (Job ID: 33075b3a-b46e-4202-9d65-d9083701d9e7) from Async(default) in 29.14ms
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mCategory Create (0.4ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Sample Category"], ["created_at", "2023-12-02 11:24:15.827268"], ["updated_at", "2023-12-02 11:24:15.827268"]]
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Category"], ["name", "icon"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Create (0.2ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "service_name", "byte_size", "checksum", "created_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["key", "d7zrpxe8su5wsdknpsr6f16hkbgl"], ["filename", "sample_icon.png"], ["content_type", "image/png"], ["metadata", "{\"identified\":true}"], ["service_name", "test"], ["byte_size", 221914], ["checksum", "9ZWoOEe1EG5hbCydoMWBig=="], ["created_at", "2023-12-02 11:24:15.829316"]]
+  [1m[36mActiveStorage::Attachment Create (0.3ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "icon"], ["record_type", "Category"], ["record_id", 2], ["blob_id", 2], ["created_at", "2023-12-02 11:24:15.830150"]]
+  [1m[36mCategory Update (0.2ms)[0m  [1m[33mUPDATE "categories" SET "updated_at" = $1 WHERE "categories"."id" = $2[0m  [["updated_at", "2023-12-02 11:24:15.830964"], ["id", 2]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+[36m  Disk Storage (1.3ms) [0m[32mUploaded file to key: d7zrpxe8su5wsdknpsr6f16hkbgl (checksum: 9ZWoOEe1EG5hbCydoMWBig==)[0m
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: 8150b5ff-f6ca-4a2d-9792-b8dfa2af6b59) to Async(default) with arguments: #<GlobalID:0x000000010a43b358 @uri=#<URI::GID gid://budget-app/ActiveStorage::Blob/2>>
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [8150b5ff-f6ca-4a2d-9792-b8dfa2af6b59]   [1m[36mActiveStorage::Blob Load (0.8ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [8150b5ff-f6ca-4a2d-9792-b8dfa2af6b59] Discarded ActiveStorage::AnalyzeJob (Job ID: 8150b5ff-f6ca-4a2d-9792-b8dfa2af6b59) due to a ActiveRecord::RecordNotFound (Couldn't find ActiveStorage::Blob with 'id'=2).
+[ActiveJob] [ActiveStorage::AnalyzeJob] [8150b5ff-f6ca-4a2d-9792-b8dfa2af6b59] Performed ActiveStorage::AnalyzeJob (Job ID: 8150b5ff-f6ca-4a2d-9792-b8dfa2af6b59) from Async(default) in 2.22ms
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mCategory Create (0.4ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Sample Category"], ["created_at", "2023-12-02 11:24:15.839114"], ["updated_at", "2023-12-02 11:24:15.839114"]]
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 3], ["record_type", "Category"], ["name", "icon"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Create (0.2ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "service_name", "byte_size", "checksum", "created_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["key", "64exphgr9k83a1qxxmm6ag063mxa"], ["filename", "sample_icon.png"], ["content_type", "image/png"], ["metadata", "{\"identified\":true}"], ["service_name", "test"], ["byte_size", 221914], ["checksum", "9ZWoOEe1EG5hbCydoMWBig=="], ["created_at", "2023-12-02 11:24:15.841202"]]
+  [1m[36mActiveStorage::Attachment Create (0.3ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "icon"], ["record_type", "Category"], ["record_id", 3], ["blob_id", 3], ["created_at", "2023-12-02 11:24:15.841910"]]
+  [1m[36mCategory Update (0.2ms)[0m  [1m[33mUPDATE "categories" SET "updated_at" = $1 WHERE "categories"."id" = $2[0m  [["updated_at", "2023-12-02 11:24:15.842755"], ["id", 3]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+[36m  Disk Storage (1.4ms) [0m[32mUploaded file to key: 64exphgr9k83a1qxxmm6ag063mxa (checksum: 9ZWoOEe1EG5hbCydoMWBig==)[0m
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: 1e77d1a8-9db6-45ff-a50c-af3fbd94656d) to Async(default) with arguments: #<GlobalID:0x000000010a49d030 @uri=#<URI::GID gid://budget-app/ActiveStorage::Blob/3>>
+  [1m[36mTRANSACTION (5.3ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [1e77d1a8-9db6-45ff-a50c-af3fbd94656d]   [1m[36mActiveStorage::Blob Load (1.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [1e77d1a8-9db6-45ff-a50c-af3fbd94656d] Discarded ActiveStorage::AnalyzeJob (Job ID: 1e77d1a8-9db6-45ff-a50c-af3fbd94656d) due to a ActiveRecord::RecordNotFound (Couldn't find ActiveStorage::Blob with 'id'=3).
+[ActiveJob] [ActiveStorage::AnalyzeJob] [1e77d1a8-9db6-45ff-a50c-af3fbd94656d] Performed ActiveStorage::AnalyzeJob (Job ID: 1e77d1a8-9db6-45ff-a50c-af3fbd94656d) from Async(default) in 5.68ms
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mCategory Create (0.6ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Sample Category"], ["created_at", "2023-12-02 11:24:15.857992"], ["updated_at", "2023-12-02 11:24:15.857992"]]
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 4], ["record_type", "Category"], ["name", "icon"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Create (0.2ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "service_name", "byte_size", "checksum", "created_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["key", "isr4e16fqvvo91oqmkbrf2wcfij9"], ["filename", "sample_icon.png"], ["content_type", "image/png"], ["metadata", "{\"identified\":true}"], ["service_name", "test"], ["byte_size", 221914], ["checksum", "9ZWoOEe1EG5hbCydoMWBig=="], ["created_at", "2023-12-02 11:24:15.860721"]]
+  [1m[36mActiveStorage::Attachment Create (0.3ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "icon"], ["record_type", "Category"], ["record_id", 4], ["blob_id", 4], ["created_at", "2023-12-02 11:24:15.861567"]]
+  [1m[36mCategory Update (0.2ms)[0m  [1m[33mUPDATE "categories" SET "updated_at" = $1 WHERE "categories"."id" = $2[0m  [["updated_at", "2023-12-02 11:24:15.862463"], ["id", 4]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+[36m  Disk Storage (1.3ms) [0m[32mUploaded file to key: isr4e16fqvvo91oqmkbrf2wcfij9 (checksum: 9ZWoOEe1EG5hbCydoMWBig==)[0m
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: 10a6e29a-8834-4de7-8ffb-a36b8fe2deef) to Async(default) with arguments: #<GlobalID:0x000000010a4df7c8 @uri=#<URI::GID gid://budget-app/ActiveStorage::Blob/4>>
+[ActiveJob] [ActiveStorage::AnalyzeJob] [10a6e29a-8834-4de7-8ffb-a36b8fe2deef]   [1m[36mActiveStorage::Blob Load (0.7ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [10a6e29a-8834-4de7-8ffb-a36b8fe2deef] Performing ActiveStorage::AnalyzeJob (Job ID: 10a6e29a-8834-4de7-8ffb-a36b8fe2deef) from Async(default) enqueued at 2023-12-02T11:24:15.865589000Z with arguments: #<GlobalID:0x000000010a4da818 @uri=#<URI::GID gid://budget-app/ActiveStorage::Blob/4>>
+[ActiveJob] [ActiveStorage::AnalyzeJob] [10a6e29a-8834-4de7-8ffb-a36b8fe2deef] Skipping image analysis because the ruby-vips gem isn't installed
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[31mROLLBACK[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [10a6e29a-8834-4de7-8ffb-a36b8fe2deef]   [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [10a6e29a-8834-4de7-8ffb-a36b8fe2deef]   [1m[36mActiveStorage::Blob Update (1.9ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = $1 WHERE "active_storage_blobs"."id" = $2[0m  [["metadata", "{\"identified\":true,\"analyzed\":true}"], ["id", 4]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [10a6e29a-8834-4de7-8ffb-a36b8fe2deef] Error performing ActiveStorage::AnalyzeJob (Job ID: 10a6e29a-8834-4de7-8ffb-a36b8fe2deef) from Async(default) in 8.63ms: ActiveRecord::StatementInvalid (PG::NoActiveSqlTransaction: ERROR:  SAVEPOINT can only be used in transaction blocks
+):
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/postgresql/database_statements.rb:55:in `exec'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/postgresql/database_statements.rb:55:in `block (2 levels) in raw_execute'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/abstract_adapter.rb:1028:in `block in with_raw_connection'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/abstract_adapter.rb:1000:in `with_raw_connection'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/postgresql/database_statements.rb:54:in `block in raw_execute'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/abstract_adapter.rb:1143:in `log'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/postgresql/database_statements.rb:53:in `raw_execute'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/abstract/database_statements.rb:521:in `internal_execute'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/abstract/savepoints.rb:12:in `create_savepoint'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/abstract/transaction.rb:337:in `materialize!'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/abstract/transaction.rb:493:in `block (2 levels) in materialize_transactions'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/abstract/transaction.rb:493:in `each'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/abstract/transaction.rb:493:in `block in materialize_transactions'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/abstract/transaction.rb:490:in `materialize_transactions'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/abstract/database_statements.rb:352:in `materialize_transactions'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/abstract_adapter.rb:1003:in `block in with_raw_connection'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/abstract_adapter.rb:1000:in `with_raw_connection'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/postgresql_adapter.rb:893:in `block in exec_no_cache'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/abstract_adapter.rb:1143:in `log'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/postgresql_adapter.rb:892:in `exec_no_cache'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/postgresql_adapter.rb:872:in `execute_and_clear'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/postgresql/database_statements.rb:77:in `exec_delete'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/abstract/database_statements.rb:202:in `update'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/abstract/query_cache.rb:25:in `update'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/persistence.rb:608:in `_update_record'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/persistence.rb:1211:in `_update_row'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/locking/optimistic.rb:93:in `_update_row'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/persistence.rb:1233:in `_update_record'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/attribute_methods/dirty.rb:234:in `_update_record'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/callbacks.rb:449:in `block (2 levels) in _update_record'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/timestamp.rb:138:in `record_update_timestamps'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/callbacks.rb:449:in `block in _update_record'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/callbacks.rb:110:in `run_callbacks'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/callbacks.rb:952:in `_run_update_callbacks'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/callbacks.rb:449:in `_update_record'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/timestamp.rb:120:in `_update_record'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/persistence.rb:1220:in `create_or_update'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/callbacks.rb:441:in `block in create_or_update'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/callbacks.rb:121:in `block in run_callbacks'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/autosave_association.rb:375:in `around_save_collection_association'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/callbacks.rb:130:in `block in run_callbacks'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/callbacks.rb:141:in `run_callbacks'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/callbacks.rb:952:in `_run_save_callbacks'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/callbacks.rb:441:in `create_or_update'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/timestamp.rb:125:in `create_or_update'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/persistence.rb:751:in `save!'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/validations.rb:55:in `save!'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/transactions.rb:313:in `block in save!'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/transactions.rb:365:in `block in with_transaction_returning_status'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/abstract/database_statements.rb:342:in `transaction'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/transactions.rb:361:in `with_transaction_returning_status'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/transactions.rb:313:in `save!'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/suppressor.rb:56:in `save!'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/persistence.rb:906:in `block in update!'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/transactions.rb:365:in `block in with_transaction_returning_status'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/abstract/transaction.rb:535:in `block in within_new_transaction'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/concurrency/load_interlock_aware_monitor.rb:23:in `handle_interrupt'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/concurrency/load_interlock_aware_monitor.rb:23:in `block in synchronize'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/concurrency/load_interlock_aware_monitor.rb:19:in `handle_interrupt'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/concurrency/load_interlock_aware_monitor.rb:19:in `synchronize'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/abstract/transaction.rb:532:in `within_new_transaction'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/abstract/database_statements.rb:344:in `transaction'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/transactions.rb:361:in `with_transaction_returning_status'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/persistence.rb:904:in `update!'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activestorage-7.1.2/app/models/active_storage/blob/analyzable.rb:30:in `analyze'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activestorage-7.1.2/app/jobs/active_storage/analyze_job.rb:11:in `perform'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/execution.rb:69:in `block in _perform_job'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/callbacks.rb:121:in `block in run_callbacks'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/i18n-1.14.1/lib/i18n.rb:322:in `with_locale'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/translation.rb:9:in `block (2 levels) in <module:Translation>'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/callbacks.rb:130:in `instance_exec'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/callbacks.rb:130:in `block in run_callbacks'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/core_ext/time/zones.rb:65:in `use_zone'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/timezones.rb:9:in `block (2 levels) in <module:Timezones>'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/callbacks.rb:130:in `instance_exec'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/callbacks.rb:130:in `block in run_callbacks'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/callbacks.rb:141:in `run_callbacks'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/execution.rb:68:in `_perform_job'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/instrumentation.rb:32:in `_perform_job'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/execution.rb:52:in `perform_now'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/instrumentation.rb:26:in `block in perform_now'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/railties/job_runtime.rb:13:in `block in instrument'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/instrumentation.rb:40:in `block in instrument'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/notifications.rb:206:in `block in instrument'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/notifications.rb:206:in `instrument'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/instrumentation.rb:39:in `instrument'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/railties/job_runtime.rb:11:in `instrument'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/instrumentation.rb:26:in `perform_now'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/logging.rb:18:in `block in perform_now'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/tagged_logging.rb:135:in `block in tagged'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/tagged_logging.rb:39:in `tagged'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/tagged_logging.rb:135:in `tagged'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/broadcast_logger.rb:240:in `method_missing'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/logging.rb:25:in `tag_logger'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/logging.rb:18:in `perform_now'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/execution.rb:30:in `block in execute'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/callbacks.rb:121:in `block in run_callbacks'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/railtie.rb:67:in `block (4 levels) in <class:Railtie>'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/reloader.rb:77:in `block in wrap'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/execution_wrapper.rb:92:in `wrap'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/reloader.rb:74:in `wrap'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/railtie.rb:66:in `block (3 levels) in <class:Railtie>'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/callbacks.rb:130:in `instance_exec'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/callbacks.rb:130:in `block in run_callbacks'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/callbacks.rb:141:in `run_callbacks'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/execution.rb:28:in `execute'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/queue_adapters/async_adapter.rb:70:in `perform'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/concurrent-ruby-1.2.2/lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:352:in `run_task'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/concurrent-ruby-1.2.2/lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:343:in `block (3 levels) in create_worker'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/concurrent-ruby-1.2.2/lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:334:in `loop'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/concurrent-ruby-1.2.2/lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:334:in `block (2 levels) in create_worker'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/concurrent-ruby-1.2.2/lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:333:in `catch'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/concurrent-ruby-1.2.2/lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:333:in `block in create_worker'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (13.8ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_2[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_2[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "schema_sha1"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.9ms)[0m  [1m[35mALTER TABLE "active_storage_variant_records" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "active_storage_attachments" DISABLE TRIGGER ALL;ALTER TABLE "categories_users" DISABLE TRIGGER ALL;ALTER TABLE "categories" DISABLE TRIGGER ALL;ALTER TABLE "active_storage_blobs" DISABLE TRIGGER ALL;ALTER TABLE "purchases" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (2.2ms)[0m  [1m[34m            SELECT schemaname || '.' || tablename
+            FROM pg_tables
+            WHERE
+              tablename !~ '_prt_' AND
+              tablename <> 'schema_migrations'
+  AND tablename <> 'ar_internal_metadata'
+ AND
+              schemaname = ANY (current_schemas(false))
+[0m
+  [1m[35m (0.7ms)[0m  [1m[34mselect table_name from information_schema.views where table_schema = 'budget_app_test'[0m
+  [1m[35m (25.2ms)[0m  [1m[35mTRUNCATE TABLE "active_storage_variant_records", "active_storage_attachments", "categories_users", "categories", "active_storage_blobs", "purchases", "users" RESTART IDENTITY RESTRICT;[0m
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "active_storage_variant_records" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" ENABLE TRIGGER ALL;ALTER TABLE "active_storage_attachments" ENABLE TRIGGER ALL;ALTER TABLE "categories_users" ENABLE TRIGGER ALL;ALTER TABLE "categories" ENABLE TRIGGER ALL;ALTER TABLE "active_storage_blobs" ENABLE TRIGGER ALL;ALTER TABLE "purchases" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mUser Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jeremiah_steuber@haag.test"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "full_name", "profile_picture") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "User 1"], ["created_at", "2023-12-02 11:24:35.793461"], ["updated_at", "2023-12-02 11:24:35.793461"], ["email", "jeremiah_steuber@haag.test"], ["encrypted_password", "$2a$04$StMRN/fhb7B90XOQUgMIyeIKoUN8lTxB3K8i2xAReHlAkuBec5Yf."], ["reset_password_token", nil], ["reset_password_sent_at", nil], ["remember_created_at", nil], ["full_name", nil], ["profile_picture", nil]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "vanita.sawayn@kris.example"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "full_name", "profile_picture") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "User 2"], ["created_at", "2023-12-02 11:24:35.797840"], ["updated_at", "2023-12-02 11:24:35.797840"], ["email", "vanita.sawayn@kris.example"], ["encrypted_password", "$2a$04$FmlDxT5WP94zFVOoitY3OuN8ku8nYzz1XmRyfptdsM/zACm7T5/R."], ["reset_password_token", nil], ["reset_password_sent_at", nil], ["remember_created_at", nil], ["full_name", nil], ["profile_picture", nil]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mCategory Create (0.7ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Sample Category"], ["created_at", "2023-12-02 11:24:35.857571"], ["updated_at", "2023-12-02 11:24:35.857571"]]
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Category"], ["name", "icon"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Create (0.6ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "service_name", "byte_size", "checksum", "created_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["key", "m2n0rk1uatgw6g00a6xz3hv37lhs"], ["filename", "sample_icon.png"], ["content_type", "image/png"], ["metadata", "{\"identified\":true}"], ["service_name", "test"], ["byte_size", 221914], ["checksum", "9ZWoOEe1EG5hbCydoMWBig=="], ["created_at", "2023-12-02 11:24:35.862389"]]
+  [1m[36mActiveStorage::Attachment Create (0.6ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "icon"], ["record_type", "Category"], ["record_id", 1], ["blob_id", 1], ["created_at", "2023-12-02 11:24:35.863723"]]
+  [1m[36mCategory Update (0.3ms)[0m  [1m[33mUPDATE "categories" SET "updated_at" = $1 WHERE "categories"."id" = $2[0m  [["updated_at", "2023-12-02 11:24:35.864922"], ["id", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+[36m  Disk Storage (1.6ms) [0m[32mUploaded file to key: m2n0rk1uatgw6g00a6xz3hv37lhs (checksum: 9ZWoOEe1EG5hbCydoMWBig==)[0m
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: 84d967a4-58da-4b94-ad80-c5041fabbdd5) to Async(default) with arguments: #<GlobalID:0x00000001161e26e0 @uri=#<URI::GID gid://budget-app/ActiveStorage::Blob/1>>
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mCategory::HABTM_Users Create (0.6ms)[0m  [1m[32mINSERT INTO "categories_users" ("user_id", "category_id") VALUES ($1, $2)[0m  [["user_id", 1], ["category_id", 1]]
+  [1m[36mCategory::HABTM_Users Create (0.2ms)[0m  [1m[32mINSERT INTO "categories_users" ("user_id", "category_id") VALUES ($1, $2)[0m  [["user_id", 2], ["category_id", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [84d967a4-58da-4b94-ad80-c5041fabbdd5]   [1m[36mActiveStorage::Blob Load (0.6ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [84d967a4-58da-4b94-ad80-c5041fabbdd5] Performing ActiveStorage::AnalyzeJob (Job ID: 84d967a4-58da-4b94-ad80-c5041fabbdd5) from Async(default) enqueued at 2023-12-02T11:24:35.869701000Z with arguments: #<GlobalID:0x00000001162ccab0 @uri=#<URI::GID gid://budget-app/ActiveStorage::Blob/1>>
+[ActiveJob] [ActiveStorage::AnalyzeJob] [84d967a4-58da-4b94-ad80-c5041fabbdd5] Skipping image analysis because the ruby-vips gem isn't installed
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" INNER JOIN "categories_users" ON "users"."id" = "categories_users"."user_id" WHERE "categories_users"."category_id" = $1 AND "users"."id" = $2 LIMIT $3[0m  [["category_id", 1], ["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" INNER JOIN "categories_users" ON "users"."id" = "categories_users"."user_id" WHERE "categories_users"."category_id" = $1 AND "users"."id" = $2 LIMIT $3[0m  [["category_id", 1], ["id", 2], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [84d967a4-58da-4b94-ad80-c5041fabbdd5]   [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [84d967a4-58da-4b94-ad80-c5041fabbdd5]   [1m[36mActiveStorage::Blob Update (2.1ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = $1 WHERE "active_storage_blobs"."id" = $2[0m  [["metadata", "{\"identified\":true,\"analyzed\":true}"], ["id", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [84d967a4-58da-4b94-ad80-c5041fabbdd5]   [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = $1[0m  [["blob_id", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [84d967a4-58da-4b94-ad80-c5041fabbdd5]   [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1[0m  [["id", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [84d967a4-58da-4b94-ad80-c5041fabbdd5]   [1m[36mCategory Update (0.6ms)[0m  [1m[33mUPDATE "categories" SET "updated_at" = $1 WHERE "categories"."id" = $2[0m  [["updated_at", "2023-12-02 11:24:35.901690"], ["id", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [84d967a4-58da-4b94-ad80-c5041fabbdd5]   [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [84d967a4-58da-4b94-ad80-c5041fabbdd5] Performed ActiveStorage::AnalyzeJob (Job ID: 84d967a4-58da-4b94-ad80-c5041fabbdd5) from Async(default) in 29.64ms
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mCategory Create (0.4ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Sample Category"], ["created_at", "2023-12-02 11:24:35.918183"], ["updated_at", "2023-12-02 11:24:35.918183"]]
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Category"], ["name", "icon"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Create (0.2ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "service_name", "byte_size", "checksum", "created_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["key", "024jl2rzo6aogq6anrh5dt8eqydb"], ["filename", "sample_icon.png"], ["content_type", "image/png"], ["metadata", "{\"identified\":true}"], ["service_name", "test"], ["byte_size", 221914], ["checksum", "9ZWoOEe1EG5hbCydoMWBig=="], ["created_at", "2023-12-02 11:24:35.920088"]]
+  [1m[36mActiveStorage::Attachment Create (0.2ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "icon"], ["record_type", "Category"], ["record_id", 2], ["blob_id", 2], ["created_at", "2023-12-02 11:24:35.920724"]]
+  [1m[36mCategory Update (0.2ms)[0m  [1m[33mUPDATE "categories" SET "updated_at" = $1 WHERE "categories"."id" = $2[0m  [["updated_at", "2023-12-02 11:24:35.921333"], ["id", 2]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+[36m  Disk Storage (1.2ms) [0m[32mUploaded file to key: 024jl2rzo6aogq6anrh5dt8eqydb (checksum: 9ZWoOEe1EG5hbCydoMWBig==)[0m
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: 2cc5f637-7f59-4012-bff7-4cc54bc13634) to Async(default) with arguments: #<GlobalID:0x000000011642ada8 @uri=#<URI::GID gid://budget-app/ActiveStorage::Blob/2>>
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [2cc5f637-7f59-4012-bff7-4cc54bc13634]   [1m[36mActiveStorage::Blob Load (0.7ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [2cc5f637-7f59-4012-bff7-4cc54bc13634] Discarded ActiveStorage::AnalyzeJob (Job ID: 2cc5f637-7f59-4012-bff7-4cc54bc13634) due to a ActiveRecord::RecordNotFound (Couldn't find ActiveStorage::Blob with 'id'=2).
+[ActiveJob] [ActiveStorage::AnalyzeJob] [2cc5f637-7f59-4012-bff7-4cc54bc13634] Performed ActiveStorage::AnalyzeJob (Job ID: 2cc5f637-7f59-4012-bff7-4cc54bc13634) from Async(default) in 1.96ms
+  [1m[36mTRANSACTION (36032.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (36032.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "schema_sha1"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.2ms)[0m  [1m[35mALTER TABLE "active_storage_variant_records" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "active_storage_attachments" DISABLE TRIGGER ALL;ALTER TABLE "categories_users" DISABLE TRIGGER ALL;ALTER TABLE "categories" DISABLE TRIGGER ALL;ALTER TABLE "active_storage_blobs" DISABLE TRIGGER ALL;ALTER TABLE "purchases" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (2.3ms)[0m  [1m[34m            SELECT schemaname || '.' || tablename
+            FROM pg_tables
+            WHERE
+              tablename !~ '_prt_' AND
+              tablename <> 'schema_migrations'
+  AND tablename <> 'ar_internal_metadata'
+ AND
+              schemaname = ANY (current_schemas(false))
+[0m
+  [1m[35m (0.9ms)[0m  [1m[34mselect table_name from information_schema.views where table_schema = 'budget_app_test'[0m
+  [1m[35m (33.1ms)[0m  [1m[35mTRUNCATE TABLE "active_storage_variant_records", "active_storage_attachments", "categories_users", "categories", "active_storage_blobs", "purchases", "users" RESTART IDENTITY RESTRICT;[0m
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "active_storage_variant_records" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" ENABLE TRIGGER ALL;ALTER TABLE "active_storage_attachments" ENABLE TRIGGER ALL;ALTER TABLE "categories_users" ENABLE TRIGGER ALL;ALTER TABLE "categories" ENABLE TRIGGER ALL;ALTER TABLE "active_storage_blobs" ENABLE TRIGGER ALL;ALTER TABLE "purchases" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mUser Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "elvin.koch@hackett-kirlin.example"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "full_name", "profile_picture") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "User 1"], ["created_at", "2023-12-02 11:25:53.465266"], ["updated_at", "2023-12-02 11:25:53.465266"], ["email", "elvin.koch@hackett-kirlin.example"], ["encrypted_password", "$2a$04$dMCkL.Hxn3OpeNTGXUOfJ.Eor7eC7MEOAzfCVp0WMbgotHl0KAQYC"], ["reset_password_token", nil], ["reset_password_sent_at", nil], ["remember_created_at", nil], ["full_name", nil], ["profile_picture", nil]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "hollis@damore-cummings.test"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "full_name", "profile_picture") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "User 2"], ["created_at", "2023-12-02 11:25:53.470551"], ["updated_at", "2023-12-02 11:25:53.470551"], ["email", "hollis@damore-cummings.test"], ["encrypted_password", "$2a$04$sVMcnN7z41irEvw2UEPqrOKHWaeQeaVpN0QXWCc64gFrsfgQrWss6"], ["reset_password_token", nil], ["reset_password_sent_at", nil], ["remember_created_at", nil], ["full_name", nil], ["profile_picture", nil]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mCategory Create (0.7ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Sample Category"], ["created_at", "2023-12-02 11:25:53.524512"], ["updated_at", "2023-12-02 11:25:53.524512"]]
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Category"], ["name", "icon"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Create (0.6ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "service_name", "byte_size", "checksum", "created_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["key", "owv7y6oc8g45j0qk32fdjut9o2kx"], ["filename", "sample_icon.png"], ["content_type", "image/png"], ["metadata", "{\"identified\":true}"], ["service_name", "test"], ["byte_size", 221914], ["checksum", "9ZWoOEe1EG5hbCydoMWBig=="], ["created_at", "2023-12-02 11:25:53.529418"]]
+  [1m[36mActiveStorage::Attachment Create (0.7ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "icon"], ["record_type", "Category"], ["record_id", 1], ["blob_id", 1], ["created_at", "2023-12-02 11:25:53.530888"]]
+  [1m[36mCategory Update (0.3ms)[0m  [1m[33mUPDATE "categories" SET "updated_at" = $1 WHERE "categories"."id" = $2[0m  [["updated_at", "2023-12-02 11:25:53.532266"], ["id", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+[36m  Disk Storage (2.4ms) [0m[32mUploaded file to key: owv7y6oc8g45j0qk32fdjut9o2kx (checksum: 9ZWoOEe1EG5hbCydoMWBig==)[0m
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: e8b96af3-d8f8-4b71-9d7f-37fef1c4c485) to Async(default) with arguments: #<GlobalID:0x0000000108633c48 @uri=#<URI::GID gid://budget-app/ActiveStorage::Blob/1>>
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mCategory::HABTM_Users Create (1.5ms)[0m  [1m[32mINSERT INTO "categories_users" ("user_id", "category_id") VALUES ($1, $2)[0m  [["user_id", 1], ["category_id", 1]]
+  [1m[36mCategory::HABTM_Users Create (0.2ms)[0m  [1m[32mINSERT INTO "categories_users" ("user_id", "category_id") VALUES ($1, $2)[0m  [["user_id", 2], ["category_id", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [e8b96af3-d8f8-4b71-9d7f-37fef1c4c485]   [1m[36mActiveStorage::Blob Load (1.8ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [e8b96af3-d8f8-4b71-9d7f-37fef1c4c485] Performing ActiveStorage::AnalyzeJob (Job ID: e8b96af3-d8f8-4b71-9d7f-37fef1c4c485) from Async(default) enqueued at 2023-12-02T11:25:53.538070000Z with arguments: #<GlobalID:0x00000001086fe010 @uri=#<URI::GID gid://budget-app/ActiveStorage::Blob/1>>
+[ActiveJob] [ActiveStorage::AnalyzeJob] [e8b96af3-d8f8-4b71-9d7f-37fef1c4c485] Skipping image analysis because the ruby-vips gem isn't installed
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" INNER JOIN "categories_users" ON "users"."id" = "categories_users"."user_id" WHERE "categories_users"."category_id" = $1 AND "users"."id" = $2 LIMIT $3[0m  [["category_id", 1], ["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" INNER JOIN "categories_users" ON "users"."id" = "categories_users"."user_id" WHERE "categories_users"."category_id" = $1 AND "users"."id" = $2 LIMIT $3[0m  [["category_id", 1], ["id", 2], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [e8b96af3-d8f8-4b71-9d7f-37fef1c4c485]   [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [e8b96af3-d8f8-4b71-9d7f-37fef1c4c485]   [1m[36mActiveStorage::Blob Update (1.7ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = $1 WHERE "active_storage_blobs"."id" = $2[0m  [["metadata", "{\"identified\":true,\"analyzed\":true}"], ["id", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [e8b96af3-d8f8-4b71-9d7f-37fef1c4c485]   [1m[36mActiveStorage::Attachment Load (0.8ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = $1[0m  [["blob_id", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [e8b96af3-d8f8-4b71-9d7f-37fef1c4c485]   [1m[36mCategory Load (0.8ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1[0m  [["id", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [e8b96af3-d8f8-4b71-9d7f-37fef1c4c485]   [1m[36mCategory Update (0.8ms)[0m  [1m[33mUPDATE "categories" SET "updated_at" = $1 WHERE "categories"."id" = $2[0m  [["updated_at", "2023-12-02 11:25:53.576623"], ["id", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [e8b96af3-d8f8-4b71-9d7f-37fef1c4c485]   [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [e8b96af3-d8f8-4b71-9d7f-37fef1c4c485] Performed ActiveStorage::AnalyzeJob (Job ID: e8b96af3-d8f8-4b71-9d7f-37fef1c4c485) from Async(default) in 36.08ms
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mCategory Create (0.4ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Sample Category"], ["created_at", "2023-12-02 11:25:53.598067"], ["updated_at", "2023-12-02 11:25:53.598067"]]
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Category"], ["name", "icon"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Create (0.2ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "service_name", "byte_size", "checksum", "created_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["key", "47thrul34m7x8e1acrnh37sz8k3m"], ["filename", "sample_icon.png"], ["content_type", "image/png"], ["metadata", "{\"identified\":true}"], ["service_name", "test"], ["byte_size", 221914], ["checksum", "9ZWoOEe1EG5hbCydoMWBig=="], ["created_at", "2023-12-02 11:25:53.600222"]]
+  [1m[36mActiveStorage::Attachment Create (0.2ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "icon"], ["record_type", "Category"], ["record_id", 2], ["blob_id", 2], ["created_at", "2023-12-02 11:25:53.600953"]]
+  [1m[36mCategory Update (0.2ms)[0m  [1m[33mUPDATE "categories" SET "updated_at" = $1 WHERE "categories"."id" = $2[0m  [["updated_at", "2023-12-02 11:25:53.601635"], ["id", 2]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+[36m  Disk Storage (1.3ms) [0m[32mUploaded file to key: 47thrul34m7x8e1acrnh37sz8k3m (checksum: 9ZWoOEe1EG5hbCydoMWBig==)[0m
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: b0de6353-d7fe-4b83-ae90-75b483ff012b) to Async(default) with arguments: #<GlobalID:0x000000010883c288 @uri=#<URI::GID gid://budget-app/ActiveStorage::Blob/2>>
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "schema_sha1"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.7ms)[0m  [1m[35mALTER TABLE "active_storage_variant_records" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "active_storage_attachments" DISABLE TRIGGER ALL;ALTER TABLE "categories_users" DISABLE TRIGGER ALL;ALTER TABLE "categories" DISABLE TRIGGER ALL;ALTER TABLE "active_storage_blobs" DISABLE TRIGGER ALL;ALTER TABLE "purchases" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (3.2ms)[0m  [1m[34m            SELECT schemaname || '.' || tablename
+            FROM pg_tables
+            WHERE
+              tablename !~ '_prt_' AND
+              tablename <> 'schema_migrations'
+  AND tablename <> 'ar_internal_metadata'
+ AND
+              schemaname = ANY (current_schemas(false))
+[0m
+  [1m[35m (1.8ms)[0m  [1m[34mselect table_name from information_schema.views where table_schema = 'budget_app_test'[0m
+  [1m[35m (40.6ms)[0m  [1m[35mTRUNCATE TABLE "active_storage_variant_records", "active_storage_attachments", "categories_users", "categories", "active_storage_blobs", "purchases", "users" RESTART IDENTITY RESTRICT;[0m
+  [1m[36mTRANSACTION (2.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.0ms)[0m  [1m[35mALTER TABLE "active_storage_variant_records" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" ENABLE TRIGGER ALL;ALTER TABLE "active_storage_attachments" ENABLE TRIGGER ALL;ALTER TABLE "categories_users" ENABLE TRIGGER ALL;ALTER TABLE "categories" ENABLE TRIGGER ALL;ALTER TABLE "active_storage_blobs" ENABLE TRIGGER ALL;ALTER TABLE "purchases" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mUser Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "stella@zemlak.example"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "full_name", "profile_picture") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "User 1"], ["created_at", "2023-12-02 11:26:36.614232"], ["updated_at", "2023-12-02 11:26:36.614232"], ["email", "stella@zemlak.example"], ["encrypted_password", "$2a$04$RR1eWcuYlgUVzvMA4i5MEu1ISiqXydE.r4bHLsQ9VtRiGdL08CJzy"], ["reset_password_token", nil], ["reset_password_sent_at", nil], ["remember_created_at", nil], ["full_name", nil], ["profile_picture", nil]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "flora.upton@mueller-mertz.example"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "full_name", "profile_picture") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "User 2"], ["created_at", "2023-12-02 11:26:36.618957"], ["updated_at", "2023-12-02 11:26:36.618957"], ["email", "flora.upton@mueller-mertz.example"], ["encrypted_password", "$2a$04$zdkq2OWsSQz7UJAF/yULP.TdydyZj03kbBLWOuHNmd6k4ciilDp/2"], ["reset_password_token", nil], ["reset_password_sent_at", nil], ["remember_created_at", nil], ["full_name", nil], ["profile_picture", nil]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mCategory Create (0.7ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Sample Category"], ["created_at", "2023-12-02 11:26:36.666722"], ["updated_at", "2023-12-02 11:26:36.666722"]]
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Category"], ["name", "icon"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Create (0.6ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "service_name", "byte_size", "checksum", "created_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["key", "2epmxqxb2i101zuiynzl76z9ya6d"], ["filename", "sample_icon.png"], ["content_type", "image/png"], ["metadata", "{\"identified\":true}"], ["service_name", "test"], ["byte_size", 221914], ["checksum", "9ZWoOEe1EG5hbCydoMWBig=="], ["created_at", "2023-12-02 11:26:36.671658"]]
+  [1m[36mActiveStorage::Attachment Create (0.9ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "icon"], ["record_type", "Category"], ["record_id", 1], ["blob_id", 1], ["created_at", "2023-12-02 11:26:36.673090"]]
+  [1m[36mCategory Update (0.3ms)[0m  [1m[33mUPDATE "categories" SET "updated_at" = $1 WHERE "categories"."id" = $2[0m  [["updated_at", "2023-12-02 11:26:36.674634"], ["id", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+[36m  Disk Storage (1.3ms) [0m[32mUploaded file to key: 2epmxqxb2i101zuiynzl76z9ya6d (checksum: 9ZWoOEe1EG5hbCydoMWBig==)[0m
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: 8a2f3a17-4324-49e4-8e57-5d9e8eb8d40c) to Async(default) with arguments: #<GlobalID:0x000000010a1a28f8 @uri=#<URI::GID gid://budget-app/ActiveStorage::Blob/1>>
+  [1m[36mTRANSACTION (7.7ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mCategory::HABTM_Users Create (1.2ms)[0m  [1m[32mINSERT INTO "categories_users" ("user_id", "category_id") VALUES ($1, $2)[0m  [["user_id", 1], ["category_id", 1]]
+  [1m[36mCategory::HABTM_Users Create (0.3ms)[0m  [1m[32mINSERT INTO "categories_users" ("user_id", "category_id") VALUES ($1, $2)[0m  [["user_id", 2], ["category_id", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [8a2f3a17-4324-49e4-8e57-5d9e8eb8d40c]   [1m[36mActiveStorage::Blob Load (0.7ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [8a2f3a17-4324-49e4-8e57-5d9e8eb8d40c] Performing ActiveStorage::AnalyzeJob (Job ID: 8a2f3a17-4324-49e4-8e57-5d9e8eb8d40c) from Async(default) enqueued at 2023-12-02T11:26:36.679591000Z with arguments: #<GlobalID:0x000000010a28ccf0 @uri=#<URI::GID gid://budget-app/ActiveStorage::Blob/1>>
+[ActiveJob] [ActiveStorage::AnalyzeJob] [8a2f3a17-4324-49e4-8e57-5d9e8eb8d40c] Skipping image analysis because the ruby-vips gem isn't installed
+  [1m[36mUser Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM "users" INNER JOIN "categories_users" ON "users"."id" = "categories_users"."user_id" WHERE "categories_users"."category_id" = $1 AND "users"."id" = $2 LIMIT $3[0m  [["category_id", 1], ["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" INNER JOIN "categories_users" ON "users"."id" = "categories_users"."user_id" WHERE "categories_users"."category_id" = $1 AND "users"."id" = $2 LIMIT $3[0m  [["category_id", 1], ["id", 2], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [8a2f3a17-4324-49e4-8e57-5d9e8eb8d40c]   [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [8a2f3a17-4324-49e4-8e57-5d9e8eb8d40c]   [1m[36mActiveStorage::Blob Update (2.1ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = $1 WHERE "active_storage_blobs"."id" = $2[0m  [["metadata", "{\"identified\":true,\"analyzed\":true}"], ["id", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [8a2f3a17-4324-49e4-8e57-5d9e8eb8d40c]   [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = $1[0m  [["blob_id", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [8a2f3a17-4324-49e4-8e57-5d9e8eb8d40c]   [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1[0m  [["id", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [8a2f3a17-4324-49e4-8e57-5d9e8eb8d40c]   [1m[36mCategory Update (0.8ms)[0m  [1m[33mUPDATE "categories" SET "updated_at" = $1 WHERE "categories"."id" = $2[0m  [["updated_at", "2023-12-02 11:26:36.737394"], ["id", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [8a2f3a17-4324-49e4-8e57-5d9e8eb8d40c]   [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [8a2f3a17-4324-49e4-8e57-5d9e8eb8d40c] Performed ActiveStorage::AnalyzeJob (Job ID: 8a2f3a17-4324-49e4-8e57-5d9e8eb8d40c) from Async(default) in 44.7ms
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mCategory Create (0.5ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Sample Category"], ["created_at", "2023-12-02 11:26:36.758674"], ["updated_at", "2023-12-02 11:26:36.758674"]]
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Category"], ["name", "icon"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Create (0.3ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "service_name", "byte_size", "checksum", "created_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["key", "6c6kgyw2179tmuuompr1z4xuj0sa"], ["filename", "sample_icon.png"], ["content_type", "image/png"], ["metadata", "{\"identified\":true}"], ["service_name", "test"], ["byte_size", 221914], ["checksum", "9ZWoOEe1EG5hbCydoMWBig=="], ["created_at", "2023-12-02 11:26:36.761383"]]
+  [1m[36mActiveStorage::Attachment Create (0.3ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "icon"], ["record_type", "Category"], ["record_id", 2], ["blob_id", 2], ["created_at", "2023-12-02 11:26:36.762425"]]
+  [1m[36mCategory Update (0.3ms)[0m  [1m[33mUPDATE "categories" SET "updated_at" = $1 WHERE "categories"."id" = $2[0m  [["updated_at", "2023-12-02 11:26:36.763298"], ["id", 2]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+[36m  Disk Storage (1.3ms) [0m[32mUploaded file to key: 6c6kgyw2179tmuuompr1z4xuj0sa (checksum: 9ZWoOEe1EG5hbCydoMWBig==)[0m
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: 082c4581-cdbe-416a-b78e-be072bd6d342) to Async(default) with arguments: #<GlobalID:0x000000010a40af28 @uri=#<URI::GID gid://budget-app/ActiveStorage::Blob/2>>
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [082c4581-cdbe-416a-b78e-be072bd6d342]   [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [082c4581-cdbe-416a-b78e-be072bd6d342] Error performing ActiveStorage::AnalyzeJob (Job ID: 082c4581-cdbe-416a-b78e-be072bd6d342) from Async(default) in 2.39ms: ActiveJob::DeserializationError (Error while trying to deserialize arguments: undefined method `clear' for nil:NilClass):
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/postgresql_adapter.rb:879:in `ensure in execute_and_clear'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/postgresql_adapter.rb:879:in `execute_and_clear'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/postgresql/database_statements.rb:64:in `internal_exec_query'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/abstract/database_statements.rb:630:in `select'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/abstract/database_statements.rb:71:in `select_all'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/abstract/query_cache.rb:111:in `block in select_all'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/abstract/query_cache.rb:151:in `block in cache_sql'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/concurrency/load_interlock_aware_monitor.rb:23:in `handle_interrupt'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/concurrency/load_interlock_aware_monitor.rb:23:in `block in synchronize'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/concurrency/load_interlock_aware_monitor.rb:19:in `handle_interrupt'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/concurrency/load_interlock_aware_monitor.rb:19:in `synchronize'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/abstract/query_cache.rb:146:in `cache_sql'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/abstract/query_cache.rb:111:in `select_all'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/querying.rb:62:in `_query_by_sql'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/relation.rb:983:in `block in exec_main_query'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/relation.rb:1003:in `skip_query_cache_if_necessary'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/relation.rb:969:in `exec_main_query'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/relation.rb:947:in `block in exec_queries'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/relation.rb:1003:in `skip_query_cache_if_necessary'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/relation.rb:941:in `exec_queries'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/relation.rb:727:in `load'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/relation.rb:264:in `records'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/relation/finder_methods.rb:572:in `find_take'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/relation/finder_methods.rb:121:in `take'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/relation/finder_methods.rb:520:in `find_one'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/relation/finder_methods.rb:499:in `find_with_ids'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/relation/finder_methods.rb:92:in `find'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/querying.rb:23:in `find'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/core.rb:246:in `find'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/globalid-1.2.1/lib/global_id/locator.rb:162:in `locate'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/globalid-1.2.1/lib/global_id/locator.rb:210:in `block in locate'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/globalid-1.2.1/lib/global_id/locator.rb:220:in `block in unscoped'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/relation.rb:914:in `_scoping'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/relation.rb:452:in `scoping'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/scoping/default.rb:51:in `unscoped'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/globalid-1.2.1/lib/global_id/locator.rb:220:in `unscoped'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/globalid-1.2.1/lib/global_id/locator.rb:210:in `locate'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/globalid-1.2.1/lib/global_id/locator.rb:31:in `locate'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/arguments.rb:137:in `deserialize_global_id'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/arguments.rb:121:in `deserialize_argument'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/arguments.rb:43:in `block in deserialize'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/arguments.rb:43:in `map'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/arguments.rb:43:in `deserialize'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/core.rb:210:in `deserialize_arguments'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/core.rb:200:in `deserialize_arguments_if_needed'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/execution.rb:50:in `perform_now'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/instrumentation.rb:26:in `block in perform_now'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/railties/job_runtime.rb:13:in `block in instrument'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/instrumentation.rb:40:in `block in instrument'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/notifications.rb:206:in `block in instrument'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/notifications.rb:206:in `instrument'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/instrumentation.rb:39:in `instrument'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/railties/job_runtime.rb:11:in `instrument'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/instrumentation.rb:26:in `perform_now'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/logging.rb:18:in `block in perform_now'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/tagged_logging.rb:135:in `block in tagged'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/tagged_logging.rb:39:in `tagged'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/tagged_logging.rb:135:in `tagged'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/broadcast_logger.rb:240:in `method_missing'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/logging.rb:25:in `tag_logger'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/logging.rb:18:in `perform_now'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/execution.rb:30:in `block in execute'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/callbacks.rb:121:in `block in run_callbacks'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/railtie.rb:67:in `block (4 levels) in <class:Railtie>'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/reloader.rb:77:in `block in wrap'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/execution_wrapper.rb:92:in `wrap'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/reloader.rb:74:in `wrap'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/railtie.rb:66:in `block (3 levels) in <class:Railtie>'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/callbacks.rb:130:in `instance_exec'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/callbacks.rb:130:in `block in run_callbacks'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/callbacks.rb:141:in `run_callbacks'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/execution.rb:28:in `execute'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/queue_adapters/async_adapter.rb:70:in `perform'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/concurrent-ruby-1.2.2/lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:352:in `run_task'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/concurrent-ruby-1.2.2/lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:343:in `block (3 levels) in create_worker'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/concurrent-ruby-1.2.2/lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:334:in `loop'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/concurrent-ruby-1.2.2/lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:334:in `block (2 levels) in create_worker'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/concurrent-ruby-1.2.2/lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:333:in `catch'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/concurrent-ruby-1.2.2/lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:333:in `block in create_worker'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mCategory Create (0.5ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Sample Category"], ["created_at", "2023-12-02 11:26:36.773524"], ["updated_at", "2023-12-02 11:26:36.773524"]]
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 3], ["record_type", "Category"], ["name", "icon"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Create (0.7ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "service_name", "byte_size", "checksum", "created_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["key", "s07czl7p222exft5oyi7us2n5m9d"], ["filename", "sample_icon.png"], ["content_type", "image/png"], ["metadata", "{\"identified\":true}"], ["service_name", "test"], ["byte_size", 221914], ["checksum", "9ZWoOEe1EG5hbCydoMWBig=="], ["created_at", "2023-12-02 11:26:36.776069"]]
+  [1m[36mActiveStorage::Attachment Create (0.6ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "icon"], ["record_type", "Category"], ["record_id", 3], ["blob_id", 3], ["created_at", "2023-12-02 11:26:36.777607"]]
+  [1m[36mCategory Update (0.7ms)[0m  [1m[33mUPDATE "categories" SET "updated_at" = $1 WHERE "categories"."id" = $2[0m  [["updated_at", "2023-12-02 11:26:36.778992"], ["id", 3]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+[36m  Disk Storage (1.6ms) [0m[32mUploaded file to key: s07czl7p222exft5oyi7us2n5m9d (checksum: 9ZWoOEe1EG5hbCydoMWBig==)[0m
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: ec6a100a-a42d-4829-ae2a-a30751f4922b) to Async(default) with arguments: #<GlobalID:0x000000010a44cc48 @uri=#<URI::GID gid://budget-app/ActiveStorage::Blob/3>>
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [ec6a100a-a42d-4829-ae2a-a30751f4922b]   [1m[36mActiveStorage::Blob Load (1.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [ec6a100a-a42d-4829-ae2a-a30751f4922b] Discarded ActiveStorage::AnalyzeJob (Job ID: ec6a100a-a42d-4829-ae2a-a30751f4922b) due to a ActiveRecord::RecordNotFound (Couldn't find ActiveStorage::Blob with 'id'=3).
+[ActiveJob] [ActiveStorage::AnalyzeJob] [ec6a100a-a42d-4829-ae2a-a30751f4922b] Performed ActiveStorage::AnalyzeJob (Job ID: ec6a100a-a42d-4829-ae2a-a30751f4922b) from Async(default) in 3.52ms

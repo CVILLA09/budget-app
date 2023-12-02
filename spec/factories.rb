@@ -6,9 +6,8 @@ FactoryBot.define do
     end
   
     factory :category do
-      sequence(:name) { |n| "Category #{n}" }
-      icon { 'https://example.com/icon.png' }
-      user
+      name { 'Sample Category' }
+      icon { Rack::Test::UploadedFile.new(Rails.root.join('spec/fixtures/files/sample_icon.png'), 'image/png') }
     end
   
     factory :purchase do

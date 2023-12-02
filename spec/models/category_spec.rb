@@ -4,6 +4,15 @@ RSpec.describe Category, type: :model do
   # Assuming you have a factory for categories defined
   let(:category) { create(:category) }
 
+  # Test for association with users
+  it 'can be associated with users' do
+    user1 = create(:user)
+    user2 = create(:user)
+    category.users << [user1, user2]
+  
+    expect(category.users).to include(user1, user2)
+  end
+
   # Test for model validity
   it 'is valid with valid attributes' do
     expect(category).to be_valid
