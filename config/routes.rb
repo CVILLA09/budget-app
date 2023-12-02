@@ -1,10 +1,18 @@
 Rails.application.routes.draw do
+  get 'static_pages/splash'
+  devise_for :users
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
-  # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
-  # Can be used by load balancers and uptime monitors to verify that the app is live.
-  get "up" => "rails/health#show", as: :rails_health_check
+  # You can set the root path to a controller and action of your choice, such as:
+  root to: 'static_pages#splash'
 
-  # Defines the root path route ("/")
-  # root "posts#index"
+  resources :categories do
+    resources :purchases, only: [:new, :create, :show]
+  end
+  
+  # If you have other actions for purchases that are not nested within categories, you can define them like this:
+  resources :purchases, except: [:new, :show, :index]
+
+  # The 'up' route can stay if it's required by your application's health check.
+  get "up" => "rails/health#show", as: :rails_health_check
 end

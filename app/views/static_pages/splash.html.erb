@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="welcome-message">
+    <p>Get started with MoneyMatters, your financial partner.</p>
+  </div>
+  <div class="title animate-scale">
+  <%= link_to image_tag('money.png', alt: 'Money'), root_path, class: 'money-logo' %>
+    <h1>MoneyMatters</h1>
+  </div>
+  <% if user_signed_in? %>
+    <%= link_to 'Start Monitoring!', categories_path, class: "button-primary" %>
+  <% else %>
+    <div class="buttons-container">
+      <%= link_to 'Log in', new_user_session_path, class: "button-primary" %>
+      <%= link_to 'Sign up', new_user_registration_path, class: "button-primary" %>
+    </div>
+  <% end %>
+</div>

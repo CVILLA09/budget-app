@@ -1,15 +1,129 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+@import "_login.css";
+@import "_signup.css";
+@import "categories.css";
+@import "purchases.css";
+
+/* Splash Screen */
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f7fafc;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 95vh;
+  padding: 2rem;
+}
+
+.welcome-message p {
+  text-align: center;
+  color: #434b54;
+  margin-top: 0;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #1a202c;
+  margin: 0;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.money-logo img {
+  width: auto;
+  height: 170px;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.buttons-container {
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+  width: 50%;
+}
+
+.button-primary {
+  padding: 1rem 2rem;
+  background-color: #2563eb;
+  color: white;
+  text-decoration: none;
+  border-radius: 0.375rem;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  width: 200px;
+  margin: 0 auto;
+}
+
+.button-primary:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-0.25rem);
+}
+
+@keyframes scale {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.animate-scale {
+  animation: scale 8s infinite;
+}
+
+/* Custom font */
+@font-face {
+  font-family: 'Open Sans';
+  src: url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+}
+
+/* Adjust the button container for mobile */
+@media (max-width: 768px) {
+  .title h1 {
+    font-size: 3rem;
+    word-wrap: break-word;
+  }
+
+  .buttons-container {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5rem;
+  }
+
+  .button-primary {
+    width: 80%;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+  }
+
+  /* Adjust the padding on the container for mobile screens */
+  .container {
+    padding: 1rem;
+    height: auto;
+    min-height: 95vh;
+  }
+
+  .money-logo img {
+    height: 120px;
+  }
+}
