@@ -43,6 +43,9 @@ RSpec.configure do |config|
     Rails.root.join('spec/fixtures')
   ]
 
+  # Add this to include FactoryBot methods
+  config.include FactoryBot::Syntax::Methods
+
   # Database Cleaner configuration
   config.before(:suite) do
     DatabaseCleaner.strategy = :transaction
