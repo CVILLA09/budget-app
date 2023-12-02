@@ -1,3 +1,105 @@
+/* index.html.erb */
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.content-wrap {
+  flex: 1;
+}
+
+.navigation-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3778C2;
+  padding: 1rem;
+}
+
+.navigation-bar .back-button img, .navigation-bar .sign-out img {
+  width: 40px;
+  height: 40px;
+  color: white;
+  text-decoration: none;
+}
+
+.page-title, .login-title {
+  color: white;
+  text-align: center;
+  flex-grow: 2;
+}
+
+.sign-out, .sign-out-form input {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.sign-out:hover, .sign-out-form input:hover {
+  text-decoration: underline;
+}
+
+.nav-link img{
+  width: 40px;
+  height: 40px;
+  color: white;
+  text-decoration: none;
+}
+
+.categories-section {
+  padding: 20px;
+}
+
+.notice {
+  color: #5fb523;
+}
+
+.category-link {
+  margin: 4px;
+  display: block;
+}
+
+.footer-section {
+  text-align: center;
+  margin-top: 16px;
+  padding-bottom: 5px;
+}
+
+.add-category-btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.add-category-button {
+  padding: 1.2rem;
+  font-size: 1rem;
+  font-style: none;
+  width: 100%;
+  border: 2px solid #5fb523;
+  background-color: #5fb523;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-category-button:hover {
+  opacity: 0.9;
+}
+
+.add-category-button:focus {
+  outline: none;
+  background-color: #5fb523;
+}
+
 /* _category.html.erb */
 
 .category-item {
@@ -128,108 +230,6 @@
   
   .nav-link:hover {
     text-decoration: underline;
-  }
-
-  /* index.html.erb */
-
-  .page-container {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-  }
-  
-  .content-wrap {
-    flex: 1;
-  }
-  
-  .navigation {
-    padding: 24px 12px;
-    background-color: #3778C2;
-    color: white;
-  }
-  
-  .nav-list {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0;
-  }
-  
-  .nav-item, .nav-title {
-    flex: 1;
-    text-align: center;
-  }
-
-  /* Additional styles for the sign-out button */
-.sign-out-button {
-    background: none;
-    border: none;
-    color: white;
-    padding: 0;
-    margin: 0;
-    font-family: inherit;
-    font-size: inherit;
-    line-height: inherit;
-    cursor: pointer;
-  }
-  
-  .sign-out-button input:hover,
-  .sign-out-button input:focus {
-    text-decoration: underline;
-  }  
-  
-  .nav-link img{
-    width: 40px;
-    height: 40px;
-    color: white;
-    text-decoration: none;
-  }
-  
-  .categories-section {
-    padding: 20px;
-  }
-  
-  .notice {
-    color: #5fb523;
-  }
-  
-  .category-link {
-    margin: 4px;
-    display: block;
-  }
-  
-  .footer-section {
-    text-align: center;
-    margin-top: 16px;
-    padding-bottom: 5px;
-  }
-  
-  .add-category-btn {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .add-category-button {
-    padding: 1.2rem;
-    font-size: 1rem;
-    font-style: none;
-    width: 100%;
-    border: 2px solid #5fb523;
-    background-color: #5fb523;
-    color: white;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .add-category-button:hover {
-    opacity: 0.9;
-  }
-  
-  .add-category-button:focus {
-    outline: none;
-    background-color: #5fb523;
   }
 
 /* show.html.erb */

@@ -1,8 +1,8 @@
 <div class="navigation py-6 px-3 blue-nav-white-text">
   <ul class="flex justify-between items-center">
-    <li class="w-10"><%= link_to image_tag('backarrow.png', alt: 'Back'), category_path(@purchase.categories[0]), class: 'nav-link' %></li>
+  <li class="w-10"><%= link_to image_tag('backarrow.png', alt: 'Back'), category_path(@purchase.category), class: 'nav-link' %></li>
     <h2><strong>Show purchase</strong></h2>
-    <li><%= link_to 'Sign Out', destroy_user_session_path, data: { turbo_method: :delete }, class: "nav-link" %></li>
+    <%= button_to 'Sign Out', destroy_user_session_path, method: :delete, form: { class: "sign-out-form", "data-turbo" => "false" }, class: "sign-out-button" %>
   </ul>
 </div>
 <p style="color: green"><%= notice %></p>
@@ -18,7 +18,7 @@
   </p>
   <p class="border-b-4 py-2 flex justify-between">
     <span><strong>Categories:</strong></span>
-    <span><%= @purchase.categories[0].name %></span>
+    <span><%= @purchase.category.name %></span>
   </p>
   <p class="py-2 flex justify-between">
     <span><strong>Created at:</strong></span>

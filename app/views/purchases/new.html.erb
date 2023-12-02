@@ -9,7 +9,7 @@
         <h2><strong>New Purchase</strong></h2>
       </li>
       <li class="nav-item">
-        <%= link_to 'Sign Out', destroy_user_session_path, method: :delete, data: { confirm: 'Are you sure?' }, class: 'nav-link' %>
+        <%= button_to 'Sign Out', destroy_user_session_path, method: :delete, form: { class: "sign-out-form", "data-turbo" => "false" }, class: "sign-out-button" %>
       </li>
     </ul>
   </div>
