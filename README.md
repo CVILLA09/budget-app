@@ -6,7 +6,7 @@
 <br/>
 
 <div align="center">
-  <img src="https://github.com/CVILLA09/budget-app/blob/develop/app/assets/images/mobile-app-preview.gif?raw=true" alt="readme-gif" width="500" height="800" style="display: inline-block;">
+  <img src="https://github.com/CVILLA09/budget-app/blob/develop/app/assets/images/mobile-app-preview.gif?raw=true" alt="readme-gif" width="500" height="900" style="display: inline-block;">
 </div>
 
 <br/>
