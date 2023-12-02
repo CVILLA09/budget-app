@@ -1,31 +1,30 @@
-<div class="navigation py-6 px-3 blue-nav-white-text">
-  <ul class="flex justify-between items-center">
-  <li class="w-10"><%= link_to image_tag('backarrow.png', alt: 'Back'), category_path(@purchase.category), class: 'nav-link' %></li>
-    <h2><strong>Show purchase</strong></h2>
-    <%= button_to 'Sign Out', destroy_user_session_path, method: :delete, form: { class: "sign-out-form", "data-turbo" => "false" }, class: "sign-out-button" %>
-  </ul>
+<div class="navigation-bar">
+  <%= link_to image_tag('backarrow.png', alt: 'Back'), category_path(@purchase.category), class: 'back-button' %>
+  <h2 class="page-title"><strong>Show Purchase</strong></h2>
+  <%= button_to 'Sign Out', destroy_user_session_path, method: :delete, form: { class: "sign-out-form" }, class: "sign-out" %>
 </div>
-<p style="color: green"><%= notice %></p>
 
-<div class="flex flex-col bg-white p-5 drop-shadow-md">
-  <p class="flex justify-between py-2">
+<p class="notice"><%= notice %></p>
+
+<div class="purchase-details">
+  <p class="purchase-detail">
     <span><strong>Name:</strong></span>
     <span><%= @purchase.name %></span>
   </p>
-  <p class="border-y-4 py-2 flex justify-between">
+  <p class="purchase-detail">
     <span><strong>Amount:</strong></span>
     <span>$<%= @purchase.amount %></span>
   </p>
-  <p class="border-b-4 py-2 flex justify-between">
-    <span><strong>Categories:</strong></span>
+  <p class="purchase-detail">
+    <span><strong>Category:</strong></span>
     <span><%= @purchase.category.name %></span>
   </p>
-  <p class="py-2 flex justify-between">
+  <p class="purchase-detail">
     <span><strong>Created at:</strong></span>
     <span><%= @purchase.created_at %></span>
   </p>
 </div>
 
-<div>
-  <%= button_to "Delete", @purchase, method: :delete, class: "mt-5 ms-5 p-3 px-5 red-btn text-white rounded-md hover:bg-red-600 focus:outline-none focus:bg-red-600 drop-shadow-md" %>
+<div class="purchase-actions">
+  <%= button_to "Delete", @purchase, method: :delete, class: "delete-purchase-button" %>
 </div>

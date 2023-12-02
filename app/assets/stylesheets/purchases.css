@@ -94,69 +94,34 @@
 
 /* show.html.erb */
 
-.purchase-show-container {
-  margin: 20px;
-}
-
-.navigation .nav-list {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  list-style-type: none;
-  padding: 0;
-  background-color: #3778C2;
-  color: white;
-}
-
-.navigation .nav-item {
-  flex: 1;
-}
-
-.navigation .nav-title {
-  flex: 2;
-  text-align: center;
-  font-size: 1.5em;
-}
-
-.nav-link {
-  color: white;
-  text-decoration: none;
-  display: inline-block;
-  padding: 8px;
-}
-
-.nav-link:hover {
-  background-color: #2a5b8d;
+.notice {
+  color: green;
+  /* other styling as needed */
 }
 
 .purchase-details {
-  background-color: #ffffff;
+  background-color: white;
   padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  margin-top: 20px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
 }
 
-.purchase-details p {
-  margin: 10px 0;
+.purchase-detail {
   display: flex;
   justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 2px solid #CCC;
 }
 
-.actions {
-  margin-top: 20px;
-}
-
-.delete-button {
+.delete-purchase-button {
   background-color: #e53e3e;
   color: white;
   padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
+  margin-top: 20px;
+  border-radius: 4px;
   cursor: pointer;
 }
 
-.delete-button:hover {
+.delete-purchase-button:hover {
   background-color: #c53030;
 }
 

@@ -9463,3 +9463,99 @@ Processing by PurchasesController#new as HTML
 Completed 200 OK in 28ms (Views: 18.9ms | ActiveRecord: 2.1ms | Allocations: 7223)
 
 
+Started GET "/categories" for ::1 at 2023-12-01 23:35:06 -0600
+Processing by CategoriesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (14.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "categories_users" ON "categories"."id" = "categories_users"."category_id" WHERE "categories_users"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/categories/index.html.erb:13
+  [1m[36mPurchase Load (1.0ms)[0m  [1m[34mSELECT "purchases".* FROM "purchases" WHERE "purchases"."category_id" = $1[0m  [["category_id", 2]]
+  ↳ app/views/categories/index.html.erb:13
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Category"], ["name", "icon"], ["LIMIT", 1]]
+  ↳ app/views/categories/_category.html.erb:2
+  [1m[36mActiveStorage::Blob Load (0.6ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/categories/_category.html.erb:3
+  [1m[36mPurchase Sum (0.5ms)[0m  [1m[34mSELECT SUM("purchases"."amount") FROM "purchases" WHERE "purchases"."category_id" = $1[0m  [["category_id", 2]]
+  ↳ app/views/categories/_category.html.erb:15
+  Rendered categories/_category.html.erb (Duration: 45.3ms | Allocations: 13226)
+  Rendered categories/index.html.erb within layouts/application (Duration: 99.3ms | Allocations: 23399)
+  Rendered layout layouts/application.html.erb (Duration: 125.3ms | Allocations: 37351)
+Completed 200 OK in 182ms (Views: 99.7ms | ActiveRecord: 43.0ms | Allocations: 51096)
+
+
+Started GET "/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MiwicHVyIjoiYmxvYl9pZCJ9fQ==--49eefcea1667c883710311c40c3d2dc3058b47f4/party.png" for ::1 at 2023-12-01 23:35:06 -0600
+Processing by ActiveStorage::Blobs::RedirectController#show as PNG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsiZGF0YSI6MiwicHVyIjoiYmxvYl9pZCJ9fQ==--49eefcea1667c883710311c40c3d2dc3058b47f4", "filename"=>"party"}
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[36m  Disk Storage (0.5ms) [0m[34mGenerated URL for file at key: z9tsezixm9wsm1545kqv8rj8k6on (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJ6OXRzZXppeG05d3NtMTU0NWtxdjhyajhrNm9uIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwicGFydHkucG5nXCI7IGZpbGVuYW1lKj1VVEYtOCcncGFydHkucG5nIiwiY29udGVudF90eXBlIjoiaW1hZ2UvcG5nIiwic2VydmljZV9uYW1lIjoibG9jYWwifSwiZXhwIjoiMjAyMy0xMi0wMlQwNTo0MDowNi45NjdaIiwicHVyIjoiYmxvYl9rZXkifX0=--56ea4f9e936c3b62039e817e05a86e1b4d9c2b6c/party.png)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJ6OXRzZXppeG05d3NtMTU0NWtxdjhyajhrNm9uIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwicGFydHkucG5nXCI7IGZpbGVuYW1lKj1VVEYtOCcncGFydHkucG5nIiwiY29udGVudF90eXBlIjoiaW1hZ2UvcG5nIiwic2VydmljZV9uYW1lIjoibG9jYWwifSwiZXhwIjoiMjAyMy0xMi0wMlQwNTo0MDowNi45NjdaIiwicHVyIjoiYmxvYl9rZXkifX0=--56ea4f9e936c3b62039e817e05a86e1b4d9c2b6c/party.png
+Completed 302 Found in 11ms (ActiveRecord: 0.5ms | Allocations: 2086)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJ6OXRzZXppeG05d3NtMTU0NWtxdjhyajhrNm9uIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwicGFydHkucG5nXCI7IGZpbGVuYW1lKj1VVEYtOCcncGFydHkucG5nIiwiY29udGVudF90eXBlIjoiaW1hZ2UvcG5nIiwic2VydmljZV9uYW1lIjoibG9jYWwifSwiZXhwIjoiMjAyMy0xMi0wMlQwNTo0MDowNi45NjdaIiwicHVyIjoiYmxvYl9rZXkifX0=--56ea4f9e936c3b62039e817e05a86e1b4d9c2b6c/party.png" for ::1 at 2023-12-01 23:35:07 -0600
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"party"}
+Completed 200 OK in 4ms (ActiveRecord: 0.0ms | Allocations: 300)
+
+
+Started GET "/categories/2" for ::1 at 2023-12-01 23:35:08 -0600
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCategory Load (40.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "categories_users" ON "categories"."id" = "categories_users"."category_id" WHERE "categories_users"."user_id" = $1 AND "categories"."id" = $2 LIMIT $3[0m  [["user_id", 1], ["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/categories_controller.rb:54:in `set_category'
+  Rendering layout layouts/application.html.erb
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Category"], ["name", "icon"], ["LIMIT", 1]]
+  ↳ app/views/categories/_category.html.erb:2
+  [1m[36mActiveStorage::Blob Load (0.6ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/categories/_category.html.erb:3
+  [1m[36mPurchase Sum (0.4ms)[0m  [1m[34mSELECT SUM("purchases"."amount") FROM "purchases" WHERE "purchases"."category_id" = $1[0m  [["category_id", 2]]
+  ↳ app/views/categories/_category.html.erb:15
+  Rendered categories/_category.html.erb (Duration: 9.0ms | Allocations: 2028)
+  [1m[36mPurchase Load (0.5ms)[0m  [1m[34mSELECT "purchases".* FROM "purchases" WHERE "purchases"."category_id" = $1 ORDER BY "purchases"."created_at" DESC[0m  [["category_id", 2]]
+  ↳ app/views/categories/show.html.erb:15
+  Rendered purchases/_purchase.html.erb (Duration: 1.1ms | Allocations: 203)
+  Rendered purchases/_purchase.html.erb (Duration: 0.2ms | Allocations: 36)
+  Rendered categories/show.html.erb within layouts/application (Duration: 19.9ms | Allocations: 4451)
+  Rendered layout layouts/application.html.erb (Duration: 25.3ms | Allocations: 6350)
+Completed 200 OK in 80ms (Views: 25.1ms | ActiveRecord: 42.2ms | Allocations: 9343)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJ6OXRzZXppeG05d3NtMTU0NWtxdjhyajhrNm9uIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwicGFydHkucG5nXCI7IGZpbGVuYW1lKj1VVEYtOCcncGFydHkucG5nIiwiY29udGVudF90eXBlIjoiaW1hZ2UvcG5nIiwic2VydmljZV9uYW1lIjoibG9jYWwifSwiZXhwIjoiMjAyMy0xMi0wMlQwNTo0MDowNi45NjdaIiwicHVyIjoiYmxvYl9rZXkifX0=--56ea4f9e936c3b62039e817e05a86e1b4d9c2b6c/party.png" for ::1 at 2023-12-01 23:35:09 -0600
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"party"}
+Completed 304 Not Modified in 5ms (ActiveRecord: 0.0ms | Allocations: 513)
+
+
+Started GET "/categories/2/purchases/1" for ::1 at 2023-12-01 23:35:10 -0600
+Processing by PurchasesController#show as HTML
+  Parameters: {"category_id"=>"2", "id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPurchase Load (0.3ms)[0m  [1m[34mSELECT "purchases".* FROM "purchases" WHERE "purchases"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/purchases_controller.rb:57:in `set_purchase'
+  Rendering layout layouts/application.html.erb
+  Rendering purchases/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/purchases/show.html.erb:2
+  Rendered purchases/show.html.erb within layouts/application (Duration: 6.6ms | Allocations: 2473)
+  Rendered layout layouts/application.html.erb (Duration: 13.1ms | Allocations: 4407)
+Completed 200 OK in 24ms (Views: 14.1ms | ActiveRecord: 1.2ms | Allocations: 7616)
+
+
+Started GET "/categories/2/purchases/1" for ::1 at 2023-12-01 23:36:12 -0600
+Processing by PurchasesController#show as HTML
+  Parameters: {"category_id"=>"2", "id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPurchase Load (0.8ms)[0m  [1m[34mSELECT "purchases".* FROM "purchases" WHERE "purchases"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/purchases_controller.rb:57:in `set_purchase'
+  Rendering layout layouts/application.html.erb
+  Rendering purchases/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/purchases/show.html.erb:2
+  Rendered purchases/show.html.erb within layouts/application (Duration: 8.0ms | Allocations: 1422)
+  Rendered layout layouts/application.html.erb (Duration: 13.0ms | Allocations: 3321)
+Completed 200 OK in 27ms (Views: 14.5ms | ActiveRecord: 1.5ms | Allocations: 5571)
+
+
