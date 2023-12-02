@@ -1808,3 +1808,438 @@ Completed 200 OK in 488ms (Views: 471.4ms | ActiveRecord: 0.0ms | Allocations: 1
 [ActiveJob] [ActiveStorage::AnalyzeJob] [ec6a100a-a42d-4829-ae2a-a30751f4922b]   [1m[36mActiveStorage::Blob Load (1.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
 [ActiveJob] [ActiveStorage::AnalyzeJob] [ec6a100a-a42d-4829-ae2a-a30751f4922b] Discarded ActiveStorage::AnalyzeJob (Job ID: ec6a100a-a42d-4829-ae2a-a30751f4922b) due to a ActiveRecord::RecordNotFound (Couldn't find ActiveStorage::Blob with 'id'=3).
 [ActiveJob] [ActiveStorage::AnalyzeJob] [ec6a100a-a42d-4829-ae2a-a30751f4922b] Performed ActiveStorage::AnalyzeJob (Job ID: ec6a100a-a42d-4829-ae2a-a30751f4922b) from Async(default) in 3.52ms
+  [1m[36mActiveRecord::InternalMetadata Load (1.4ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "schema_sha1"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.0ms)[0m  [1m[35mALTER TABLE "active_storage_variant_records" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "active_storage_attachments" DISABLE TRIGGER ALL;ALTER TABLE "categories_users" DISABLE TRIGGER ALL;ALTER TABLE "categories" DISABLE TRIGGER ALL;ALTER TABLE "active_storage_blobs" DISABLE TRIGGER ALL;ALTER TABLE "purchases" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL[0m
+  [1m[36mTRANSACTION (2.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (2.3ms)[0m  [1m[34m            SELECT schemaname || '.' || tablename
+            FROM pg_tables
+            WHERE
+              tablename !~ '_prt_' AND
+              tablename <> 'schema_migrations'
+  AND tablename <> 'ar_internal_metadata'
+ AND
+              schemaname = ANY (current_schemas(false))
+[0m
+  [1m[35m (0.9ms)[0m  [1m[34mselect table_name from information_schema.views where table_schema = 'budget_app_test'[0m
+  [1m[35m (45.3ms)[0m  [1m[35mTRUNCATE TABLE "active_storage_variant_records", "active_storage_attachments", "categories_users", "categories", "active_storage_blobs", "purchases", "users" RESTART IDENTITY RESTRICT;[0m
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (6.0ms)[0m  [1m[35mALTER TABLE "active_storage_variant_records" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" ENABLE TRIGGER ALL;ALTER TABLE "active_storage_attachments" ENABLE TRIGGER ALL;ALTER TABLE "categories_users" ENABLE TRIGGER ALL;ALTER TABLE "categories" ENABLE TRIGGER ALL;ALTER TABLE "active_storage_blobs" ENABLE TRIGGER ALL;ALTER TABLE "purchases" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mUser Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "tobias_donnelly@gusikowski-goldner.test"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.0ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "full_name", "profile_picture") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "User 1"], ["created_at", "2023-12-02 11:28:41.417225"], ["updated_at", "2023-12-02 11:28:41.417225"], ["email", "tobias_donnelly@gusikowski-goldner.test"], ["encrypted_password", "$2a$04$gMrjnOjYncaey0/Osptb5.pbK/TiX/Vq9h9dyfBGRkKfbmPPlD4wC"], ["reset_password_token", nil], ["reset_password_sent_at", nil], ["remember_created_at", nil], ["full_name", nil], ["profile_picture", nil]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "otis@lang.example"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "full_name", "profile_picture") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "User 2"], ["created_at", "2023-12-02 11:28:41.422820"], ["updated_at", "2023-12-02 11:28:41.422820"], ["email", "otis@lang.example"], ["encrypted_password", "$2a$04$S.MIq.bXh5XUIOwdKC4Fe.qtuPwGTAw.JJgdEGGpMAUUdBAQi6f/O"], ["reset_password_token", nil], ["reset_password_sent_at", nil], ["remember_created_at", nil], ["full_name", nil], ["profile_picture", nil]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mCategory Create (0.8ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Sample Category"], ["created_at", "2023-12-02 11:28:41.487603"], ["updated_at", "2023-12-02 11:28:41.487603"]]
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Category"], ["name", "icon"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Create (0.6ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "service_name", "byte_size", "checksum", "created_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["key", "h8uugktkjnyxlrtu2uyz0qup31dj"], ["filename", "sample_icon.png"], ["content_type", "image/png"], ["metadata", "{\"identified\":true}"], ["service_name", "test"], ["byte_size", 221914], ["checksum", "9ZWoOEe1EG5hbCydoMWBig=="], ["created_at", "2023-12-02 11:28:41.493566"]]
+  [1m[36mActiveStorage::Attachment Create (0.6ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "icon"], ["record_type", "Category"], ["record_id", 1], ["blob_id", 1], ["created_at", "2023-12-02 11:28:41.494877"]]
+  [1m[36mCategory Update (0.2ms)[0m  [1m[33mUPDATE "categories" SET "updated_at" = $1 WHERE "categories"."id" = $2[0m  [["updated_at", "2023-12-02 11:28:41.496089"], ["id", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+[36m  Disk Storage (1.5ms) [0m[32mUploaded file to key: h8uugktkjnyxlrtu2uyz0qup31dj (checksum: 9ZWoOEe1EG5hbCydoMWBig==)[0m
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: 82c65a18-5b07-4278-b31e-a3171a42911c) to Async(default) with arguments: #<GlobalID:0x0000000114443850 @uri=#<URI::GID gid://budget-app/ActiveStorage::Blob/1>>
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mCategory::HABTM_Users Create (0.6ms)[0m  [1m[32mINSERT INTO "categories_users" ("user_id", "category_id") VALUES ($1, $2)[0m  [["user_id", 1], ["category_id", 1]]
+  [1m[36mCategory::HABTM_Users Create (0.2ms)[0m  [1m[32mINSERT INTO "categories_users" ("user_id", "category_id") VALUES ($1, $2)[0m  [["user_id", 2], ["category_id", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [82c65a18-5b07-4278-b31e-a3171a42911c]   [1m[36mActiveStorage::Blob Load (1.6ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [82c65a18-5b07-4278-b31e-a3171a42911c] Performing ActiveStorage::AnalyzeJob (Job ID: 82c65a18-5b07-4278-b31e-a3171a42911c) from Async(default) enqueued at 2023-12-02T11:28:41.500755000Z with arguments: #<GlobalID:0x000000011450dc18 @uri=#<URI::GID gid://budget-app/ActiveStorage::Blob/1>>
+[ActiveJob] [ActiveStorage::AnalyzeJob] [82c65a18-5b07-4278-b31e-a3171a42911c] Skipping image analysis because the ruby-vips gem isn't installed
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" INNER JOIN "categories_users" ON "users"."id" = "categories_users"."user_id" WHERE "categories_users"."category_id" = $1 AND "users"."id" = $2 LIMIT $3[0m  [["category_id", 1], ["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" INNER JOIN "categories_users" ON "users"."id" = "categories_users"."user_id" WHERE "categories_users"."category_id" = $1 AND "users"."id" = $2 LIMIT $3[0m  [["category_id", 1], ["id", 2], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [82c65a18-5b07-4278-b31e-a3171a42911c]   [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [82c65a18-5b07-4278-b31e-a3171a42911c]   [1m[36mActiveStorage::Blob Update (1.9ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = $1 WHERE "active_storage_blobs"."id" = $2[0m  [["metadata", "{\"identified\":true,\"analyzed\":true}"], ["id", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [82c65a18-5b07-4278-b31e-a3171a42911c]   [1m[36mActiveStorage::Attachment Load (0.9ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = $1[0m  [["blob_id", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [82c65a18-5b07-4278-b31e-a3171a42911c]   [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1[0m  [["id", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [82c65a18-5b07-4278-b31e-a3171a42911c]   [1m[36mCategory Update (0.5ms)[0m  [1m[33mUPDATE "categories" SET "updated_at" = $1 WHERE "categories"."id" = $2[0m  [["updated_at", "2023-12-02 11:28:41.531996"], ["id", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [82c65a18-5b07-4278-b31e-a3171a42911c]   [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [82c65a18-5b07-4278-b31e-a3171a42911c] Performed ActiveStorage::AnalyzeJob (Job ID: 82c65a18-5b07-4278-b31e-a3171a42911c) from Async(default) in 29.29ms
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mCategory Create (0.8ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Sample Category"], ["created_at", "2023-12-02 11:28:41.553582"], ["updated_at", "2023-12-02 11:28:41.553582"]]
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Category"], ["name", "icon"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Create (0.2ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "service_name", "byte_size", "checksum", "created_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["key", "3tvksfe6rv4mfbve6962cgr2nq7g"], ["filename", "sample_icon.png"], ["content_type", "image/png"], ["metadata", "{\"identified\":true}"], ["service_name", "test"], ["byte_size", 221914], ["checksum", "9ZWoOEe1EG5hbCydoMWBig=="], ["created_at", "2023-12-02 11:28:41.556262"]]
+  [1m[36mActiveStorage::Attachment Create (0.4ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "icon"], ["record_type", "Category"], ["record_id", 2], ["blob_id", 2], ["created_at", "2023-12-02 11:28:41.557111"]]
+  [1m[36mCategory Update (0.2ms)[0m  [1m[33mUPDATE "categories" SET "updated_at" = $1 WHERE "categories"."id" = $2[0m  [["updated_at", "2023-12-02 11:28:41.557986"], ["id", 2]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+[36m  Disk Storage (1.4ms) [0m[32mUploaded file to key: 3tvksfe6rv4mfbve6962cgr2nq7g (checksum: 9ZWoOEe1EG5hbCydoMWBig==)[0m
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: 55be3431-c832-45d5-9363-11ace57e4787) to Async(default) with arguments: #<GlobalID:0x000000011464be68 @uri=#<URI::GID gid://budget-app/ActiveStorage::Blob/2>>
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [55be3431-c832-45d5-9363-11ace57e4787]   [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [55be3431-c832-45d5-9363-11ace57e4787] Error performing ActiveStorage::AnalyzeJob (Job ID: 55be3431-c832-45d5-9363-11ace57e4787) from Async(default) in 2.11ms: ActiveJob::DeserializationError (Error while trying to deserialize arguments: undefined method `clear' for nil:NilClass):
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/postgresql_adapter.rb:879:in `ensure in execute_and_clear'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/postgresql_adapter.rb:879:in `execute_and_clear'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/postgresql/database_statements.rb:64:in `internal_exec_query'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/abstract/database_statements.rb:630:in `select'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/abstract/database_statements.rb:71:in `select_all'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/abstract/query_cache.rb:111:in `block in select_all'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/abstract/query_cache.rb:151:in `block in cache_sql'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/concurrency/load_interlock_aware_monitor.rb:23:in `handle_interrupt'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/concurrency/load_interlock_aware_monitor.rb:23:in `block in synchronize'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/concurrency/load_interlock_aware_monitor.rb:19:in `handle_interrupt'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/concurrency/load_interlock_aware_monitor.rb:19:in `synchronize'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/abstract/query_cache.rb:146:in `cache_sql'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/abstract/query_cache.rb:111:in `select_all'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/querying.rb:62:in `_query_by_sql'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/relation.rb:983:in `block in exec_main_query'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/relation.rb:1003:in `skip_query_cache_if_necessary'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/relation.rb:969:in `exec_main_query'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/relation.rb:947:in `block in exec_queries'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/relation.rb:1003:in `skip_query_cache_if_necessary'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/relation.rb:941:in `exec_queries'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/relation.rb:727:in `load'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/relation.rb:264:in `records'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/relation/finder_methods.rb:572:in `find_take'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/relation/finder_methods.rb:121:in `take'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/relation/finder_methods.rb:520:in `find_one'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/relation/finder_methods.rb:499:in `find_with_ids'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/relation/finder_methods.rb:92:in `find'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/querying.rb:23:in `find'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/core.rb:246:in `find'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/globalid-1.2.1/lib/global_id/locator.rb:162:in `locate'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/globalid-1.2.1/lib/global_id/locator.rb:210:in `block in locate'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/globalid-1.2.1/lib/global_id/locator.rb:220:in `block in unscoped'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/relation.rb:914:in `_scoping'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/relation.rb:452:in `scoping'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/scoping/default.rb:51:in `unscoped'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/globalid-1.2.1/lib/global_id/locator.rb:220:in `unscoped'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/globalid-1.2.1/lib/global_id/locator.rb:210:in `locate'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/globalid-1.2.1/lib/global_id/locator.rb:31:in `locate'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/arguments.rb:137:in `deserialize_global_id'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/arguments.rb:121:in `deserialize_argument'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/arguments.rb:43:in `block in deserialize'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/arguments.rb:43:in `map'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/arguments.rb:43:in `deserialize'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/core.rb:210:in `deserialize_arguments'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/core.rb:200:in `deserialize_arguments_if_needed'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/execution.rb:50:in `perform_now'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/instrumentation.rb:26:in `block in perform_now'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/railties/job_runtime.rb:13:in `block in instrument'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/instrumentation.rb:40:in `block in instrument'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/notifications.rb:206:in `block in instrument'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/notifications.rb:206:in `instrument'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/instrumentation.rb:39:in `instrument'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/railties/job_runtime.rb:11:in `instrument'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/instrumentation.rb:26:in `perform_now'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/logging.rb:18:in `block in perform_now'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/tagged_logging.rb:135:in `block in tagged'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/tagged_logging.rb:39:in `tagged'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/tagged_logging.rb:135:in `tagged'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/broadcast_logger.rb:240:in `method_missing'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/logging.rb:25:in `tag_logger'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/logging.rb:18:in `perform_now'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/execution.rb:30:in `block in execute'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/callbacks.rb:121:in `block in run_callbacks'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/railtie.rb:67:in `block (4 levels) in <class:Railtie>'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/reloader.rb:77:in `block in wrap'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/execution_wrapper.rb:92:in `wrap'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/reloader.rb:74:in `wrap'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/railtie.rb:66:in `block (3 levels) in <class:Railtie>'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/callbacks.rb:130:in `instance_exec'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/callbacks.rb:130:in `block in run_callbacks'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/callbacks.rb:141:in `run_callbacks'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/execution.rb:28:in `execute'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/queue_adapters/async_adapter.rb:70:in `perform'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/concurrent-ruby-1.2.2/lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:352:in `run_task'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/concurrent-ruby-1.2.2/lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:343:in `block (3 levels) in create_worker'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/concurrent-ruby-1.2.2/lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:334:in `loop'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/concurrent-ruby-1.2.2/lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:334:in `block (2 levels) in create_worker'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/concurrent-ruby-1.2.2/lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:333:in `catch'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/concurrent-ruby-1.2.2/lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:333:in `block in create_worker'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mCategory Create (0.5ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Sample Category"], ["created_at", "2023-12-02 11:28:41.567400"], ["updated_at", "2023-12-02 11:28:41.567400"]]
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 3], ["record_type", "Category"], ["name", "icon"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Create (0.3ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "service_name", "byte_size", "checksum", "created_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["key", "m1zv73vwiag1gssujvdbpvl4rw84"], ["filename", "sample_icon.png"], ["content_type", "image/png"], ["metadata", "{\"identified\":true}"], ["service_name", "test"], ["byte_size", 221914], ["checksum", "9ZWoOEe1EG5hbCydoMWBig=="], ["created_at", "2023-12-02 11:28:41.569595"]]
+  [1m[36mActiveStorage::Attachment Create (0.6ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "icon"], ["record_type", "Category"], ["record_id", 3], ["blob_id", 3], ["created_at", "2023-12-02 11:28:41.570577"]]
+  [1m[36mCategory Update (0.3ms)[0m  [1m[33mUPDATE "categories" SET "updated_at" = $1 WHERE "categories"."id" = $2[0m  [["updated_at", "2023-12-02 11:28:41.571869"], ["id", 3]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+[36m  Disk Storage (1.4ms) [0m[32mUploaded file to key: m1zv73vwiag1gssujvdbpvl4rw84 (checksum: 9ZWoOEe1EG5hbCydoMWBig==)[0m
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: f7af53e7-a1a4-450e-b2ca-18b19b4ce822) to Async(default) with arguments: #<GlobalID:0x000000011468db88 @uri=#<URI::GID gid://budget-app/ActiveStorage::Blob/3>>
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [f7af53e7-a1a4-450e-b2ca-18b19b4ce822]   [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [f7af53e7-a1a4-450e-b2ca-18b19b4ce822] Discarded ActiveStorage::AnalyzeJob (Job ID: f7af53e7-a1a4-450e-b2ca-18b19b4ce822) due to a ActiveRecord::RecordNotFound (Couldn't find ActiveStorage::Blob with 'id'=3).
+[ActiveJob] [ActiveStorage::AnalyzeJob] [f7af53e7-a1a4-450e-b2ca-18b19b4ce822] Performed ActiveStorage::AnalyzeJob (Job ID: f7af53e7-a1a4-450e-b2ca-18b19b4ce822) from Async(default) in 2.44ms
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mCategory Create (0.4ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Sample Category"], ["created_at", "2023-12-02 11:28:41.580823"], ["updated_at", "2023-12-02 11:28:41.580823"]]
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 4], ["record_type", "Category"], ["name", "icon"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Create (0.2ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "service_name", "byte_size", "checksum", "created_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["key", "nnaf9t0osxdp6l8ra1v8rhukhj07"], ["filename", "sample_icon.png"], ["content_type", "image/png"], ["metadata", "{\"identified\":true}"], ["service_name", "test"], ["byte_size", 221914], ["checksum", "9ZWoOEe1EG5hbCydoMWBig=="], ["created_at", "2023-12-02 11:28:41.583132"]]
+  [1m[36mActiveStorage::Attachment Create (0.3ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "icon"], ["record_type", "Category"], ["record_id", 4], ["blob_id", 4], ["created_at", "2023-12-02 11:28:41.583932"]]
+  [1m[36mCategory Update (0.3ms)[0m  [1m[33mUPDATE "categories" SET "updated_at" = $1 WHERE "categories"."id" = $2[0m  [["updated_at", "2023-12-02 11:28:41.584754"], ["id", 4]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+[36m  Disk Storage (1.3ms) [0m[32mUploaded file to key: nnaf9t0osxdp6l8ra1v8rhukhj07 (checksum: 9ZWoOEe1EG5hbCydoMWBig==)[0m
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: 76aed955-de30-4d1a-a913-4e04389888b0) to Async(default) with arguments: #<GlobalID:0x00000001146cfc68 @uri=#<URI::GID gid://budget-app/ActiveStorage::Blob/4>>
+[ActiveJob] [ActiveStorage::AnalyzeJob] [76aed955-de30-4d1a-a913-4e04389888b0]   [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [76aed955-de30-4d1a-a913-4e04389888b0] Performing ActiveStorage::AnalyzeJob (Job ID: 76aed955-de30-4d1a-a913-4e04389888b0) from Async(default) enqueued at 2023-12-02T11:28:41.588462000Z with arguments: #<GlobalID:0x00000001146cacb8 @uri=#<URI::GID gid://budget-app/ActiveStorage::Blob/4>>
+[ActiveJob] [ActiveStorage::AnalyzeJob] [76aed955-de30-4d1a-a913-4e04389888b0] Skipping image analysis because the ruby-vips gem isn't installed
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[31mROLLBACK[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [76aed955-de30-4d1a-a913-4e04389888b0]   [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [76aed955-de30-4d1a-a913-4e04389888b0]   [1m[36mActiveStorage::Blob Update (1.8ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = $1 WHERE "active_storage_blobs"."id" = $2[0m  [["metadata", "{\"identified\":true,\"analyzed\":true}"], ["id", 4]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [76aed955-de30-4d1a-a913-4e04389888b0] Error performing ActiveStorage::AnalyzeJob (Job ID: 76aed955-de30-4d1a-a913-4e04389888b0) from Async(default) in 4.84ms: ActiveRecord::StatementInvalid (PG::NoActiveSqlTransaction: ERROR:  SAVEPOINT can only be used in transaction blocks
+):
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/postgresql/database_statements.rb:55:in `exec'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/postgresql/database_statements.rb:55:in `block (2 levels) in raw_execute'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/abstract_adapter.rb:1028:in `block in with_raw_connection'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/abstract_adapter.rb:1000:in `with_raw_connection'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/postgresql/database_statements.rb:54:in `block in raw_execute'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/abstract_adapter.rb:1143:in `log'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/postgresql/database_statements.rb:53:in `raw_execute'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/abstract/database_statements.rb:521:in `internal_execute'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/abstract/savepoints.rb:12:in `create_savepoint'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/abstract/transaction.rb:337:in `materialize!'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/abstract/transaction.rb:493:in `block (2 levels) in materialize_transactions'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/abstract/transaction.rb:493:in `each'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/abstract/transaction.rb:493:in `block in materialize_transactions'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/abstract/transaction.rb:490:in `materialize_transactions'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/abstract/database_statements.rb:352:in `materialize_transactions'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/abstract_adapter.rb:1003:in `block in with_raw_connection'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/abstract_adapter.rb:1000:in `with_raw_connection'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/postgresql_adapter.rb:893:in `block in exec_no_cache'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/abstract_adapter.rb:1143:in `log'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/postgresql_adapter.rb:892:in `exec_no_cache'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/postgresql_adapter.rb:872:in `execute_and_clear'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/postgresql/database_statements.rb:77:in `exec_delete'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/abstract/database_statements.rb:202:in `update'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/abstract/query_cache.rb:25:in `update'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/persistence.rb:608:in `_update_record'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/persistence.rb:1211:in `_update_row'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/locking/optimistic.rb:93:in `_update_row'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/persistence.rb:1233:in `_update_record'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/attribute_methods/dirty.rb:234:in `_update_record'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/callbacks.rb:449:in `block (2 levels) in _update_record'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/timestamp.rb:138:in `record_update_timestamps'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/callbacks.rb:449:in `block in _update_record'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/callbacks.rb:110:in `run_callbacks'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/callbacks.rb:952:in `_run_update_callbacks'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/callbacks.rb:449:in `_update_record'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/timestamp.rb:120:in `_update_record'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/persistence.rb:1220:in `create_or_update'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/callbacks.rb:441:in `block in create_or_update'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/callbacks.rb:121:in `block in run_callbacks'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/autosave_association.rb:375:in `around_save_collection_association'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/callbacks.rb:130:in `block in run_callbacks'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/callbacks.rb:141:in `run_callbacks'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/callbacks.rb:952:in `_run_save_callbacks'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/callbacks.rb:441:in `create_or_update'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/timestamp.rb:125:in `create_or_update'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/persistence.rb:751:in `save!'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/validations.rb:55:in `save!'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/transactions.rb:313:in `block in save!'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/transactions.rb:365:in `block in with_transaction_returning_status'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/abstract/database_statements.rb:342:in `transaction'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/transactions.rb:361:in `with_transaction_returning_status'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/transactions.rb:313:in `save!'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/suppressor.rb:56:in `save!'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/persistence.rb:906:in `block in update!'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/transactions.rb:365:in `block in with_transaction_returning_status'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/abstract/transaction.rb:535:in `block in within_new_transaction'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/concurrency/load_interlock_aware_monitor.rb:23:in `handle_interrupt'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/concurrency/load_interlock_aware_monitor.rb:23:in `block in synchronize'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/concurrency/load_interlock_aware_monitor.rb:19:in `handle_interrupt'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/concurrency/load_interlock_aware_monitor.rb:19:in `synchronize'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/abstract/transaction.rb:532:in `within_new_transaction'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/abstract/database_statements.rb:344:in `transaction'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/transactions.rb:361:in `with_transaction_returning_status'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/persistence.rb:904:in `update!'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activestorage-7.1.2/app/models/active_storage/blob/analyzable.rb:30:in `analyze'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activestorage-7.1.2/app/jobs/active_storage/analyze_job.rb:11:in `perform'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/execution.rb:69:in `block in _perform_job'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/callbacks.rb:121:in `block in run_callbacks'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/i18n-1.14.1/lib/i18n.rb:322:in `with_locale'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/translation.rb:9:in `block (2 levels) in <module:Translation>'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/callbacks.rb:130:in `instance_exec'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/callbacks.rb:130:in `block in run_callbacks'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/core_ext/time/zones.rb:65:in `use_zone'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/timezones.rb:9:in `block (2 levels) in <module:Timezones>'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/callbacks.rb:130:in `instance_exec'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/callbacks.rb:130:in `block in run_callbacks'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/callbacks.rb:141:in `run_callbacks'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/execution.rb:68:in `_perform_job'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/instrumentation.rb:32:in `_perform_job'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/execution.rb:52:in `perform_now'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/instrumentation.rb:26:in `block in perform_now'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/railties/job_runtime.rb:13:in `block in instrument'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/instrumentation.rb:40:in `block in instrument'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/notifications.rb:206:in `block in instrument'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/notifications.rb:206:in `instrument'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/instrumentation.rb:39:in `instrument'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/railties/job_runtime.rb:11:in `instrument'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/instrumentation.rb:26:in `perform_now'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/logging.rb:18:in `block in perform_now'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/tagged_logging.rb:135:in `block in tagged'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/tagged_logging.rb:39:in `tagged'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/tagged_logging.rb:135:in `tagged'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/broadcast_logger.rb:240:in `method_missing'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/logging.rb:25:in `tag_logger'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/logging.rb:18:in `perform_now'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/execution.rb:30:in `block in execute'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/callbacks.rb:121:in `block in run_callbacks'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/railtie.rb:67:in `block (4 levels) in <class:Railtie>'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/reloader.rb:77:in `block in wrap'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/execution_wrapper.rb:92:in `wrap'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/reloader.rb:74:in `wrap'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/railtie.rb:66:in `block (3 levels) in <class:Railtie>'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/callbacks.rb:130:in `instance_exec'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/callbacks.rb:130:in `block in run_callbacks'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/callbacks.rb:141:in `run_callbacks'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/execution.rb:28:in `execute'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/queue_adapters/async_adapter.rb:70:in `perform'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/concurrent-ruby-1.2.2/lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:352:in `run_task'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/concurrent-ruby-1.2.2/lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:343:in `block (3 levels) in create_worker'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/concurrent-ruby-1.2.2/lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:334:in `loop'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/concurrent-ruby-1.2.2/lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:334:in `block (2 levels) in create_worker'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/concurrent-ruby-1.2.2/lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:333:in `catch'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/concurrent-ruby-1.2.2/lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:333:in `block in create_worker'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (11.9ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_2[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_2[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (139823.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (139824.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [b0de6353-d7fe-4b83-ae90-75b483ff012b]   [1m[36mActiveStorage::Blob Load (359078.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [b0de6353-d7fe-4b83-ae90-75b483ff012b] Error performing ActiveStorage::AnalyzeJob (Job ID: b0de6353-d7fe-4b83-ae90-75b483ff012b) from Async(default) in 359079.51ms: ActiveJob::DeserializationError (Error while trying to deserialize arguments: stream closed in another thread):
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/postgresql_adapter.rb:911:in `exec_prepared'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/postgresql_adapter.rb:911:in `block (2 levels) in exec_cache'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/abstract_adapter.rb:1143:in `log'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/postgresql_adapter.rb:910:in `block in exec_cache'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/abstract_adapter.rb:1028:in `block in with_raw_connection'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/abstract_adapter.rb:1000:in `with_raw_connection'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/postgresql_adapter.rb:906:in `exec_cache'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/postgresql_adapter.rb:874:in `execute_and_clear'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/postgresql/database_statements.rb:64:in `internal_exec_query'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/abstract/database_statements.rb:630:in `select'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/abstract/database_statements.rb:71:in `select_all'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/abstract/query_cache.rb:111:in `block in select_all'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/abstract/query_cache.rb:151:in `block in cache_sql'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/concurrency/load_interlock_aware_monitor.rb:23:in `handle_interrupt'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/concurrency/load_interlock_aware_monitor.rb:23:in `block in synchronize'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/concurrency/load_interlock_aware_monitor.rb:19:in `handle_interrupt'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/concurrency/load_interlock_aware_monitor.rb:19:in `synchronize'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/abstract/query_cache.rb:146:in `cache_sql'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/connection_adapters/abstract/query_cache.rb:111:in `select_all'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/querying.rb:62:in `_query_by_sql'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/relation.rb:983:in `block in exec_main_query'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/relation.rb:1003:in `skip_query_cache_if_necessary'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/relation.rb:969:in `exec_main_query'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/relation.rb:947:in `block in exec_queries'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/relation.rb:1003:in `skip_query_cache_if_necessary'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/relation.rb:941:in `exec_queries'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/relation.rb:727:in `load'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/relation.rb:264:in `records'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/relation/finder_methods.rb:572:in `find_take'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/relation/finder_methods.rb:121:in `take'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/relation/finder_methods.rb:520:in `find_one'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/relation/finder_methods.rb:499:in `find_with_ids'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/relation/finder_methods.rb:92:in `find'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/querying.rb:23:in `find'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/core.rb:246:in `find'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/globalid-1.2.1/lib/global_id/locator.rb:162:in `locate'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/globalid-1.2.1/lib/global_id/locator.rb:210:in `block in locate'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/globalid-1.2.1/lib/global_id/locator.rb:220:in `block in unscoped'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/relation.rb:914:in `_scoping'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/relation.rb:452:in `scoping'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/scoping/default.rb:51:in `unscoped'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/globalid-1.2.1/lib/global_id/locator.rb:220:in `unscoped'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/globalid-1.2.1/lib/global_id/locator.rb:210:in `locate'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/globalid-1.2.1/lib/global_id/locator.rb:31:in `locate'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/arguments.rb:137:in `deserialize_global_id'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/arguments.rb:121:in `deserialize_argument'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/arguments.rb:43:in `block in deserialize'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/arguments.rb:43:in `map'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/arguments.rb:43:in `deserialize'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/core.rb:210:in `deserialize_arguments'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/core.rb:200:in `deserialize_arguments_if_needed'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/execution.rb:50:in `perform_now'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/instrumentation.rb:26:in `block in perform_now'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/railties/job_runtime.rb:13:in `block in instrument'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/instrumentation.rb:40:in `block in instrument'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/notifications.rb:206:in `block in instrument'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/notifications.rb:206:in `instrument'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/instrumentation.rb:39:in `instrument'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activerecord-7.1.2/lib/active_record/railties/job_runtime.rb:11:in `instrument'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/instrumentation.rb:26:in `perform_now'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/logging.rb:18:in `block in perform_now'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/tagged_logging.rb:135:in `block in tagged'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/tagged_logging.rb:39:in `tagged'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/tagged_logging.rb:135:in `tagged'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/broadcast_logger.rb:240:in `method_missing'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/logging.rb:25:in `tag_logger'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/logging.rb:18:in `perform_now'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/execution.rb:30:in `block in execute'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/callbacks.rb:121:in `block in run_callbacks'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/railtie.rb:67:in `block (4 levels) in <class:Railtie>'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/reloader.rb:77:in `block in wrap'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/execution_wrapper.rb:92:in `wrap'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/reloader.rb:74:in `wrap'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/railtie.rb:66:in `block (3 levels) in <class:Railtie>'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/callbacks.rb:130:in `instance_exec'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/callbacks.rb:130:in `block in run_callbacks'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activesupport-7.1.2/lib/active_support/callbacks.rb:141:in `run_callbacks'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/execution.rb:28:in `execute'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/activejob-7.1.2/lib/active_job/queue_adapters/async_adapter.rb:70:in `perform'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/concurrent-ruby-1.2.2/lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:352:in `run_task'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/concurrent-ruby-1.2.2/lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:343:in `block (3 levels) in create_worker'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/concurrent-ruby-1.2.2/lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:334:in `loop'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/concurrent-ruby-1.2.2/lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:334:in `block (2 levels) in create_worker'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/concurrent-ruby-1.2.2/lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:333:in `catch'
+/Users/macpro/.rvm/gems/ruby-3.2.2/gems/concurrent-ruby-1.2.2/lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:333:in `block in create_worker'
+  [1m[36mTRANSACTION (359078.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(365782137357548520)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(365782137357548520)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "schema_sha1"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.9ms)[0m  [1m[35mALTER TABLE "active_storage_variant_records" DISABLE TRIGGER ALL;ALTER TABLE "categories" DISABLE TRIGGER ALL;ALTER TABLE "purchases" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "categories_users" DISABLE TRIGGER ALL;ALTER TABLE "active_storage_blobs" DISABLE TRIGGER ALL;ALTER TABLE "active_storage_attachments" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.8ms)[0m  [1m[34m            SELECT schemaname || '.' || tablename
+            FROM pg_tables
+            WHERE
+              tablename !~ '_prt_' AND
+              tablename <> 'schema_migrations'
+  AND tablename <> 'ar_internal_metadata'
+ AND
+              schemaname = ANY (current_schemas(false))
+[0m
+  [1m[35m (1.4ms)[0m  [1m[34mselect table_name from information_schema.views where table_schema = 'budget_app_test'[0m
+  [1m[35m (55.4ms)[0m  [1m[35mTRUNCATE TABLE "active_storage_variant_records", "categories", "purchases", "users", "categories_users", "active_storage_blobs", "active_storage_attachments" RESTART IDENTITY RESTRICT;[0m
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.9ms)[0m  [1m[35mALTER TABLE "active_storage_variant_records" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" ENABLE TRIGGER ALL;ALTER TABLE "active_storage_blobs" ENABLE TRIGGER ALL;ALTER TABLE "active_storage_attachments" ENABLE TRIGGER ALL;ALTER TABLE "categories" ENABLE TRIGGER ALL;ALTER TABLE "purchases" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "categories_users" ENABLE TRIGGER ALL[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
