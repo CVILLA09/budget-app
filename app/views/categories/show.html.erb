@@ -23,11 +23,11 @@
 
   <section class="actions-section">
   <div class="action-buttons">
-    <%= link_to new_category_purchase_path(@category), class: 'new-purchase-button' do %>
+  <%= link_to new_category_purchase_path(@category), data: { testid: "new-purchase-button" }, class: 'new-purchase-button' do %>
       <button>New Purchase</button>
     <% end %>
 
-    <%= link_to edit_category_path(@category), class: 'edit-category-button' do %>
+    <%= link_to edit_category_path(@category), data: { testid: "edit-category-button" }, class: 'edit-category-button' do %>
       <button>Edit Category</button>
     <% end %>
     </div>

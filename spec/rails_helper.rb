@@ -44,6 +44,9 @@ RSpec.configure do |config|
     Rails.root.join('spec/fixtures')
   ]
 
+  # Include Warden test helpers
+  config.include Warden::Test::Helpers
+
   config.before(:suite) do
     DatabaseCleaner.clean_with(:truncation)
   end
