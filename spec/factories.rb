@@ -6,7 +6,7 @@ FactoryBot.define do
   end
 
   factory :category do
-    name { 'Sample Category' }
+    sequence(:name) { |n| "Sample Category #{n}" }
     icon { Rack::Test::UploadedFile.new(Rails.root.join('spec/fixtures/files/sample_icon.png'), 'image/png') }
   end
 
