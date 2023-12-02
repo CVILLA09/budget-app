@@ -241,11 +241,12 @@ button,
 /* _form.html.erb */
 
 .category-form {
-  margin-top: 40px;
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
-  gap: 20px; /* Adjust the space between form fields */
-  padding-left: 16px; /* Adjust as needed */
+  align-items: stretch;
+  width: 100%;
+  height: 90vh;
 }
 
 .errors {
@@ -257,30 +258,35 @@ button,
 }
 
 .form-field {
-  margin-bottom: 20px; /* Adjust the space between form fields */
+  padding: 0;
 }
 
 .form-field label {
   display: block;
   margin-bottom: 5px;
+  padding: .5rem;
 }
 
 .text-field,
 .file-field,
 .submit-btn {
-  padding: 12px;
-  border: 1px solid #d1d5db; /* Light grey border */
+  padding: 1rem;
+  border: 1px solid #d1d5db;
   border-radius: 4px;
-  width: 100%; /* You might want to set a max-width */
+  width: 100%;
 }
 
 .submit-btn {
-  background-color: #5fb523; /* Green background */
+  background-color: #5fb523;
   color: white;
   cursor: pointer;
   transition: background-color 0.3s;
+  width: 100%;
+  padding: 1.2rem;
+  font-size: larger;
+  margin-top: 2rem;
 }
 
 .submit-btn:hover {
-  background-color: #38a169; /* Darker green on hover */
+  background-color: #38a169;
 }
