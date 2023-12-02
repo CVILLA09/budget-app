@@ -2,5 +2,3 @@
 node_modules/
 /app/assets/builds/*
 !/app/assets/builds/.keep
-public/assets/application-d04a88cf915514d5b1f2d32d9a1153a62cf29d8d26bc6aa616b9072ae5d6d05a.css
-public/assets/trix-91ad87f30d9c53c7b05f534dc3c9994e4e90d50dff03a7222c1326f342f9c223.css
