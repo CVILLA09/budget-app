@@ -1,15 +1,9 @@
-<div class="navigation">
-  <ul class="nav-list">
-    <li class="nav-item">
-      <%= link_to image_tag('backarrow.png', alt: 'Back'), category_path(@category), class: 'nav-link' %>
-    </li>
-    <li class="nav-title">
-      <h2><strong>Editing Category</strong></h2>
-    </li>
-    <li class="nav-item">
-    <%= button_to 'Sign Out', destroy_user_session_path, method: :delete, form: { class: "sign-out-button", "data-turbo" => "false" }, class: "sign-out-button" %>
-    </li>
-  </ul>
+<div class="page-container">
+<div class="navigation-bar">
+<%= link_to image_tag('backarrow.png', alt: 'Back'), categories_path, class: 'back-button' %>
+<h2 class="page-title"><strong>Editing Category</strong></h2>
+<%= button_to 'Sign Out', destroy_user_session_path, method: :delete, form: { class: "sign-out-form" }, class: "sign-out" %>
 </div>
 
 <%= render "form", category: @category %>
+</div>
