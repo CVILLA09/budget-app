@@ -290,6 +290,7 @@ button,
 .submit-btn:hover {
   background-color: #38a169;
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 body,
@@ -371,6 +372,7 @@ a {
   margin: 0;
   padding: 0 10px;
 }
+
 /* index.html.erb */
 
 .purchases-container {
@@ -612,6 +614,7 @@ a {
 .purchase-edit-link:hover {
   background-color: #e8e8e8;
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 body,
@@ -678,8 +681,8 @@ a {
   margin-top: 0;
   margin-bottom: 20px;
 }
-/*
 
+/*
 
  */
 
