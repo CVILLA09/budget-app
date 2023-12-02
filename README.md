@@ -12,13 +12,10 @@
 <br/>
 
 <div align="center">
-  <h1 style="border-bottom: none;">  MoneyMatters </h1>
+  <h1 style="border-bottom: none;"> 💵 🤑 MoneyMatters 🤑 💵 </h1>
 </div>
 
-![BudgetThumbnail (1)](https://github.com/Salimer/Budget-app/assets/52242629/a45ff6b6-db3c-4626-8d26-06af201530d9)
-
-
-</div>
+<br/>
 
 <!-- TABLE OF CONTENTS -->
 
