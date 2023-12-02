@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe Purchase, type: :model do
   let(:user) { create(:user) } # Assuming you have a user factory
   let(:category) { create(:category) } # Assuming you have a category factory
-  let(:purchase) { build(:purchase, author: user, category: category) } # Explicitly setting the author and category
+  let(:purchase) { build(:purchase, author: user, category:) } # Explicitly setting the author and category
 
   it 'is valid with valid attributes' do
     expect(purchase).to be_valid

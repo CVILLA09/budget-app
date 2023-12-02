@@ -6,7 +6,7 @@ ENV['RAILS_ENV'] ||= 'test'
 require_relative '../config/environment'
 require 'rspec/rails'
 # Prevent database truncation if the environment is production
-abort("The Rails environment is running in production mode!") if Rails.env.production?
+abort('The Rails environment is running in production mode!') if Rails.env.production?
 # Add additional requires below this line. Rails is not loaded until this point!
 
 # Requires supporting ruby files with custom matchers and macros, etc, in
@@ -63,26 +63,26 @@ RSpec.configure do |config|
     # :rack_test driver's Rack app under test shares database connection with the specs, so use transaction strategy for speed.
     driver_shares_db_connection_with_specs = Capybara.current_driver == :rack_test
 
-    if !driver_shares_db_connection_with_specs
+    unless driver_shares_db_connection_with_specs
       # Driver is probably for an external browser with an app under test that does *not* share a database connection with the specs, so use truncation strategy.
       DatabaseCleaner.strategy = :truncation
     end
 
-  config.before(:each) do
-    DatabaseCleaner.start
-  end
+    config.before(:each) do
+      DatabaseCleaner.start
+    end
 
-  config.append_after(:each) do
-    DatabaseCleaner.clean
-  end
+    config.append_after(:each) do
+      DatabaseCleaner.clean
+    end
 
-  # This line should be inside the RSpec.configure block
-  config.use_transactional_fixtures = true
+    # This line should be inside the RSpec.configure block
+    config.use_transactional_fixtures = true
 
-  # The following configs should also be inside the RSpec.configure block
-  config.infer_spec_type_from_file_location!
-  config.filter_rails_from_backtrace!
-  # arbitrary gems may also be filtered via:
-  # config.filter_gems_from_backtrace("gem name")
+    # The following configs should also be inside the RSpec.configure block
+    config.infer_spec_type_from_file_location!
+    config.filter_rails_from_backtrace!
+    # arbitrary gems may also be filtered via:
+    # config.filter_gems_from_backtrace("gem name")
   end
 end

@@ -1,14 +1,14 @@
 require 'rails_helper'
 
 RSpec.describe 'CategoriesController', type: :request do
-    describe 'GET /index' do
-      before(:all) do
-        @category = FactoryBot.create(:category)
-        @user = FactoryBot.create(:user)
-        @category.users << @user # This associates the user with the category
-      end
-  
-      before(:each) { sign_in @user }
+  describe 'GET /index' do
+    before(:all) do
+      @category = FactoryBot.create(:category)
+      @user = FactoryBot.create(:user)
+      @category.users << @user # This associates the user with the category
+    end
+
+    before(:each) { sign_in @user }
 
     it 'returns a successful response' do
       get categories_path

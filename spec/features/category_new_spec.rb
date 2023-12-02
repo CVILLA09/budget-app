@@ -1,12 +1,12 @@
 require 'rails_helper'
 
 RSpec.describe 'categories/new', type: :view do
-    before(:each) do
-        category = Category.new(name: 'MyString')
-        category.icon.attach(io: File.open('spec/fixtures/files/sample_icon.png'), filename: 'sample_icon.png', content_type: 'image/png')
-        assign(:category, category)
-      end
-      
+  before(:each) do
+    category = Category.new(name: 'MyString')
+    category.icon.attach(io: File.open('spec/fixtures/files/sample_icon.png'), filename: 'sample_icon.png',
+                         content_type: 'image/png')
+    assign(:category, category)
+  end
 
   it 'renders new category form' do
     render

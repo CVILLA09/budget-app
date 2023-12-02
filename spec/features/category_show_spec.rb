@@ -11,7 +11,7 @@ RSpec.feature 'Category Show Page', type: :feature do
     purchase.author = user
     purchase.save
     login_as(user, scope: :user)
-  end  
+  end
 
   before(:each) { visit category_path(category) }
 
