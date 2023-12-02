@@ -1,7 +1,7 @@
-@import "login.css";
-@import "signup.css";
-@import "categories.css";
-@import "purchases.css";
+@import "login";
+@import "signup";
+@import "categories";
+@import "purchases";
 
 /* Splash Screen */
 
