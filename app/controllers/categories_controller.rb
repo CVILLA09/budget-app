@@ -43,8 +43,13 @@ class CategoriesController < ApplicationController
 
   # DELETE /categories/1
   def destroy
+    @category = Category.find(params[:id])
+
+    # This will delete all purchases associated with this category
+    @category.purchases.destroy_all
+
     @category.destroy
-    redirect_to categories_url, notice: 'Category was successfully destroyed.'
+    redirect_to categories_url, notice: 'Category and all associated purchases were successfully destroyed.'
   end
 
   private

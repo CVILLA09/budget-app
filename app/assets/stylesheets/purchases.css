@@ -1,6 +1,6 @@
- /* index.html.erb */
+/* index.html.erb */
 
- .purchases-container {
+.purchases-container {
   margin: 20px;
 }
 
@@ -15,10 +15,14 @@
 }
 
 .purchase-item {
-  background-color: #f0f0f0;
-  border-radius: 4px;
+  background-color: white;
+  border-radius: 6px;
   padding: 15px;
   margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .purchase-link {
@@ -49,9 +53,9 @@
   background-color: #38a169;
 }
 
- /* new.html.erb */
+/* new.html.erb */
 
- .purchase-new-container {
+.purchase-new-container {
   margin: 0;
 }
 
@@ -59,24 +63,27 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #3778C2;
+  background-color: #3778c2;
   padding: 1rem;
 }
 
-.navigation-bar .back-button img, .navigation-bar .sign-out img {
+.navigation-bar .back-button img,
+.navigation-bar .sign-out img {
   width: 40px;
   height: 40px;
   color: white;
   text-decoration: none;
 }
 
-.page-title, .login-title {
+.page-title,
+.login-title {
   color: white;
   text-align: center;
   flex-grow: 2;
 }
 
-.sign-out, .sign-out-form input {
+.sign-out,
+.sign-out-form input {
   background: none;
   border: none;
   color: white;
@@ -88,28 +95,24 @@
   line-height: inherit;
 }
 
-.sign-out:hover, .sign-out-form input:hover {
+.sign-out:hover,
+.sign-out-form input:hover {
   text-decoration: underline;
 }
 
 /* show.html.erb */
 
-.notice {
-  color: green;
-  /* other styling as needed */
-}
-
 .purchase-details {
   background-color: white;
   padding: 20px;
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .purchase-detail {
   display: flex;
   justify-content: space-between;
   padding: 10px 0;
-  border-bottom: 2px solid #CCC;
+  border-bottom: 2px solid #ccc;
 }
 
 .delete-purchase-button {
@@ -128,116 +131,104 @@
 /* _form.html.erb */
 
 .purchase-form {
-    max-width: 500px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  
-  .purchase-form .field {
-    margin-bottom: 10px;
-  }
-  
-  .purchase-form .field label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  .purchase-form .field input[type="text"] {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  .purchase-form .actions {
-    margin-top: 20px;
-  }
-  
-  .purchase-form .submit-btn {
-    padding: 10px 15px;
-    background-color: #48bb78;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .purchase-form .submit-btn:hover {
-    background-color: #38a169;
-  }
-  
-  .errors {
-    color: red;
-    margin-bottom: 15px;
-  }
-  
-  .errors ul {
-    padding-left: 20px;
-  }
-  
-  .errors li {
-    list-style-type: disc;
-  }
-  
-  /* edit.html.erb */
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 
-  .purchase-item {
-    background-color: white;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 4px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .purchase-info {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .purchase-name {
-    font-weight: bold;
-  }
-  
-  .purchase-date {
-    color: #666;
-    font-size: 0.85em;
-  }
-  
-  .purchase-amount {
-    color: #333;
-    font-weight: bold;
-  }
+.purchase-form .field {
+  margin-bottom: 10px;
+}
 
-  /* _purchase.html.erb */
+.purchase-form .field label {
+  display: block;
+  margin-bottom: 5px;
+}
 
-  .purchase-edit-container {
-    margin: 20px;
-  }
-  
-  .purchase-edit-title {
-    font-size: 1.5em;
-    margin-bottom: 20px;
-  }
-  
-  .purchase-edit-actions {
-    margin-top: 20px;
-  }
-  
-  .purchase-edit-link {
-    padding: 10px;
-    margin-right: 10px;
-    background-color: #f0f0f0;
-    border-radius: 4px;
-    text-decoration: none;
-    color: #333;
-  }
-  
-  .purchase-edit-link:hover {
-    background-color: #e8e8e8;
-  }
-  
+.purchase-form .field input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.purchase-form .actions {
+  margin-top: 20px;
+}
+
+.purchase-form .submit-btn {
+  padding: 10px 15px;
+  background-color: #48bb78;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.purchase-form .submit-btn:hover {
+  background-color: #38a169;
+}
+
+.errors {
+  color: red;
+  margin-bottom: 15px;
+}
+
+.errors ul {
+  padding-left: 20px;
+}
+
+.errors li {
+  list-style-type: disc;
+}
+
+/* edit.html.erb */
+
+.purchase-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.purchase-name {
+  font-weight: bold;
+}
+
+.purchase-date {
+  color: #666;
+  font-size: 0.85em;
+}
+
+.purchase-amount {
+  color: #333;
+  font-weight: bold;
+}
+
+/* _purchase.html.erb */
+
+.purchase-edit-container {
+  margin: 20px;
+}
+
+.purchase-edit-title {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.purchase-edit-actions {
+  margin-top: 20px;
+}
+
+.purchase-edit-link {
+  padding: 10px;
+  margin-right: 10px;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #333;
+}
+
+.purchase-edit-link:hover {
+  background-color: #e8e8e8;
+}

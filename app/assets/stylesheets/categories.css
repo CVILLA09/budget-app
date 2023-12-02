@@ -14,24 +14,27 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #3778C2;
+  background-color: #3778c2;
   padding: 1rem;
 }
 
-.navigation-bar .back-button img, .navigation-bar .sign-out img {
+.navigation-bar .back-button img,
+.navigation-bar .sign-out img {
   width: 40px;
   height: 40px;
   color: white;
   text-decoration: none;
 }
 
-.page-title, .login-title {
+.page-title,
+.login-title {
   color: white;
   text-align: center;
   flex-grow: 2;
 }
 
-.sign-out, .sign-out-form input {
+.sign-out,
+.sign-out-form input {
   background: none;
   border: none;
   color: white;
@@ -43,15 +46,9 @@
   line-height: inherit;
 }
 
-.sign-out:hover, .sign-out-form input:hover {
+.sign-out:hover,
+.sign-out-form input:hover {
   text-decoration: underline;
-}
-
-.nav-link img{
-  width: 40px;
-  height: 40px;
-  color: white;
-  text-decoration: none;
 }
 
 .categories-section {
@@ -82,7 +79,6 @@
 .add-category-button {
   padding: 1.2rem;
   font-size: 1rem;
-  font-style: none;
   width: 100%;
   border: 2px solid #5fb523;
   background-color: #5fb523;
@@ -127,7 +123,8 @@
   margin-bottom: 5px;
 }
 
-.new-purchase-button, .edit-category-button {
+.new-purchase-button,
+.edit-category-button {
   flex: 1;
   margin-right: 5px;
   padding: 1.2rem;
@@ -141,11 +138,6 @@
   text-decoration: none;
 }
 
-/* The last button in the action-buttons section should not have a margin on the right */
-.edit-category-button {
-  margin-right: 0;
-}
-
 /* Button specific styles */
 .new-purchase-button {
   background-color: #48bb78;
@@ -153,6 +145,7 @@
 
 .edit-category-button {
   background-color: #f6ad55;
+  margin-right: 0;
 }
 
 /* Delete button should be an actual button element */
@@ -167,13 +160,12 @@
   cursor: pointer;
 }
 
-/* Button hover effects */
-.new-purchase-button:hover, .edit-category-button:hover, .delete-category-button:hover {
-  opacity: 0.9;
-}
-
 /* Reset default button styles */
-button, .button, .new-purchase-button, .edit-category-button, .delete-category-button {
+button,
+.button,
+.new-purchase-button,
+.edit-category-button,
+.delete-category-button {
   border: none;
   outline: none;
   -webkit-appearance: none;
@@ -182,105 +174,113 @@ button, .button, .new-purchase-button, .edit-category-button, .delete-category-b
 }
 
 /* Ensure text inside buttons does not have any additional boxes */
-.new-purchase-button > button, .edit-category-button > button, .delete-category-button > button {
+.new-purchase-button > button,
+.edit-category-button > button,
+.delete-category-button > button {
   background: transparent;
   color: inherit;
   box-shadow: none;
-}    
+}
+
+/* Button hover effects */
+.new-purchase-button:hover,
+.edit-category-button:hover,
+.delete-category-button:hover {
+  opacity: 0.9;
+}
 
 /* _category.html.erb */
 
 .category-item {
-    background-color: white;
-    padding: 15px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .category-icon {
-    width: 64px; /* Adjust as needed */
-    border-radius: 5px;
-  }
-  
-  .category-content {
-    flex-grow: 1;
-    padding-left: 20px; /* Adjust space between icon and content */
-  }
-  
-  .category-header {
-    border-bottom: 1px solid #e5e7eb;
-    padding-bottom: 5px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .category-title {
-    font-size: 1rem; /* Adjust as needed */
-    font-weight: bold;
-    color: #1a202c; /* Adjust title color */
-  }
-  
-  .category-total {
-    font-size: 1rem;
-    font-weight: bold;
-    color: #4a5568; /* Adjust total amount color */
-  }
-  
-  .category-date {
-    font-size: 0.75rem; /* Adjust as needed */
-    color: #a0aec0; /* Adjust date color */
-    margin-top: 5px;
-  }
-  
-  /* _form.html.erb */
+  background-color: white;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  .category-form {
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px; /* Adjust the space between form fields */
-    padding-left: 16px; /* Adjust as needed */
-  }
-  
-  .errors {
-    color: red;
-  }
-  
-  .errors h2 {
-    margin-bottom: 10px;
-  }
-  
-  .form-field {
-    margin-bottom: 20px; /* Adjust the space between form fields */
-  }
-  
-  .form-field label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  .text-field,
-  .file-field,
-  .submit-btn {
-    padding: 12px;
-    border: 1px solid #d1d5db; /* Light grey border */
-    border-radius: 4px;
-    width: 100%; /* You might want to set a max-width */
-  }
-  
-  .submit-btn {
-    background-color: #5fb523; /* Green background */
-    color: white;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .submit-btn:hover {
-    background-color: #38a169; /* Darker green on hover */
-  }
-  
+.category-icon {
+  width: 64px; /* Adjust as needed */
+  border-radius: 5px;
+}
+
+.category-content {
+  flex-grow: 1;
+  padding-left: 20px; /* Adjust space between icon and content */
+}
+
+.category-header {
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.category-title {
+  font-size: 1rem; /* Adjust as needed */
+  font-weight: bold;
+  color: #1a202c; /* Adjust title color */
+}
+
+.category-total {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #4a5568; /* Adjust total amount color */
+}
+
+.category-date {
+  font-size: 0.75rem; /* Adjust as needed */
+  color: #a0aec0; /* Adjust date color */
+  margin-top: 5px;
+}
+
+/* _form.html.erb */
+
+.category-form {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Adjust the space between form fields */
+  padding-left: 16px; /* Adjust as needed */
+}
+
+.errors {
+  color: red;
+}
+
+.errors h2 {
+  margin-bottom: 10px;
+}
+
+.form-field {
+  margin-bottom: 20px; /* Adjust the space between form fields */
+}
+
+.form-field label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.text-field,
+.file-field,
+.submit-btn {
+  padding: 12px;
+  border: 1px solid #d1d5db; /* Light grey border */
+  border-radius: 4px;
+  width: 100%; /* You might want to set a max-width */
+}
+
+.submit-btn {
+  background-color: #5fb523; /* Green background */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #38a169; /* Darker green on hover */
+}
