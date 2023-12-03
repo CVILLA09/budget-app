@@ -34,7 +34,7 @@
   border-radius: 4px;
   text-decoration: none;
   color: #31708f;
-  width: max-content;
+  width: auto;
 }
 
 .purchase-link:hover {
