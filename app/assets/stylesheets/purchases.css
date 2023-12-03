@@ -23,15 +23,17 @@
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 98.5%;
 }
 
 .purchase-link {
   display: inline-block;
-  padding: 5px 10px;
+  padding: .7rem;
   background-color: #d9edf7;
   border-radius: 4px;
   text-decoration: none;
   color: #31708f;
+  width: 98.5%;
 }
 
 .purchase-link:hover {
