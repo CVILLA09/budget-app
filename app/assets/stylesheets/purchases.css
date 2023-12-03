@@ -24,7 +24,7 @@
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  width: 98.5%;
+  width: auto;
 }
 
 .purchase-link {
@@ -34,7 +34,7 @@
   border-radius: 4px;
   text-decoration: none;
   color: #31708f;
-  width: 98.5%;
+  width: auto;
 }
 
 .purchase-link:hover {
