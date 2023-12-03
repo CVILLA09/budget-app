@@ -2,6 +2,7 @@
 
 .purchases-container {
   margin: 20px;
+  align-items: stretch;
 }
 
 .notice {
@@ -28,7 +29,7 @@
 
 .purchase-link {
   display: inline-block;
-  padding: .7rem;
+  padding: 0.7rem;
   background-color: #d9edf7;
   border-radius: 4px;
   text-decoration: none;
